@@ -43,8 +43,8 @@ footer {
 /* FIX THANKYOU ALIGNMENT */
 
 
-#cb-slideshow,
-#cb-slideshow:after { 
+#x,
+#x:after {
     margin:0px;
     padding: 0px;
     position: fixed;
@@ -52,11 +52,11 @@ footer {
     height: 100%;
     top: 0px;
     left: 0px;
-    z-index: -1; 
+    z-index: -1;
     list-style-type: none;
 }
 
-#cb-slideshow:target li span { 
+#x:target li span {
     width: 100%;
     height: 100%;
     position: absolute;
@@ -70,12 +70,12 @@ footer {
     z-index: 0;
     -webkit-backface-visibility: hidden;
     -webkit-animation: imageAnimation 60s linear 1 0s;
-    animation: imageAnimation 60s linear 1 0s; 
+    animation: imageAnimation 60s linear 1 0s;
 }
 
 
 
-#cb-slideshow div#thankpic {
+#x div#thankpic {
     background-image: url(../img/end.png);
     display: block;
     position: absolute;
@@ -89,7 +89,7 @@ footer {
 
 
 
-#cb-slideshow div#thank {
+#x div#thank {
     width: 100%;
     height: 100%;
     opacity: 0;
@@ -98,60 +98,60 @@ footer {
 }
 
 
-#cb-slideshow:target div#thank { 
-    animation: thankAnimation 6s linear 20s 0.5 forwards;
-    -webkit-animation: thankAnimation 6s linear 20s 0.5 forwards;
-    -moz-animation: thankAnimation 6s linear 20s 0.5 forwards;
-    -o-animation: thankAnimation 6s linear 20s 0.5 forwards;
+#x:target div#thank {
+    animation: thankAnimation 6s linear 26s 0.5 forwards;
+    -webkit-animation: thankAnimation 6s linear 26s 0.5 forwards;
+    -moz-animation: thankAnimation 6s linear 26s 0.5 forwards;
+    -o-animation: thankAnimation 6s linear 26s 0.5 forwards;
 }
-#cb-slideshow li:nth-child(1) span { 
-    background-image: url(../img/1.jpg) 
+#x li:nth-child(1) span {
+    background-image: url(../img/1.jpg)
 }
-#cb-slideshow li:nth-child(2) span { 
+#x li:nth-child(2) span {
     background-image: url(../img/2.jpg);
     -webkit-animation-delay: 6s;
     -ms-animation-delay: 6s;
-    animation-delay: 6s; 
+    animation-delay: 6s;
 }
-#cb-slideshow li:nth-child(3) span { 
+#x li:nth-child(3) span {
     background-image: url(../img/3.jpg);
     -webkit-animation-delay: 12s;
     -ms-animation-delay: 12s;
-    animation-delay: 12s; 
+    animation-delay: 12s;
 }
 
 
-@-webkit-keyframes imageAnimation { 
+@-webkit-keyframes imageAnimation {
     0% { opacity: 0;
     -webkit-animation-timing-function: ease-in; }
-    2% { opacity: 1;
+    4% { opacity: 1;
          -webkit-animation-timing-function: ease-out; }
-    12% { opacity: 1 }
-    14% { opacity: 0 }
+    22% { opacity: 1 }
+    24% { opacity: 0 }
     100% { opacity: 0 }
 }
 
-@keyframes imageAnimation { 
+@keyframes imageAnimation {
     0% { opacity: 0;
     -webkit-animation-timing-function: ease-in;
             animation-timing-function: ease-in; }
-    3% { opacity: 1;
+    4% { opacity: 1;
        -webkit-animation-timing-function: ease-out;
                animation-timing-function: ease-out; }
-    10% { opacity: 1 }
-    14% { opacity: 0 }
+    20% { opacity: 1 }
+    24% { opacity: 0 }
     100% { opacity: 0 }
 }
 
 
-@-webkit-keyframes thankAnimation { 
+@-webkit-keyframes thankAnimation {
     0% { opacity: 0;
     -webkit-animation-timing-function: ease-in; }
     50% { opacity: 1 }
     100% { opacity: 1 }
 }
 
-@keyframes thankAnimation { 
+@keyframes thankAnimation {
     0% { opacity: 0;
     -webkit-animation-timing-function: ease-in;
             animation-timing-function: ease-in; }

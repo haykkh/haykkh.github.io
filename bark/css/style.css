@@ -40,8 +40,8 @@ body {
 /* FIX THANKYOU ALIGNMENT */
 
 
-#cb-slideshow,
-#cb-slideshow:after { 
+#bark,
+#bark:after {
     margin:0px;
     padding: 0px;
     position: fixed;
@@ -49,11 +49,11 @@ body {
     height: 100%;
     top: 0px;
     left: 0px;
-    z-index: -1; 
+    z-index: -1;
     list-style-type: none;
 }
 
-#cb-slideshow:target li span { 
+#bark:target li span {
     width: 100%;
     height: 100%;
     position: absolute;
@@ -67,12 +67,12 @@ body {
     z-index: 0;
     -webkit-backface-visibility: hidden;
     -webkit-animation: imageAnimation 60s linear 1 0s;
-    animation: imageAnimation 60s linear 1 0s; 
+    animation: imageAnimation 60s linear 1 0s;
 }
 
 
 
-#cb-slideshow div#thankpic {
+#bark div#thankpic {
     background-image: url(../img/end.png);
     display: block;
     position: absolute;
@@ -86,7 +86,7 @@ body {
 
 
 
-#cb-slideshow div#thank {
+#bark div#thank {
     width: 100%;
     height: 100%;
     opacity: 0;
@@ -94,130 +94,130 @@ body {
 
 }
 
-#cb-slideshow:target div#thank { 
-    animation: thankAnimation 6s linear 86s 0.5 forwards;
-    -webkit-animation: thankAnimation 6s linear 86s 0.5 forwards;
-    -moz-animation: thankAnimation 6s linear 86s 0.5 forwards;
-    -o-animation: thankAnimation 6s linear 86s 0.5 forwards;
+#bark:target div#thank {
+    animation: thankAnimation 6s linear 90s 0.5 forwards;
+    -webkit-animation: thankAnimation 6s linear 90s 0.5 forwards;
+    -moz-animation: thankAnimation 6s linear 90s 0.5 forwards;
+    -o-animation: thankAnimation 6s linear 90s 0.5 forwards;
 }
-#cb-slideshow li:nth-child(1) span { 
-    background-image: url(../img/1.jpg) 
+#bark li:nth-child(1) span {
+    background-image: url(../img/1.jpg)
 }
-#cb-slideshow li:nth-child(2) span { 
+#bark li:nth-child(2) span {
     background-image: url(../img/2.jpg);
     -webkit-animation-delay: 6s;
     -ms-animation-delay: 6s;
-    animation-delay: 6s; 
+    animation-delay: 6s;
 }
-#cb-slideshow li:nth-child(3) span { 
+#bark li:nth-child(3) span {
     background-image: url(../img/3.jpg);
     -webkit-animation-delay: 12s;
     -ms-animation-delay: 12s;
-    animation-delay: 12s; 
+    animation-delay: 12s;
 }
-#cb-slideshow li:nth-child(4) span { 
+#bark li:nth-child(4) span {
     background-image: url(../img/4.jpg);
     -webkit-animation-delay: 18s;
     -ms-animation-delay: 18s;
-    animation-delay: 18s; 
+    animation-delay: 18s;
 }
-#cb-slideshow li:nth-child(5) span { 
+#bark li:nth-child(5) span {
     background-image: url(../img/5.jpg);
     -webkit-animation-delay: 24s;
     -ms-animation-delay: 24s;
-    animation-delay: 24s; 
+    animation-delay: 24s;
 }
-#cb-slideshow li:nth-child(6) span { 
+#bark li:nth-child(6) span {
     background-image: url(../img/6.jpg);
     -webkit-animation-delay: 30s;
     -ms-animation-delay: 30s;
-    animation-delay: 30s; 
+    animation-delay: 30s;
 }
-#cb-slideshow li:nth-child(7) span { 
+#bark li:nth-child(7) span {
     background-image: url(../img/7.jpg);
     -webkit-animation-delay: 36s;
     -ms-animation-delay: 36s;
-    animation-delay: 36s; 
+    animation-delay: 36s;
 }
-#cb-slideshow li:nth-child(8) span { 
+#bark li:nth-child(8) span {
     background-image: url(../img/8.jpg);
     -webkit-animation-delay: 42s;
     -ms-animation-delay: 42s;
-    animation-delay: 42s; 
+    animation-delay: 42s;
 }
-#cb-slideshow li:nth-child(9) span { 
+#bark li:nth-child(9) span {
     background-image: url(../img/9.jpg);
     -webkit-animation-delay: 48s;
     -ms-animation-delay: 48s;
-    animation-delay: 48s; 
+    animation-delay: 48s;
 }
-#cb-slideshow li:nth-child(10) span { 
+#bark li:nth-child(10) span {
     background-image: url(../img/10.jpg);
     -webkit-animation-delay: 54s;
     -ms-animation-delay: 54s;
-    animation-delay: 54s; 
+    animation-delay: 54s;
 }
 
-#cb-slideshow li:nth-child(11) span { 
+#bark li:nth-child(11) span {
     background-image: url(../img/11.jpg);
     -webkit-animation-delay: 60s;
     -ms-animation-delay: 60s;
-    animation-delay: 60s; 
+    animation-delay: 60s;
 }
 
-#cb-slideshow li:nth-child(12) span { 
+#bark li:nth-child(12) span {
     background-image: url(../img/12.jpg);
     -webkit-animation-delay: 66s;
     -ms-animation-delay: 66s;
-    animation-delay: 66s; 
+    animation-delay: 66s;
 }
 
-#cb-slideshow li:nth-child(13) span { 
+#bark li:nth-child(13) span {
     background-image: url(../img/13.jpg);
     -webkit-animation-delay: 72s;
     -ms-animation-delay: 72s;
-    animation-delay: 72s; 
+    animation-delay: 72s;
 }
 
-#cb-slideshow li:nth-child(14) span { 
+#bark li:nth-child(14) span {
     background-image: url(../img/14.jpg);
     -webkit-animation-delay: 78s;
     -ms-animation-delay: 78s;
-    animation-delay: 78s; 
+    animation-delay: 78s;
 }
 
 
-@-webkit-keyframes imageAnimation { 
+@-webkit-keyframes imageAnimation {
     0% { opacity: 0;
     -webkit-animation-timing-function: ease-in; }
-    3% { opacity: 1;
+    4% { opacity: 1;
          -webkit-animation-timing-function: ease-out; }
-    12% { opacity: 1 }
-    14% { opacity: 0 }
+    22% { opacity: 1 }
+    24% { opacity: 0 }
     100% { opacity: 0 }
 }
 
-@keyframes imageAnimation { 
+@keyframes imageAnimation {
     0% { opacity: 0;
     -webkit-animation-timing-function: ease-in;
             animation-timing-function: ease-in; }
-    3% { opacity: 1;
+    4% { opacity: 1;
        -webkit-animation-timing-function: ease-out;
                animation-timing-function: ease-out; }
-    10% { opacity: 1 }
-    14% { opacity: 0 }
+    20% { opacity: 1 }
+    24% { opacity: 0 }
     100% { opacity: 0 }
 }
 
 
-@-webkit-keyframes thankAnimation { 
+@-webkit-keyframes thankAnimation {
     0% { opacity: 0;
     -webkit-animation-timing-function: ease-in; }
     50% { opacity: 1 }
     100% { opacity: 1 }
 }
 
-@keyframes thankAnimation { 
+@keyframes thankAnimation {
     0% { opacity: 0;
     -webkit-animation-timing-function: ease-in;
             animation-timing-function: ease-in; }

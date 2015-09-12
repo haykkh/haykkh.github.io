@@ -15,15 +15,28 @@
 			"file": "index.html",
 			"settings":
 			{
-				"buffer_size": 204,
+				"buffer_size": 3420,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "css/style.css",
+			"settings":
+			{
+				"buffer_size": 5176,
 				"line_ending": "Unix"
 			}
 		}
 	],
 	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
 	"command_palette":
 	{
 		"height": 359.0,
+		"last_filter": "",
 		"selected_items":
 		[
 			[
@@ -73,7 +86,7 @@
 	},
 	"expanded_folders":
 	[
-		"/Users/haroot/Documents/Hayk.com/bark."
+		"/Users/haroot/Documents/Hayk/bark/css"
 	],
 	"file_history":
 	[
@@ -118,7 +131,7 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 1,
 			"sheets":
 			[
 				{
@@ -127,7 +140,7 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 204,
+						"buffer_size": 3420,
 						"regions":
 						{
 						},
@@ -140,10 +153,46 @@
 						],
 						"settings":
 						{
-							"syntax": "Packages/HTML/HTML.tmLanguage"
+							"WordCountShouldRun": true,
+							"WordCountSyntax": "html",
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "css/style.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5176,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1745,
+								1745
+							]
+						],
+						"settings":
+						{
+							"WordCountShouldRun": false,
+							"WordCountSyntax": "css",
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1296.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
@@ -187,6 +236,7 @@
 	{
 		"height": 0.0
 	},
+	"pinned_build_system": "",
 	"project": "bark.sublime-project",
 	"replace":
 	{
@@ -196,6 +246,7 @@
 	"select_file":
 	{
 		"height": 0.0,
+		"last_filter": "",
 		"selected_items":
 		[
 		],
@@ -204,6 +255,7 @@
 	"select_project":
 	{
 		"height": 0.0,
+		"last_filter": "",
 		"selected_items":
 		[
 		],
@@ -212,6 +264,7 @@
 	"select_symbol":
 	{
 		"height": 0.0,
+		"last_filter": "",
 		"selected_items":
 		[
 		],
