@@ -1,0 +1,74 @@
+html, body {
+	margin: 0; 
+	height: 100vh; 
+	overflow-y: hidden;
+	padding-bottom: -40px;
+}
+
+header {
+	position: fixed;
+	height: 10vh;
+	width:100%;
+	top: 0;
+}
+
+header h1 {
+	font-family: 'Playfair Display', serif;
+	font-size: 6vh;
+	line-height: 5vh;
+	text-decoration: none;
+
+}
+
+#title {
+	display: inline-block;
+	position: relative;
+	transform: translateY(-25%); 
+	margin: 0 3vh;
+	height: inherit;
+
+}
+
+nav {
+	display: inline-block;
+	position: relative;
+	right: 0;
+	font-size: 2.5vh;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 300;
+	float: right;
+	top: 50%;
+	transform: translateY(-50%); 
+	margin-right: 3vh;
+}
+
+nav a {
+
+	text-decoration: none;
+	color: black;
+}
+
+nav a:after {
+	content: '\5C';
+    margin: 0 5.136vh;
+    font-size: 1.93vh;
+}
+
+nav a:last-child:after {
+	content: '';
+	margin: 1vh;
+}
+#gallery {
+	height: 90vh;
+	overflow-x: scroll;
+	overflow-y: hidden;
+	margin: 10vh -1px 0 -1px;
+	font-size: 0;
+	white-space: nowrap;
+}
+#gallery img {
+	height: inherit;
+	display: inline;
+	margin: 0 1px 0 1px;
+
+}
