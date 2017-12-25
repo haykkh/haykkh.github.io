@@ -8,15 +8,19 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <!-- Place favicon.ico in the root directory -->
-        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="style.css">
         <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700" rel="stylesheet">
     </head>
     <body>
         <!--[if lte IE 9]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
         <![endif]-->
+        <a id="home"></a>
+        <a id="about"></a>
+        <a id="projects"></a>
+        <a id="contact"></a>
 
-        <nav role="navigation">
+        <nav id="primary-nav" role="navigation">
           <div id="menuToggle">
             <!--
             A fake / hidden checkbox is used as click reciever,
@@ -39,21 +43,48 @@
             but hey, it's pure CSS magic.
             -->
             <ul id="menu">
-              <a href="#"><li>Home</li></a>
-              <a href="#"><li>About</li></a>
-              <a href="#"><li>Projects</li></a>
-              <a href="#"><li>Contact</li></a>
+              <a href="#home"><li>Home</li></a>
+              <a href="#about"><li>About</li></a>
+              <a href="#projects"><li>Projects</li></a>
+              <a href="#contact"><li>Contact</li></a>
             </ul>
           </div>
         </nav>
 
-        <section class="home">
+        <section class="panel" id="home">
             <div class="container">
-                <div class="hello">
-                    Hi! I'm Hayk, <a href="#about" title="">I'd love to meet you.</a>
+                <div class="inner" id="hello">
+                    Hi, I'm Hayk. <br>
+                    <a href="#about" title="">I'd love to meet you!</a>
                 </div>
             </div>
-        </section>    
+        </section>  
+
+        <section class="panel" id="about">
+            <div class="container">
+                <div class="inner" id="me">
+                    this me. <br>
+                   <a href="#projects" title="">I'd love to meet you!</a>
+                </div>
+            </div>
+        </section>  
+
+        <section class="panel" id="projects">
+            <div class="container">
+                <div class="inner" id="portfolio">
+                   and my porofolio. <br>
+                   <!-- <a href="#" title="">I'd love to meet you!</a> -->
+                </div>
+            </div>
+        </section>  
+        <section class="panel" id="contact">
+            <div class="container">
+                <div class="inner" id="message">
+                   text me!. <br>
+                   <!-- <a href="#" title="">I'd love to meet you!</a> -->
+                </div>
+            </div>
+        </section>  
 
         <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
         <script>
