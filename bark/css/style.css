@@ -1,11 +1,13 @@
 html {
-    min-height: 400px;
+    height:100vh;
+    padding-bottom:80px;
 }
 
 body {
     background-image: url(../img/bgcopy.jpg); /* Chrome 1.0+ Safari 3.0+ */ /* Firefox 3.6+ */ /* Opera 10.0+ */
     background-size: cover; /* Chrome 4.0+ IE 9+ Firefox 4.0+ Safari 4.1+ Opera 10.5+ */
     margin: 0px;
+    overflow:hidden;
 }
 
 #body:target {
