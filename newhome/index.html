@@ -7,21 +7,24 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
+        <link rel="manifest" href="site.webmanifest">
+        <link rel="apple-touch-icon" href="icon.png">
         <!-- Place favicon.ico in the root directory -->
+
         <link rel="stylesheet" href="style.css">
-        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700" rel="stylesheet">
+                <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700" rel="stylesheet">
+
     </head>
     <body>
-        <div id="site">
-        <!--[if lte IE 9]>
-            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
-        <![endif]-->
         <a id="home"></a>
         <a id="about"></a>
         <a id="projects"></a>
-        <a id="contact"></a>
-
-        <nav id="primary-nav" role="navigation">
+        <a id="contact"></a>        <!--[if lte IE 9]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+        <![endif]-->
+<div class="full-screen">
+	<div class="header">        
+		<nav id="primary-nav" role="navigation">
           <div id="menuToggle">
             <!--
             A fake / hidden checkbox is used as click reciever,
@@ -50,42 +53,51 @@
               <a href="#contact"><li>Contact</li></a>
             </ul>
           </div>
-        </nav>
+        </nav></div>
+	<div class="main">
+		<div class="outer" id="home">
+			<div class="inner" id="hello">
+				Hi, I'm Hayk. <br>
+            	<a href="#about" title="">I'd love to meet you!</a>				
+			</div>
 
-        <section class="panel" id="home">
-            <div class="container">
-                <div class="inner" id="hello">
-                    Hi, I'm Hayk. <br>
-                    <a href="#about" title="">I'd love to meet you!</a>
-                </div>
-            </div>
-        </section>  
 
-        <section class="panel" id="about">
-            <div class="container">
-                <div class="inner" id="me">
-                    this me. <br>
-                   <a href="#projects" title="">I'd love to meet you!</a>
-                </div>
-            </div>
-        </section>  
+		</div>
+		<div class="outer" id="about">
+			<div class="inner" id="banner">
+				<div>
+				<p>I'm an undergrad Physics student at UCL</p>
+				<p>When I'm not trying to calculate the mass of the sun, I like hacking doodads and thingamajigs together to bring smiles to people's faces.</p>
+				<p>I dream of one day hacking the ultimate doodad and thingamajig together into a quantum computer.<br>
+					Oh I also dream about spaceships a lot.
+				</p>
+				<p>I fear Facebook's impdending world domination.</p>					
+				</div>
+			</div>
+			<!--<div class="inner" id="me">
+				<a id="me"></a>
+				<p>I'm an undergrad Physics student at UCL</p>
+				<p>When I'm not trying to calculate the mass of the sun, I like hacking doodads and thingamajigs together to bring smiles to people's faces.</p>
+				<p>I dream of one day hacking the ultimate doodad and thingamajig together into a quantum computer.<br>
+					Oh I also dream about spaceships a lot.
+				</p>
+				<p>I fear Facebook's impdending world domination.</p>
+				
+			</div>-->
 
-        <section class="panel" id="projects">
-            <div class="container">
-                <div class="inner" id="portfolio">
-                   and my porofolio. <br>
-                   <!-- <a href="#" title="">I'd love to meet you!</a> -->
-                </div>
-            </div>
-        </section>  
-        <section class="panel" id="contact">
-            <div class="container">
-                <div class="inner" id="message">
-                   text me!. <br>
-                   <!-- <a href="#" title="">I'd love to meet you!</a> -->
-                </div>
-            </div>
-        </section>  
+		</div>
+		<div class="outer" id="projects">
+			<div class="inner" id="portfolio">
+				my portofoli
+			</div>
+		</div>
+		<div class="outer" id="contact">
+			<div class="inner" id="sms">
+				say hi
+			</div>
+		</div>
+	</div>
+</div>
 
         <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
         <script>
@@ -93,6 +105,5 @@
             ga('create','UA-XXXXX-Y','auto');ga('send','pageview')
         </script>
         <script src="https://www.google-analytics.com/analytics.js" async defer></script>
-    </div>
     </body>
 </html>

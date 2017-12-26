@@ -6,22 +6,25 @@
 /* ==========================================================================
    Base styles: opinionated defaults
    ========================================================================== */
-html {
-  /*background: linear-gradient(rgb(237, 106, 106), white);*/
-  color: #222;
-  font-size: 1em;
-  line-height: 1.4;
-  font-family: 'Roboto Slab', serif;
-  overflow: hidden;
+html, body, .full-screen {
+  height: 100%;
   margin: 0;
   padding: 0; }
 
 body {
+  font-size: 1em;
+  line-height: 1.4;
+  font-family: 'Roboto Slab', serif; }
+
+.full-screen {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   overflow: hidden;
-  margin: 0;
-  width: -webkit-max-content;
-  width: -moz-max-content;
-  width: max-content; }
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
 
 #site {
   overflow: hidden;
@@ -30,7 +33,11 @@ body {
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
-  position: fixed; }
+  position: fixed;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  height: 100%; }
 
 /*
  * Remove text-shadow in selection highlight:
@@ -64,12 +71,7 @@ hr {
  * images, videos and the bottom of their containers:
  * https://github.com/h5bp/html5-boilerplate/issues/440
  */
-audio,
-canvas,
-iframe,
-img,
-svg,
-video {
+audio, canvas, iframe, img, svg, video {
   vertical-align: middle; }
 
 /*
@@ -110,75 +112,61 @@ textarea {
   -webkit-user-select: none;
   -moz-user-select: none;
    -ms-user-select: none;
-       user-select: none; }
-
-#menuToggle input {
-  display: block;
-  width: 32px;
-  height: 25px;
-  position: absolute;
-  top: -7px;
-  left: -5px;
-  cursor: pointer;
-  opacity: 0;
-  /* hide this */
-  z-index: 2;
-  /* and place it over the hamburger */
-  -webkit-touch-callout: none; }
-
-/*
- * Just a quick hamburger
- */
-#menuToggle .burgers {
-  margin: 15px; }
-
-#menuToggle span {
-  display: block;
-  width: 30px;
-  height: 3px;
-  margin-bottom: 5px;
-  position: relative;
-  background: black;
-  z-index: 1;
-  -webkit-transform-origin: 4px 0px;
-          transform-origin: 4px 0px;
-  -webkit-transition: background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease, -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
-  transition: background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease, -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
-  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
-  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease, -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1); }
-
-#menuToggle span:first-child {
-  -webkit-transform-origin: 0% 0%;
-          transform-origin: 0% 0%; }
-
-#menuToggle span:nth-last-child(2) {
-  -webkit-transform-origin: 0% 100%;
-          transform-origin: 0% 100%; }
-
-/* 
- * Transform all the slices of hamburger
- * into a crossmark.
- */
-#menuToggle input:checked ~ span {
-  opacity: 1;
-  -webkit-transform: rotate(45deg) translate(-2px, -1px);
-          transform: rotate(45deg) translate(-2px, -1px);
-  background: white; }
-
-/*
- * But let's hide the middle one.
- */
-#menuToggle input:checked ~ span:nth-last-child(3) {
-  opacity: 0;
-  -webkit-transform: rotate(0deg) scale(0.2, 0.2);
-          transform: rotate(0deg) scale(0.2, 0.2); }
-
-/*
- * Ohyeah and the last one should go the other direction
- */
-#menuToggle input:checked ~ span:nth-last-child(2) {
-  -webkit-transform: rotate(-45deg) translate(0, -1px);
-          transform: rotate(-45deg) translate(0, -1px); }
+       user-select: none;
+  /*
+  * Just a quick hamburger
+  */
+  /* 
+  * Transform all the slices of hamburger
+  * into a crossmark.
+  */ }
+  #menuToggle input {
+    display: block;
+    width: 26px;
+    height: 25px;
+    position: absolute;
+    top: -7px;
+    left: -5px;
+    cursor: pointer;
+    opacity: 0;
+    /* hide this */
+    z-index: 2;
+    /* and place it over the hamburger */
+    -webkit-touch-callout: none; }
+  #menuToggle span {
+    display: block;
+    width: 24px;
+    height: 3px;
+    margin-bottom: 5px;
+    position: relative;
+    background: black;
+    z-index: 1;
+    -webkit-transform-origin: 4px 0px;
+            transform-origin: 4px 0px;
+    -webkit-transition: background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease, -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+    transition: background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease, -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease, -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1); }
+    #menuToggle span:first-child {
+      -webkit-transform-origin: 0% 0%;
+              transform-origin: 0% 0%; }
+    #menuToggle span:nth-last-child(2) {
+      -webkit-transform-origin: 0% 100%;
+              transform-origin: 0% 100%; }
+  #menuToggle input:checked ~ span {
+    opacity: 1;
+    -webkit-transform: rotate(45deg) translate(1px, 0px);
+            transform: rotate(45deg) translate(1px, 0px);
+    background: white; }
+    #menuToggle input:checked ~ span:nth-last-child(3) {
+      /* But let's hide the middle one */
+      opacity: 0;
+      -webkit-transform: rotate(0deg) scale(0.2, 0.2);
+              transform: rotate(0deg) scale(0.2, 0.2); }
+    #menuToggle input:checked ~ span:nth-last-child(2) {
+      /* Ohyeah and the last one should go the other direction */
+      -webkit-transform: rotate(-45deg) translate(2px, 0px);
+              transform: rotate(-45deg) translate(2px, 0px); }
 
 /*
  * Make this absolute positioned
@@ -202,17 +190,15 @@ textarea {
   transition: -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
   transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
   transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1); }
-
-#menu a {
-  text-decoration: none; }
-
-#menu li {
-  padding: 10px 0;
-  margin-right: 25px;
-  font-size: 1rem;
-  color: white;
-  text-decoration: none;
-  display: inline-block; }
+  #menu a {
+    text-decoration: none; }
+  #menu li {
+    padding: 10px 0;
+    margin-right: 25px;
+    font-size: 1.2rem;
+    color: white;
+    text-decoration: none;
+    display: inline-block; }
 
 /*
  * And let's slide it in from the top
@@ -224,23 +210,26 @@ textarea {
 /******************/
 /*  HAMBURGER END */
 /******************/
-section {
-  display: inline; }
-
-.container {
-  /* background-image: url(../overlay.png), linear-gradient(60deg, rgba(255, 165, 150, 0.5) 5%, rgba(0, 228, 255, 0.35));
-  background-repeat: repeat,  no-repeat; */
-  font-size: 2rem;
-  line-height: 2rem;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  height: 100vh;
-  width: 100vw;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  vertical-align: top;
+.full-screen > * {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+  overflow: scroll; }
+.full-screen > .main {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden; }
+  .full-screen > .main > * {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 auto;
+            flex: 0 0 auto;
+    -ms-flex-preferred-size: 100vw;
+        flex-basis: 100vw; }
+.full-screen .outer {
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
   -webkit-transition: -webkit-transform 0.6s ease-in-out;
@@ -248,36 +237,61 @@ section {
   transition: transform 0.6s ease-in-out;
   transition: transform 0.6s ease-in-out, -webkit-transform 0.6s ease-in-out;
   -webkit-backface-visibility: hidden;
-  backface-visibility: hidden; }
-
-.container div {
-  margin: auto;
-  padding: 25px;
-  line-height: 2.5rem; }
-
-#about .container {
-  background-image: url(overlay.png), -webkit-linear-gradient(30deg, rgba(255, 165, 150, 0.5) 5%, rgba(0, 228, 255, 0.35)), url(1.jpg);
-  background-image: url(overlay.png), linear-gradient(60deg, rgba(255, 165, 150, 0.5) 5%, rgba(0, 228, 255, 0.35)), url(1.jpg);
-  background-repeat: repeat,  no-repeat,  no-repeat;
-  background-size: 100px 100px, cover,  cover;
-  background-position: top left,  center center,  top center;
-  overflow-y: scroll;
-  margin-left: -4px; }
-
-.inner a {
-  color: black;
+  backface-visibility: hidden;
+  font-size: 2rem;
+  line-height: 2.5rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: column;
+      flex-flow: column; }
+.full-screen .inner {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto; }
+.full-screen a {
+  color: tomato;
   white-space: nowrap;
-  text-decoration: underline dashed  tomato; }
-
-.inner a:visited {
-  color: black;
-  text-decoration: underline dashed tomato; }
-
-#me {
-  color: white; }
-
-#me a {
-  color: white; }
+  text-decoration: underline dashed  black;
+  -webkit-text-decoration-skip: ink;
+          text-decoration-skip: ink; }
+  .full-screen a:visited {
+    color: tomato;
+    text-decoration: underline dashed black;
+    -webkit-text-decoration-skip: ink;
+            text-decoration-skip: ink; }
+.full-screen #banner {
+  height: 100vh;
+  background-image: url(overlay.png), -webkit-linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), -webkit-linear-gradient(30deg, rgba(255, 165, 150, 0.5) 5%, rgba(0, 228, 255, 0.35)), url(bg-2048.jpg);
+  background-image: url(overlay.png), linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), linear-gradient(60deg, rgba(255, 165, 150, 0.5) 5%, rgba(0, 228, 255, 0.35)), url(bg-2048.jpg);
+  background-repeat: repeat,  repeat, no-repeat,  no-repeat;
+  background-size: 100px 100px, 5px 5px, cover,  cover;
+  background-position: top left, top left, center center,  top center;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-flow: column;
+      flex-flow: column; }
+  .full-screen #banner > a {
+    position: absolute;
+    color: white;
+    text-decoration: none;
+    bottom: 25px; }
+.full-screen #banner div {
+  max-width: 550px;
+  padding: 25px; }
+.full-screen #banner p {
+  text-align: left;
+  font-size: 1.1rem;
+  line-height: 1.5rem; }
 
 /* ==========================================================================
 
@@ -311,24 +325,22 @@ Helper classes
   width: 1px;
   white-space: nowrap;
   /* 1 */ }
+  .visuallyhidden.focusable:active, .visuallyhidden.focusable:focus {
+    clip: auto;
+    -webkit-clip-path: none;
+            clip-path: none;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+    white-space: inherit; }
 
 /*
  * Extends the .visuallyhidden class to allow the element
  * to be focusable when navigated to via the keyboard:
  * https://www.drupal.org/node/897638
  */
-.visuallyhidden.focusable:active,
-.visuallyhidden.focusable:focus {
-  clip: auto;
-  -webkit-clip-path: none;
-          clip-path: none;
-  height: auto;
-  margin: 0;
-  overflow: visible;
-  position: static;
-  width: auto;
-  white-space: inherit; }
-
 /*
  * Hide visually and from screen readers, but maintain layout
  */
@@ -346,14 +358,16 @@ Helper classes
  * 2. The use of `table` rather than `block` is only necessary if using
  *    `:before` to contain the top-margins of child elements.
  */
-.clearfix:before,
-.clearfix:after {
+.clearfix:before {
   content: " ";
   /* 1 */
   display: table;
   /* 2 */ }
-
 .clearfix:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
   clear: both; }
 
 /* ==========================================================================
@@ -371,22 +385,27 @@ Helper classes
    http://www.phpied.com/delay-loading-your-print-css/
    ========================================================================== */
 @media print {
-  *,
-  *:before,
-  *:after {
+  * {
     background: transparent !important;
     color: #000 !important;
     /* Black prints faster:
        http://www.sanbeiji.com/archives/953 */
     box-shadow: none !important;
     text-shadow: none !important; }
+    *:before, *:after {
+      background: transparent !important;
+      color: #000 !important;
+      /* Black prints faster:
+         http://www.sanbeiji.com/archives/953 */
+      box-shadow: none !important;
+      text-shadow: none !important; }
 
-  a,
-  a:visited {
+  a {
     text-decoration: underline; }
-
-  a[href]:after {
-    content: " (" attr(href) ")"; }
+    a:visited {
+      text-decoration: underline; }
+    a[href]:after {
+      content: " (" attr(href) ")"; }
 
   abbr[title]:after {
     content: " (" attr(title) ")"; }
@@ -395,14 +414,14 @@ Helper classes
    * Don't show links that are fragment identifiers,
    * or use the `javascript:` pseudo protocol
    */
-  a[href^="#"]:after,
-  a[href^="javascript:"]:after {
+  a[href^="#"]:after, a[href^="javascript:"]:after {
     content: ""; }
 
   pre {
-    white-space: pre-wrap !important; }
+    white-space: pre-wrap !important;
+    border: 1px solid #999;
+    page-break-inside: avoid; }
 
-  pre,
   blockquote {
     border: 1px solid #999;
     page-break-inside: avoid; }
@@ -414,37 +433,29 @@ Helper classes
   thead {
     display: table-header-group; }
 
-  tr,
-  img {
+  tr, img {
     page-break-inside: avoid; }
 
-  p,
-  h2,
-  h3 {
+  p, h2, h3 {
     orphans: 3;
     widows: 3; }
 
-  h2,
-  h3 {
+  h2, h3 {
     page-break-after: avoid; } }
 /* ==========================================================================
    Scrolling
    ========================================================================== */
-a[id="home"]:target ~ section.panel .container {
+a[id="home"]:target ~ div.full-screen .outer {
   -webkit-transform: translateX(0);
   transform: translateX(0); }
-
-a[id="about"]:target ~ section.panel .container {
+a[id="about"]:target ~ div.full-screen .outer, a[id="me"]:target ~ div.full-screen .outer {
   -webkit-transform: translateX(-100vw);
   transform: translateX(-100vw); }
-
-a[id="projects"]:target ~ section.panel .container {
+a[id="projects"]:target ~ div.full-screen .outer {
   -webkit-transform: translateX(-200vw);
   transform: translateX(-200vw); }
-
-a[id="contact"]:target ~ section.panel .container {
+a[id="contact"]:target ~ div.full-screen .outer {
   -webkit-transform: translateX(-300vw);
   transform: translateX(-300vw); }
-
-a[id="about"]:target ~ nav#primary-nav span {
+a[id="about"]:target ~ div.full-screen nav#primary-nav span {
   background: white; }
