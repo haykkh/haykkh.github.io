@@ -307,30 +307,28 @@ textarea {
     .full-screen .vertical .inner div {
       padding: 50px; }
 .full-screen #about #banner {
+  /*
   background-repeat: repeat, no-repeat,  no-repeat;
   background-size: 100px 100px, cover,  cover;
-  background-position: top left, center center,  top center;
+  background-position: top left, center center,  top center; */
+  background-size: cover;
   color: white;
   height: 100%;
   width: 100vw;
-  background-image: url(overlay.png), -webkit-linear-gradient(30deg, rgba(255, 165, 150, 0.5) 5%, rgba(0, 228, 255, 0.35)), url(bg-640.jpg);
-  background-image: url(overlay.png), linear-gradient(60deg, rgba(255, 165, 150, 0.5) 5%, rgba(0, 228, 255, 0.35)), url(bg-640.jpg); }
-  @media screen and (min-width: 641px), (min-height: 428px) {
-    .full-screen #about #banner {
-      background-image: url(overlay.png), -webkit-linear-gradient(30deg, rgba(255, 165, 150, 0.5) 5%, rgba(0, 228, 255, 0.35)), url(bg-1280.jpg);
-      background-image: url(overlay.png), linear-gradient(60deg, rgba(255, 165, 150, 0.5) 5%, rgba(0, 228, 255, 0.35)), url(bg-1280.jpg); } }
+  background-image: url(bg-3072.jpg);
+  /*
+  @media screen and (min-width: 641px), (min-height: 428px){
+    background-image: url(overlay.png), linear-gradient(60deg, rgba(255, 165, 150, 0.5) 5%, rgba(0, 228, 255, 0.35)), url(bg-1280.jpg);
+  }
   @media screen and (min-width: 1281px), (min-height: 854px) {
-    .full-screen #about #banner {
-      background-image: url(overlay.png), -webkit-linear-gradient(30deg, rgba(255, 165, 150, 0.5) 5%, rgba(0, 228, 255, 0.35)), url(bg-1920.jpg);
-      background-image: url(overlay.png), linear-gradient(60deg, rgba(255, 165, 150, 0.5) 5%, rgba(0, 228, 255, 0.35)), url(bg-1920.jpg); } }
+    background-image: url(overlay.png), linear-gradient(60deg, rgba(255, 165, 150, 0.5) 5%, rgba(0, 228, 255, 0.35)), url(bg-1920.jpg);
+  } 
   @media screen and (min-width: 1921px), (min-height: 1281px) {
-    .full-screen #about #banner {
-      background-image: url(overlay.png), -webkit-linear-gradient(30deg, rgba(255, 165, 150, 0.5) 5%, rgba(0, 228, 255, 0.35)), url(bg-3072.jpg);
-      background-image: url(overlay.png), linear-gradient(60deg, rgba(255, 165, 150, 0.5) 5%, rgba(0, 228, 255, 0.35)), url(bg-3072.jpg); } }
-  @media screen and (min-width: 3071px), (min-height: 2049px) {
-    .full-screen #about #banner {
-      background-image: url(overlay.png), -webkit-linear-gradient(30deg, rgba(255, 165, 150, 0.5) 5%, rgba(0, 228, 255, 0.35)), url(bg-6048.jpg);
-      background-image: url(overlay.png), linear-gradient(60deg, rgba(255, 165, 150, 0.5) 5%, rgba(0, 228, 255, 0.35)), url(bg-6048.jpg); } }
+    background-image: url(overlay.png), linear-gradient(60deg, rgba(255, 165, 150, 0.5) 5%, rgba(0, 228, 255, 0.35)), url(bg-3072.jpg);
+  }
+  @media screen and (min-width: 3071px ), (min-height: 2049px) {
+    background-image: url(overlay.png), linear-gradient(60deg, rgba(255, 165, 150, 0.5) 5%, rgba(0, 228, 255, 0.35)), url(bg-6048.jpg);
+  } */ }
   .full-screen #about #banner div {
     max-width: 550px;
     padding: 150px; }

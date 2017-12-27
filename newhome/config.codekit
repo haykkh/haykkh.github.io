@@ -35,33 +35,11 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/bg-1280.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 1.22273e+06,
-		"inputAbbreviatedPath": "\/bg-1280.jpg",
-		"outputAbbreviatedPath": "\/bg-1280.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/bg-1920.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 2.54219e+06,
-		"inputAbbreviatedPath": "\/bg-1920.jpg",
-		"outputAbbreviatedPath": "\/bg-1920.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
 	"\/bg-3072.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 1.58942e+06,
+		"initialSize": 5.20753e+06,
 		"inputAbbreviatedPath": "\/bg-3072.jpg",
 		"outputAbbreviatedPath": "\/bg-3072.jpg",
 		"outputPathIsOutsideProject": 0,
@@ -75,17 +53,6 @@
 		"initialSize": 4.52075e+06,
 		"inputAbbreviatedPath": "\/bg-6048.jpg",
 		"outputAbbreviatedPath": "\/bg-6048.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/bg-640.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 359011,
-		"inputAbbreviatedPath": "\/bg-640.jpg",
-		"outputAbbreviatedPath": "\/bg-640.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
