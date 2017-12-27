@@ -12,14 +12,19 @@
         <!-- Place favicon.ico in the root directory -->
 
         <link rel="stylesheet" href="style.css">
-                <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700" rel="stylesheet">
+        <link href="https://use.fontawesome.com/releases/v5.0.2/css/all.css" rel="stylesheet">
+
+
 
     </head>
     <body>
         <a id="home"></a>
         <a id="about"></a>
         <a id="projects"></a>
-        <a id="contact"></a>        <!--[if lte IE 9]>
+        <a id="contact"></a> 
+                        <a id="me"></a>
+       <!--[if lte IE 9]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
         <![endif]-->
 <div class="full-screen">
@@ -51,6 +56,7 @@
               <a href="#about"><li>About</li></a>
               <a href="#projects"><li>Projects</li></a>
               <a href="#contact"><li>Contact</li></a>
+              <a href="http://hayk.khachatryan.io"><li>Resume</li></a>
             </ul>
           </div>
         </nav></div>
@@ -58,37 +64,46 @@
 		<div class="outer" id="home">
 			<div class="inner" id="hello">
 				Hi, I'm Hayk. <br>
-            	<a href="#about" title="">I'd love to meet you!</a>				
+            	<a href="#about" class="primary" title="">I'd love to meet you!</a>				
 			</div>
 
 
 		</div>
-		<div class="outer" id="about">
+		<div class="outer vertical" id="about">
 			<div class="inner" id="banner">
 				<div>
-				<p>I'm an undergrad Physics student at UCL</p>
-				<p>When I'm not trying to calculate the mass of the sun, I like hacking doodads and thingamajigs together to bring smiles to people's faces.</p>
-				<p>I dream of one day hacking the ultimate doodad and thingamajig together into a quantum computer.<br>
-					Oh I also dream about spaceships a lot.
-				</p>
-				<p>I fear Facebook's impdending world domination.</p>					
+				<p>That's me! <i class="fas fa-long-arrow-alt-right"></i></p>				
 				</div>
+                <a href="#home" class="controls left"><i class="fas fa-angle-left"></i></a>
+                <a href="#me" class="controls down primary" ><i class="fas fa-angle-down"></i></a>
 			</div>
-			<!--<div class="inner" id="me">
-				<a id="me"></a>
-				<p>I'm an undergrad Physics student at UCL</p>
-				<p>When I'm not trying to calculate the mass of the sun, I like hacking doodads and thingamajigs together to bring smiles to people's faces.</p>
-				<p>I dream of one day hacking the ultimate doodad and thingamajig together into a quantum computer.<br>
-					Oh I also dream about spaceships a lot.
-				</p>
-				<p>I fear Facebook's impdending world domination.</p>
+			<div class="inner" id="me">
+                <a href="#about" class="controls up"><i class="fas fa-angle-up"></i></a>
+                <a href="#projects" class="controls right primary" title=""><i class="fas fa-angle-right"></i></a>
+                <div>
+                <p>I'm an undergrad Physics student at UCL</p>
+                <p>When I'm not trying to calculate the mass of the sun, I like hacking doodads and thingamajigs together to bring smiles to people's faces.</p>
+                <p>I dream of one day hacking the ultimate doodad and thingamajig together into a quantum computer.<br>
+                    Oh I also dream about spaceships a lot.
+                </p>
+                <p>I fear Facebook's impdending world domination.</p>
+                </div>
+
 				
-			</div>-->
+			</div>
 
 		</div>
-		<div class="outer" id="projects">
+		<div class="outer vertical" id="projects">
+            <div class="inner empty">
+                
+            </div>
 			<div class="inner" id="portfolio">
-				my portofoli
+                <a href="#me" class="controls left" title=""><i class="fas fa-angle-left"></i></a>
+                <a href="#contact" class="controls right primary" title=""><i class="fas fa-angle-right"></i></a>
+                <div>
+                    my portofoli
+
+                </div>
 			</div>
 		</div>
 		<div class="outer" id="contact">

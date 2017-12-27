@@ -35,46 +35,57 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/bg-1080.jpg": {
+	"\/bg-1280.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 1.90112e+06,
-		"inputAbbreviatedPath": "\/bg-1080.jpg",
-		"outputAbbreviatedPath": "\/bg-1080.jpg",
+		"initialSize": 1.22273e+06,
+		"inputAbbreviatedPath": "\/bg-1280.jpg",
+		"outputAbbreviatedPath": "\/bg-1280.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/bg-2048.jpg": {
+	"\/bg-1920.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 8.38861e+06,
-		"inputAbbreviatedPath": "\/bg-2048.jpg",
-		"outputAbbreviatedPath": "\/bg-2048.jpg",
+		"initialSize": 2.54219e+06,
+		"inputAbbreviatedPath": "\/bg-1920.jpg",
+		"outputAbbreviatedPath": "\/bg-1920.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/bg-4032.jpg": {
+	"\/bg-3072.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 1.72799e+07,
-		"inputAbbreviatedPath": "\/bg-4032.jpg",
-		"outputAbbreviatedPath": "\/bg-4032.jpg",
+		"initialSize": 1.58942e+06,
+		"inputAbbreviatedPath": "\/bg-3072.jpg",
+		"outputAbbreviatedPath": "\/bg-3072.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/bg-720.jpg": {
+	"\/bg-6048.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 922548,
-		"inputAbbreviatedPath": "\/bg-720.jpg",
-		"outputAbbreviatedPath": "\/bg-720.jpg",
+		"initialSize": 4.52075e+06,
+		"inputAbbreviatedPath": "\/bg-6048.jpg",
+		"outputAbbreviatedPath": "\/bg-6048.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/bg-640.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 359011,
+		"inputAbbreviatedPath": "\/bg-640.jpg",
+		"outputAbbreviatedPath": "\/bg-640.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
