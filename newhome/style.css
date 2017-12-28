@@ -311,6 +311,7 @@ textarea {
   background-repeat: repeat, no-repeat,  no-repeat;
   background-size: 100px 100px, cover,  cover;
   background-position: top left, center center,  top center; */
+  background-position: center center;
   background-size: cover;
   color: white;
   height: 100%;
@@ -336,6 +337,8 @@ textarea {
     text-align: left;
     font-size: 1.1rem;
     line-height: 1.5rem; }
+  .full-screen #about #banner .controls {
+    text-shadow: 0 0 5px black; }
   .full-screen #about #banner .controls.left {
     color: white; }
 .full-screen #me .controls {
@@ -523,20 +526,24 @@ Helper classes
 /* ==========================================================================
    Scrolling
    ========================================================================== */
+:not(:target) div.full-screen .outer {
+  -webkit-transform: translate(-100vw, -300%);
+          transform: translate(-100vw, -300%); }
+
 a[id="home"]:target ~ div.full-screen .outer {
-  -webkit-transform: translateX(0);
-          transform: translateX(0); }
+  -webkit-transform: translate(-100vw, -300%);
+          transform: translate(-100vw, -300%); }
 a[id="about"]:target ~ div.full-screen .outer {
-  -webkit-transform: translateX(-100vw);
-          transform: translateX(-100vw); }
+  -webkit-transform: translate(0, -100%);
+          transform: translate(0, -100%); }
 a[id="about"]:target ~ div.full-screen nav#primary-nav span {
   background: white; }
 a[id="me"]:target ~ div.full-screen .outer {
-  -webkit-transform: translate(-100vw, -100%);
-          transform: translate(-100vw, -100%); }
+  -webkit-transform: translate(0, -200%);
+          transform: translate(0, -200%); }
 a[id="projects"]:target ~ div.full-screen .outer {
-  -webkit-transform: translate(-200vw, -100%);
-          transform: translate(-200vw, -100%); }
+  -webkit-transform: translate(-200vw, -400%);
+          transform: translate(-200vw, -400%); }
 a[id="contact"]:target ~ div.full-screen .outer {
-  -webkit-transform: translateX(-300vw);
-          transform: translateX(-300vw); }
+  -webkit-transform: translate(-300vw, 0);
+          transform: translate(-300vw, 0); }
