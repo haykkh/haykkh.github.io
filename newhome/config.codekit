@@ -33,7 +33,7 @@
 		"outputAbbreviatedPath": "\/img\/bark.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/img\/bg-3072.jpg": {
 		"fileType": 16384,
@@ -55,7 +55,7 @@
 		"outputAbbreviatedPath": "\/img\/bg-6048.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/img\/chloe.jpg": {
 		"fileType": 16384,

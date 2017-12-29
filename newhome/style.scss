@@ -383,81 +383,100 @@ textarea {
           min-height: 200px;
           background-size: 200%;
           background-position: 0 center;
-          box-shadow: 0 0 0 1px black;
           padding:0;
           position: relative;
           line-height: 0;
           margin: 10px;
           display: flex;
-          &:after {
+
+          span {
+            height: 0;
+            opacity: 0;
             background-position: 100% center;
             background-size:200%;
             top: 0; left: 0; bottom: 0; right: 0;
             position: absolute;
-            opacity: 0;
-            transition: opacity 0.5s ease;
-            font-size: 1.2rem;
-            color: white;
             align-items: center;
-            display: flex;
             justify-content: center;
           }
 
-          &:hover:after {
-            opacity: 1;
+          a {
+
+            font-size: 1.2rem;
+            color: white;
+            height: 0;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+            opacity: 0;
+            margin-top:50px;
           }
 
+          &:hover span, &:active span {
+            opacity: 1;
+            height: auto;
+            transition: opacity 0.5s ease, height 0.5s ease;
+          }
+          &:hover a, &:active a {
+            animation: grow 0.001ms forwards;
+            margin-top: 0;
+
+          }
+
+          @keyframes grow {
+            from { height:    0; 
+                   opacity:   0; }
+            50%  { height: 100%; 
+                   opacity:   1; }
+            to   { height: 100%; 
+                   opacity:   1; }
+          }
           &#bark {
             background-image: url(img/bark.jpg);
-            &:after {
+            span {
               background-image: url(img/bark.jpg);
-              content: 'hayk.io/bark'
             }
           }
           &#x {
             background-image: url(img/x.jpg);
             background-position:0 bottom;
 
-            &:after {
+            span {
               background-image:url(img/x.jpg);
               background-position: 100% bottom;
-              content:'hayk.io/x';
               color: black;
             } 
           }
           &#chloe {
             background-image: url(img/chloe.jpg);
-            &:after {
+            span {
               background-image: url(img/chloe.jpg);
-              content: 'chloestavrou.com';
             }
           }
           &#tic {
             background-image: url(img/tic.jpg);
-            &:after {
+            span {
               background-image: url(img/tic.jpg);
-              content: 'the-island-club.com';
             }
           }
           &#cp {
             background-image: url(img/cp.jpg);
-            &:after {
+            span {
               background-image: url(img/cp.jpg);
-              content:'christodoulospanayiotou.com';
             }
           }
           &#aa {
             background-image: url(img/aa.jpg);
-            &:after {
+            span {
               background-image: url(img/aa.jpg);
-              content:'hayk.io/analogaffairs';
             }
           }
           &#parkwoods {
             background-image: url(img/parkwoods.jpg);
-            &:after {
+            span {
               background-image: url(img/parkwoods.jpg);
-              content: 'parkwoods.net';
             }
           }
         }
