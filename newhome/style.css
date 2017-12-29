@@ -66,6 +66,33 @@ hr {
   margin: 1em 0;
   padding: 0; }
 
+/* Setting up primary objects */
+.primary {
+  -webkit-animation: floating 3s ease infinite;
+          animation: floating 3s ease infinite;
+  color: tomato !important; }
+
+@-webkit-keyframes floating {
+  from {
+    -webkit-transform: translate(0, 0px);
+            transform: translate(0, 0px); }
+  65% {
+    -webkit-transform: translate(0, 10px);
+            transform: translate(0, 10px); }
+  to {
+    -webkit-transform: translate(0, 0px);
+            transform: translate(0, 0px); } }
+
+@keyframes floating {
+  from {
+    -webkit-transform: translate(0, 0px);
+            transform: translate(0, 0px); }
+  65% {
+    -webkit-transform: translate(0, 10px);
+            transform: translate(0, 10px); }
+  to {
+    -webkit-transform: translate(0, 0px);
+            transform: translate(0, 0px); } }
 /*
  * Remove the gap between audio, canvas, iframes,
  * images, videos and the bottom of their containers:
@@ -316,7 +343,7 @@ textarea {
   color: white;
   height: 100%;
   width: 100vw;
-  background-image: url(bg-3072.jpg);
+  background-image: url(img/bg-3072.jpg);
   /*
   @media screen and (min-width: 641px), (min-height: 428px){
     background-image: url(overlay.png), linear-gradient(60deg, rgba(255, 165, 150, 0.5) 5%, rgba(0, 228, 255, 0.35)), url(bg-1280.jpg);
@@ -330,50 +357,110 @@ textarea {
   @media screen and (min-width: 3071px ), (min-height: 2049px) {
     background-image: url(overlay.png), linear-gradient(60deg, rgba(255, 165, 150, 0.5) 5%, rgba(0, 228, 255, 0.35)), url(bg-6048.jpg);
   } */ }
-  .full-screen #about #banner div {
-    max-width: 550px;
-    padding: 150px; }
-  .full-screen #about #banner p {
-    text-align: left;
-    font-size: 1.1rem;
-    line-height: 1.5rem; }
   .full-screen #about #banner .controls {
     text-shadow: 0 0 5px black; }
   .full-screen #about #banner .controls.left {
-    color: white; }
-.full-screen #me .controls {
+    color: white;
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg); }
+.full-screen #about #me .controls {
   color: black; }
-.full-screen #me div {
+.full-screen #about #me div {
   padding: 50px;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   line-height: 1.5rem;
   max-width: 550px; }
-.full-screen #projects .inner div {
-  max-width: 550px; }
-.full-screen .primary {
-  -webkit-animation: floating 3s ease infinite;
-          animation: floating 3s ease infinite;
-  color: tomato !important; }
-@-webkit-keyframes floating {
-  from {
-    -webkit-transform: translate(0, 0px);
-            transform: translate(0, 0px); }
-  65% {
-    -webkit-transform: translate(0, 10px);
-            transform: translate(0, 10px); }
-  to {
-    -webkit-transform: translate(0, 0px);
-            transform: translate(0, 0px); } }
-@keyframes floating {
-  from {
-    -webkit-transform: translate(0, 0px);
-            transform: translate(0, 0px); }
-  65% {
-    -webkit-transform: translate(0, 10px);
-            transform: translate(0, 10px); }
-  to {
-    -webkit-transform: translate(0, 0px);
-            transform: translate(0, 0px); } }
+.full-screen #projects #portfolio .showcase {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  overflow-y: scroll; }
+  .full-screen #projects #portfolio .showcase .showcase-item {
+    width: 300px;
+    height: 200px;
+    background-size: 200%;
+    background-position: 0 center;
+    box-shadow: 0 0 0 1px black;
+    padding: 0;
+    position: relative;
+    line-height: 0;
+    margin: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    .full-screen #projects #portfolio .showcase .showcase-item:after {
+      background-position: 100% center;
+      background-size: 200%;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      position: absolute;
+      opacity: 0;
+      -webkit-transition: opacity 0.5s ease;
+      transition: opacity 0.5s ease;
+      font-size: 1.2rem;
+      color: white;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center; }
+    .full-screen #projects #portfolio .showcase .showcase-item:hover:after {
+      opacity: 1; }
+    .full-screen #projects #portfolio .showcase .showcase-item#bark {
+      background-image: url(img/bark.jpg); }
+      .full-screen #projects #portfolio .showcase .showcase-item#bark:after {
+        background-image: url(img/bark.jpg);
+        content: "hayk.io/bark"; }
+    .full-screen #projects #portfolio .showcase .showcase-item#x {
+      background-image: url(img/x.jpg);
+      background-position: 0 bottom; }
+      .full-screen #projects #portfolio .showcase .showcase-item#x:after {
+        background-image: url(img/x.jpg);
+        background-position: 100% bottom;
+        content: 'hayk.io/x';
+        color: black; }
+    .full-screen #projects #portfolio .showcase .showcase-item#chloe {
+      background-image: url(img/chloe.jpg); }
+      .full-screen #projects #portfolio .showcase .showcase-item#chloe:after {
+        background-image: url(img/chloe.jpg);
+        content: 'chloestavrou.com'; }
+    .full-screen #projects #portfolio .showcase .showcase-item#tic {
+      background-image: url(img/tic.jpg); }
+      .full-screen #projects #portfolio .showcase .showcase-item#tic:after {
+        background-image: url(img/tic.jpg);
+        content: 'the-island-club.com'; }
+    .full-screen #projects #portfolio .showcase .showcase-item#cp {
+      background-image: url(img/cp.jpg); }
+      .full-screen #projects #portfolio .showcase .showcase-item#cp:after {
+        background-image: url(img/cp.jpg);
+        content: 'christodoulospanayiotou.com'; }
+    .full-screen #projects #portfolio .showcase .showcase-item#aa {
+      background-image: url(img/aa.jpg); }
+      .full-screen #projects #portfolio .showcase .showcase-item#aa:after {
+        background-image: url(img/aa.jpg);
+        content: 'hayk.io/analogaffairs'; }
+    .full-screen #projects #portfolio .showcase .showcase-item#parkwoods {
+      background-image: url(img/parkwoods.jpg); }
+      .full-screen #projects #portfolio .showcase .showcase-item#parkwoods:after {
+        background-image: url(img/parkwoods.jpg);
+        content: 'parkwoods.net'; }
+.full-screen #projects #portfolio .controls.right {
+  -webkit-transform: rotate(-30deg);
+          transform: rotate(-30deg);
+  top: 25px;
+  color: black; }
+
 /* ==========================================================================
 
 
@@ -527,23 +614,23 @@ Helper classes
    Scrolling
    ========================================================================== */
 :not(:target) div.full-screen .outer {
-  -webkit-transform: translate(-100vw, -300%);
-          transform: translate(-100vw, -300%); }
+  -webkit-transform: translate(-100vw, -100%);
+          transform: translate(-100vw, -100%); }
 
 a[id="home"]:target ~ div.full-screen .outer {
-  -webkit-transform: translate(-100vw, -300%);
-          transform: translate(-100vw, -300%); }
+  -webkit-transform: translate(-100vw, -100%);
+          transform: translate(-100vw, -100%); }
 a[id="about"]:target ~ div.full-screen .outer {
-  -webkit-transform: translate(0, -100%);
-          transform: translate(0, -100%); }
+  -webkit-transform: translate(-300vw, -200%);
+          transform: translate(-300vw, -200%); }
 a[id="about"]:target ~ div.full-screen nav#primary-nav span {
   background: white; }
 a[id="me"]:target ~ div.full-screen .outer {
-  -webkit-transform: translate(0, -200%);
-          transform: translate(0, -200%); }
+  -webkit-transform: translate(-300vw, -300%);
+          transform: translate(-300vw, -300%); }
 a[id="projects"]:target ~ div.full-screen .outer {
-  -webkit-transform: translate(-200vw, -400%);
-          transform: translate(-200vw, -400%); }
+  -webkit-transform: translate(0, -400%);
+          transform: translate(0, -400%); }
 a[id="contact"]:target ~ div.full-screen .outer {
-  -webkit-transform: translate(-300vw, 0);
-          transform: translate(-300vw, 0); }
+  -webkit-transform: translate(-200vw, 0);
+          transform: translate(-200vw, 0); }

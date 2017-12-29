@@ -64,6 +64,19 @@ hr {
   padding: 0;
 }
 
+/* Setting up primary objects */
+.primary {
+  animation: floating 3s ease infinite;
+  color:tomato!important;
+}
+@keyframes floating {
+  from { transform: translate(0,  0px); }
+  65%  { transform: translate(0, 10px); }
+  to   { transform: translate(0, 0px); }    
+}
+
+
+
 /*
  * Remove the gap between audio, canvas, iframes,
  * images, videos and the bottom of their containers:
@@ -314,7 +327,7 @@ textarea {
       color: white;
       height: 100%;
       width: 100vw;
-      background-image: url(bg-3072.jpg);
+      background-image: url(img/bg-3072.jpg);
       /*
       @media screen and (min-width: 641px), (min-height: 428px){
         background-image: url(overlay.png), linear-gradient(60deg, rgba(255, 165, 150, 0.5) 5%, rgba(0, 228, 255, 0.35)), url(bg-1280.jpg);
@@ -328,55 +341,135 @@ textarea {
       @media screen and (min-width: 3071px ), (min-height: 2049px) {
         background-image: url(overlay.png), linear-gradient(60deg, rgba(255, 165, 150, 0.5) 5%, rgba(0, 228, 255, 0.35)), url(bg-6048.jpg);
       } */
-      div {
-        max-width: 550px;
-        padding: 150px;
-      }
-      p {
-        text-align: left;
-        font-size: 1.1rem;
-        line-height: 1.5rem;
-      }
       .controls {
         text-shadow: 0 0 5px black;
       }
       .controls.left {
         color: white;
+        transform: rotate(45deg);
       }
 
     }
-  }
-    
 
-
-  #me {
-    .controls {
-      color: black;
-    }
-    div {
-      padding:50px;
-      font-size: 1.2rem;
-      line-height: 1.5rem;
-      max-width: 550px;
-    }
-  }
-  #projects {
-    .inner {
+    #me {
+      .controls {
+        color: black;
+      }
       div {
+        padding:50px;
+        font-size: 1.3rem;
+        line-height: 1.5rem;
         max-width: 550px;
       }
     }
-
   }
 
-  .primary {
-    animation: floating 3s ease infinite;
-    color:tomato!important;
-  }
-  @keyframes floating {
-    from { transform: translate(0,  0px); }
-    65%  { transform: translate(0, 10px); }
-    to   { transform: translate(0, 0px); }    
+  #projects {
+
+    #portfolio {
+
+
+      .showcase {
+        display: inline-flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        overflow-y: scroll;
+
+
+        .showcase-item {
+          width:300px;
+          height: 200px;
+          background-size: 200%;
+          background-position: 0 center;
+          box-shadow: 0 0 0 1px black;
+          padding:0;
+          position: relative;
+          line-height: 0;
+          margin: 0;
+          display: flex;
+          &:after {
+            background-position: 100% center;
+            background-size:200%;
+            top: 0; left: 0; bottom: 0; right: 0;
+            position: absolute;
+            opacity: 0;
+            transition: opacity 0.5s ease;
+            font-size: 1.2rem;
+            color: white;
+            align-items: center;
+            display: flex;
+            justify-content: center;
+          }
+
+          &:hover:after {
+            opacity: 1;
+          }
+
+          &#bark {
+            background-image: url(img/bark.jpg);
+            &:after {
+              background-image: url(img/bark.jpg);
+              content: 'hayk.io/bark'
+            }
+          }
+          &#x {
+            background-image: url(img/x.jpg);
+            background-position:0 bottom;
+
+            &:after {
+              background-image:url(img/x.jpg);
+              background-position: 100% bottom;
+              content:'hayk.io/x';
+              color: black;
+            } 
+          }
+          &#chloe {
+            background-image: url(img/chloe.jpg);
+            &:after {
+              background-image: url(img/chloe.jpg);
+              content: 'chloestavrou.com';
+            }
+          }
+          &#tic {
+            background-image: url(img/tic.jpg);
+            &:after {
+              background-image: url(img/tic.jpg);
+              content: 'the-island-club.com';
+            }
+          }
+          &#cp {
+            background-image: url(img/cp.jpg);
+            &:after {
+              background-image: url(img/cp.jpg);
+              content:'christodoulospanayiotou.com';
+            }
+          }
+          &#aa {
+            background-image: url(img/aa.jpg);
+            &:after {
+              background-image: url(img/aa.jpg);
+              content:'hayk.io/analogaffairs';
+            }
+          }
+          &#parkwoods {
+            background-image: url(img/parkwoods.jpg);
+            &:after {
+              background-image: url(img/parkwoods.jpg);
+              content: 'parkwoods.net';
+            }
+          }
+        }
+      }
+
+
+      .controls.right {
+        transform:rotate(-30deg);
+        top: 25px;
+        color: black;
+      }
+
+
+    }
   }
 
 }
@@ -565,30 +658,30 @@ Helper classes
    ========================================================================== */
 
 :not(:target) div.full-screen .outer {
-  transform: translate(-100vw, -300%);
+  transform: translate(-100vw, -100%);
 }
 
 a {
   &[id="home"]:target ~ div.full-screen .outer {
-    transform:translate(-100vw, -300%);
+    transform:translate(-100vw, -100%);
   }
 
   &[id="about"]:target ~ div.full-screen .outer {
-    transform: translate(0, -100%);
+    transform: translate(-300vw, -200%);
   }
   &[id="about"]:target ~ div.full-screen nav#primary-nav span {
     background: white;
   }
   &[id="me"]:target ~ div.full-screen .outer {
-    transform: translate(0, -200%);
+    transform: translate(-300vw, -300%);
   }
 
   &[id="projects"]:target ~ div.full-screen .outer {
-    transform: translate(-200vw, -400%);
+    transform: translate(0, -400%);
   }
 
   &[id="contact"]:target ~ div.full-screen .outer {
-    transform: translate(-300vw, 0);
+    transform: translate(-200vw, 0);
   }
 
 
