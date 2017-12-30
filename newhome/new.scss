@@ -495,21 +495,23 @@ body {
     /*
     * Just a quick hamburger
     */
-  span {
-    display: block;
-    width: 24px;
-    height: 3px;
-    margin-bottom: 5px;
-    position: relative;
-    background: black;
-    z-index: 1;
-    transform-origin: 4px 0px;
-    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
-    &:first-child {
-      transform-origin: 0% 0%;
-    }
-    &:nth-last-child(2) {
-      transform-origin: 0% 100%;
+  .burger {
+    span {
+      display: block;
+      width: 25px;
+      height: 3px;
+      margin-bottom: 5px;
+      position: relative;
+      background: black;
+      z-index: 1;
+      transform-origin: center;
+      transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
+      &:first-child {
+        transform-origin: center;
+      }
+      &:nth-last-child(2) {
+        transform-origin: 0% 100%;
+      }
     }
   }
 
@@ -518,16 +520,18 @@ body {
     * into a crossmark.
     */
    
-  input:checked ~ span {
+   
+  input:checked ~ div.burger span {
     opacity: 1;
-    transform: rotate(45deg) translate(1px, 0px);
+    transform: translateY(8px) rotate(45deg);
+    transform-origin: center;
     background: white;
-    &:nth-last-child(3) { /* But let's hide the middle one */
+    &:nth-last-child(2) { /* But let's hide the middle one */
       opacity: 0;
       transform: rotate(0deg) scale(0.2, 0.2);
     }
-    &:nth-last-child(2) { /* Ohyeah and the last one should go the other direction */
-      transform: rotate(-45deg) translate(2px, 0px);
+    &:nth-last-child(1) { /* Ohyeah and the last one should go the other direction */
+      transform: translateY(-8px) rotate(-45deg);
     }
   }
 }
@@ -543,7 +547,7 @@ body {
   margin: -15px 0 0 -15px;
   padding-left: 75px;
   top: 0;
-  background: black;
+  background: crimson;
   list-style-type: none;
   -webkit-font-smoothing: antialiased;
   /* to stop flickering of text in safari */
@@ -554,10 +558,10 @@ body {
     text-decoration: none;
   }
   li {
-    padding: 10px 0;
     margin-right: 25px;
     font-size: 1.2rem;
     color: white;
+    line-height: 3.1rem;
     text-decoration: none;
     display: inline-block;
   }
@@ -591,6 +595,7 @@ body {
     flex-direction: inherit;
     flex-basis: inherit;
     transition: transform 0.6s ease-in-out;
+    position: relative;
 
     .inner {
       display: inherit;
@@ -599,13 +604,23 @@ body {
       flex-shrink: 0;
       flex-basis: inherit;
       width: 100vw;
+      position: relative;
+
+      .container {
+        font-size: 2rem;
+
+        a {
+
+        }
+      }
 
       .title {
         width: 100vw;
         text-align: center;
-        padding: 50px 25px 25px 25px;
-        border-bottom: 1px solid black;
-        font-size: 2rem;
+        padding: 0;
+        line-height: 3.1rem;
+        border-bottom: 1px solid crimson;
+        font-size: 1.8rem;
       }
 
       .bottom {
@@ -632,7 +647,7 @@ body {
               min-height: 200px;
               background-size: 200%;
               background-position: 0 center;
-              border:1px black solid;
+              border:1px crimson solid;
               padding:0;
               position: relative;
               line-height: 0;
@@ -734,7 +749,8 @@ body {
         }
 
         .footer {
-
+          text-align: center;
+          margin-bottom: 25px;
         }
       }
     }
@@ -755,13 +771,15 @@ body {
   position: absolute;
   color: black;
   font-size: 2rem;
+  right:25px;
+  top:0;
+  line-height: 3.1rem;
+}
 
-  &.left {
-    align-self:  normal;
-  }
-
-  &.right {
-    align-self:flex-end;
+#hello {
+  .primary {
+      text-decoration: underline dashed black;
+      text-decoration-skip: ink;
   }
 }
 
@@ -770,8 +788,56 @@ body {
     background-image: url(img/bg-3072.jpg);
     background-size: cover;
     background-position: center;
+    position: relative;
+
+    .controls {
+      &.down {
+        bottom:25px;
+        top:unset;
+        i:before {
+          background: rgba(255,255,255,0.6);
+          box-shadow: 0 0 20px 10px rgba(255,255,255,0.6);
+        }
+      }
+
+      &.left {
+        color: white;
+        transform:rotate(45deg);
+      }
+    }
+  }
+
+  #me {
+    .sack {
+      max-width: 600px;
+    }
+
+    .footer {
+      .cv  {
+        color: dodgerblue;
+        text-decoration: none;
+      }
+    }
+
   }
 }
+
+#projects {
+  #portfolio {
+    .controls {
+      transform: rotate(-30deg);
+    }
+  }
+}
+
+#contact {
+  #sms {
+    .controls {
+      transform: rotate(-60deg);
+    }
+  }
+}
+  
 
 
 
@@ -808,7 +874,8 @@ a {
 
 .primary {
   animation: floating 3s ease infinite;
-  color:tomato!important;
+  text-decoration: none;
+  color:crimson!important;
 }
 @keyframes floating {
   from { transform: translate(0,  0px); }

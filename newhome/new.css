@@ -438,40 +438,42 @@ body {
     z-index: 2;
     /* and place it over the hamburger */
     -webkit-touch-callout: none; }
-  #menuToggle span {
+  #menuToggle .burger span {
     display: block;
-    width: 24px;
+    width: 25px;
     height: 3px;
     margin-bottom: 5px;
     position: relative;
     background: black;
     z-index: 1;
-    -webkit-transform-origin: 4px 0px;
-            transform-origin: 4px 0px;
+    -webkit-transform-origin: center;
+            transform-origin: center;
     -webkit-transition: background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease, -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
     transition: background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease, -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
     transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
     transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease, -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1); }
-    #menuToggle span:first-child {
-      -webkit-transform-origin: 0% 0%;
-              transform-origin: 0% 0%; }
-    #menuToggle span:nth-last-child(2) {
+    #menuToggle .burger span:first-child {
+      -webkit-transform-origin: center;
+              transform-origin: center; }
+    #menuToggle .burger span:nth-last-child(2) {
       -webkit-transform-origin: 0% 100%;
               transform-origin: 0% 100%; }
-  #menuToggle input:checked ~ span {
+  #menuToggle input:checked ~ div.burger span {
     opacity: 1;
-    -webkit-transform: rotate(45deg) translate(1px, 0px);
-            transform: rotate(45deg) translate(1px, 0px);
+    -webkit-transform: translateY(8px) rotate(45deg);
+            transform: translateY(8px) rotate(45deg);
+    -webkit-transform-origin: center;
+            transform-origin: center;
     background: white; }
-    #menuToggle input:checked ~ span:nth-last-child(3) {
+    #menuToggle input:checked ~ div.burger span:nth-last-child(2) {
       /* But let's hide the middle one */
       opacity: 0;
       -webkit-transform: rotate(0deg) scale(0.2, 0.2);
               transform: rotate(0deg) scale(0.2, 0.2); }
-    #menuToggle input:checked ~ span:nth-last-child(2) {
+    #menuToggle input:checked ~ div.burger span:nth-last-child(1) {
       /* Ohyeah and the last one should go the other direction */
-      -webkit-transform: rotate(-45deg) translate(2px, 0px);
-              transform: rotate(-45deg) translate(2px, 0px); }
+      -webkit-transform: translateY(-8px) rotate(-45deg);
+              transform: translateY(-8px) rotate(-45deg); }
 
 /*
  * Make this absolute positioned
@@ -483,7 +485,7 @@ body {
   margin: -15px 0 0 -15px;
   padding-left: 75px;
   top: 0;
-  background: black;
+  background: crimson;
   list-style-type: none;
   -webkit-font-smoothing: antialiased;
   /* to stop flickering of text in safari */
@@ -498,10 +500,10 @@ body {
   #menu a {
     text-decoration: none; }
   #menu li {
-    padding: 10px 0;
     margin-right: 25px;
     font-size: 1.2rem;
     color: white;
+    line-height: 3.1rem;
     text-decoration: none;
     display: inline-block; }
 
@@ -541,7 +543,8 @@ body {
     -webkit-transition: -webkit-transform 0.6s ease-in-out;
     transition: -webkit-transform 0.6s ease-in-out;
     transition: transform 0.6s ease-in-out;
-    transition: transform 0.6s ease-in-out, -webkit-transform 0.6s ease-in-out; }
+    transition: transform 0.6s ease-in-out, -webkit-transform 0.6s ease-in-out;
+    position: relative; }
     .full-screen .outer .inner {
       display: inherit;
       -webkit-box-align: safe center;
@@ -555,13 +558,17 @@ body {
           flex-shrink: 0;
       -ms-flex-preferred-size: inherit;
           flex-basis: inherit;
-      width: 100vw; }
+      width: 100vw;
+      position: relative; }
+      .full-screen .outer .inner .container {
+        font-size: 2rem; }
       .full-screen .outer .inner .title {
         width: 100vw;
         text-align: center;
-        padding: 50px 25px 25px 25px;
-        border-bottom: 1px solid black;
-        font-size: 2rem; }
+        padding: 0;
+        line-height: 3.1rem;
+        border-bottom: 1px solid crimson;
+        font-size: 1.8rem; }
       .full-screen .outer .inner .bottom {
         width: 100vw;
         -webkit-box-align: unset;
@@ -592,7 +599,7 @@ body {
               min-height: 200px;
               background-size: 200%;
               background-position: 0 center;
-              border: 1px black solid;
+              border: 1px crimson solid;
               padding: 0;
               position: relative;
               line-height: 0;
@@ -694,6 +701,9 @@ body {
                 background-image: url(img/parkwoods.jpg); }
                 .full-screen .outer .inner .bottom .sack .showcase .showcase-item#parkwoods span {
                   background-image: url(img/parkwoods.jpg); }
+        .full-screen .outer .inner .bottom .footer {
+          text-align: center;
+          margin-bottom: 25px; }
     .full-screen .outer .v-center {
       /* content in here will be vertically centered */
       -webkit-box-pack: safe center;
@@ -713,18 +723,44 @@ body {
 .controls {
   position: absolute;
   color: black;
-  font-size: 2rem; }
-  .controls.left {
-    -ms-flex-item-align: normal;
-        align-self: normal; }
-  .controls.right {
-    -ms-flex-item-align: end;
-        align-self: flex-end; }
+  font-size: 2rem;
+  right: 25px;
+  top: 0;
+  line-height: 3.1rem; }
+
+#hello .primary {
+  text-decoration: underline dashed black;
+  -webkit-text-decoration-skip: ink;
+          text-decoration-skip: ink; }
 
 #about #banner {
   background-image: url(img/bg-3072.jpg);
   background-size: cover;
-  background-position: center; }
+  background-position: center;
+  position: relative; }
+  #about #banner .controls.down {
+    bottom: 25px;
+    top: unset; }
+    #about #banner .controls.down i:before {
+      background: rgba(255, 255, 255, 0.6);
+      box-shadow: 0 0 20px 10px rgba(255, 255, 255, 0.6); }
+  #about #banner .controls.left {
+    color: white;
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg); }
+#about #me .sack {
+  max-width: 600px; }
+#about #me .footer .cv {
+  color: dodgerblue;
+  text-decoration: none; }
+
+#projects #portfolio .controls {
+  -webkit-transform: rotate(-30deg);
+          transform: rotate(-30deg); }
+
+#contact #sms .controls {
+  -webkit-transform: rotate(-60deg);
+          transform: rotate(-60deg); }
 
 :not(:target) div.full-screen .outer {
   -webkit-transform: translate(-100vw, -100%);
@@ -751,7 +787,8 @@ a[id="contact"]:target ~ div.full-screen .outer {
 .primary {
   -webkit-animation: floating 3s ease infinite;
           animation: floating 3s ease infinite;
-  color: tomato !important; }
+  text-decoration: none;
+  color: crimson !important; }
 
 @-webkit-keyframes floating {
   from {
