@@ -242,7 +242,7 @@ input,
 optgroup,
 select,
 textarea {
-  font-family: sans-serif; /* 1 */
+  font-family: 'Roboto Slab', monospace; /* 1 */
   font-size: 100%; /* 1 */
   line-height: 1.15; /* 1 */
   margin: 0; /* 2 */
@@ -505,6 +505,8 @@ body {
       background: black;
       z-index: 1;
       transform-origin: center;
+      transform: translateZ(0);
+      backface-visibility:hidden;
       transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
       &:first-child {
         transform-origin: center;
@@ -552,7 +554,8 @@ body {
   -webkit-font-smoothing: antialiased;
   /* to stop flickering of text in safari */
   transform-origin: 0% 0%;
-  transform: translate(0, -100%);
+  transform: translate(0, -100%) translateZ(0);
+  backface-visibility: hidden;
   transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
   a {
     text-decoration: none;
@@ -595,7 +598,9 @@ body {
     flex-direction: inherit;
     flex-basis: inherit;
     transition: transform 0.6s ease-in-out;
+    backface-visibility: hidden;
     position: relative;
+    transform: translateZ(0);
 
     .inner {
       display: inherit;
@@ -620,7 +625,7 @@ body {
         padding: 0;
         line-height: 3.1rem;
         border-bottom: 1px solid crimson;
-        font-size: 1.8rem;
+        font-size: 1.6rem;
       }
 
       .bottom {
@@ -630,7 +635,7 @@ body {
         overflow-y: scroll;
 
         .sack {
-          padding: 25px 50px;
+          padding-top: 25px;
           margin: auto;
 
           .showcase {
@@ -654,7 +659,7 @@ body {
               margin: 10px;
               display: flex;
     
-              span {
+              > span {
                 height: 0;
                 opacity: 0;
                 background-position: 100% center;
@@ -663,6 +668,7 @@ body {
                 position: absolute;
                 align-items: center;
                 justify-content: center;
+                transition: opacity 0.5s ease, height 0.5s ease;
               }
     
               a {
@@ -673,19 +679,22 @@ body {
                 width: 100%;
                 display: flex;
                 justify-content: center;
+                flex-direction: column;
                 align-items: center;
                 text-decoration: none;
                 opacity: 0;
                 margin-top:50px;
               }
     
-              &:hover span, &:active span {
+              &:hover > span, &:active > span {
                 opacity: 1;
                 height: auto;
                 transition: opacity 0.5s ease, height 0.5s ease;
+                backface-visibility:hidden;
               }
               &:hover a, &:active a {
                 animation: grow 0.001ms forwards;
+                backface-visibility:hidden;
                 margin-top: 0;
     
               }
@@ -700,7 +709,7 @@ body {
               }
               &#bark {
                 background-image: url(img/bark.jpg);
-                span {
+                > span {
                   background-image: url(img/bark.jpg);
                 }
               }
@@ -708,7 +717,7 @@ body {
                 background-image: url(img/x.jpg);
                 background-position:0 bottom;
     
-                span {
+                > span {
                   background-image:url(img/x.jpg);
                   background-position: 100% bottom;
                   color: black;
@@ -716,31 +725,31 @@ body {
               }
               &#chloe {
                 background-image: url(img/chloe.jpg);
-                span {
+                > span {
                   background-image: url(img/chloe.jpg);
                 }
               }
               &#tic {
                 background-image: url(img/tic.jpg);
-                span {
+                > span {
                   background-image: url(img/tic.jpg);
                 }
               }
               &#cp {
                 background-image: url(img/cp.jpg);
-                span {
+                > span {
                   background-image: url(img/cp.jpg);
                 }
               }
               &#aa {
                 background-image: url(img/aa.jpg);
-                span {
+                > span {
                   background-image: url(img/aa.jpg);
                 }
               }
               &#parkwoods {
                 background-image: url(img/parkwoods.jpg);
-                span {
+                > span {
                   background-image: url(img/parkwoods.jpg);
                 }
               }
@@ -796,6 +805,7 @@ body {
         top:unset;
         i:before {
           text-shadow: 0 0 40px white, 0 0 40px white, 0 0 40px white, 0 0 40px white, 0 0 40px white, 0 0 40px white, 0 0 40px white, 0 0 40px white, 0 0 40px white, 0 0 40px white, 0 0 40px white, 0 0 40px white, 0 0 40px white, 0 0 40px white, 0 0 40px white, 0 0 40px white;
+          display: block;
         }
       }
 
@@ -833,6 +843,106 @@ body {
   #sms {
     .controls {
       transform: rotate(-60deg);
+    }
+    .sack {
+
+      form {
+        > * {
+          display: block;
+          margin: 10px;
+          width: 400px;
+          border: 1px solid crimson;
+          line-height: 2rem;
+          @media screen and (max-width: 450px) {
+            width: 250px;
+          }
+        }
+        .holder {
+          padding:10px;
+          position: relative;
+          font-family: 'Roboto Slab', monospace;
+          > *:focus {
+            outline:none;
+          }
+          i {
+            color:crimson;
+          }
+          input {
+            border:none;
+            width: calc(100% - 1rem - 15px);
+            padding-left:10px;
+          }
+          textarea {
+            border:none;
+            min-width: calc(100% - 1rem - 15px);
+            height: 100px;
+            padding-left: calc(15px + 1rem);
+            line-height: 1.3rem;
+          }
+          .fa-pencil-alt {
+            top:calc(10px + 0.25rem);;
+            position:absolute;
+
+          }
+        }
+        textarea {
+        }
+        button {
+          background: crimson;
+          transition: all 0.5s ease;
+          border-color: crimson;
+          color: white;
+          padding:5px;
+          cursor: pointer;
+          width: 422px;
+
+          @media screen and (max-width: 450px) {
+            width: 272px;
+          }
+
+          &:hover {
+            background: black;
+            transition: all 0.5s ease;
+            border-color: black;
+          }
+        }
+
+
+      }
+
+      ul {
+        border-top: 1px solid crimson;
+        list-style: none;
+        padding: 0;
+        padding-top:15px;
+        width: fit-content;
+        margin: 25px auto;
+
+        li {
+          display: inline-block;
+
+          a{
+            margin: 25px;
+            i {
+              font-size: 3rem;
+              color: black;
+              transition: color 0.5s ease;
+
+              @media screen and (max-width: 450px) {
+                font-size: 2rem;
+              }
+
+              &:hover {
+                color: crimson;
+                transition: color 0.5s ease;
+              }
+            }
+
+          }
+
+        }
+      }
+
     }
   }
 }

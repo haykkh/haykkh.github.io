@@ -131,7 +131,7 @@
 			<div class="inner v-center" id="hello">
 				<div class="container">
 					Hi, I'm Hayk. <br>
-                    <a href="#about" class="primary" title="">I'd love to meet you!</a>  
+                    <a href="#about" class="primary" title=""><span class="primary">I'd love to meet you!</span></a>  
 				</div>
 			</div>
 		</div>
@@ -144,7 +144,31 @@
 
 				<div class="bottom v-center" >
 					<div class="sack">
-						Lick my balls
+						<form method="POST" action="http://formspree.io/hayk@khachatryan.io">
+							<div class="holder">
+								<i class="fas fa-user"></i>
+								<input type="text" placeholder="Your name">
+							</div>
+							
+							<div class="holder">
+								<i class="fas fa-at"></i>
+								<input type="email" name="email" placeholder="Your email">
+							</div>
+							
+							<div class="holder">
+								<i class="fas fa-pencil-alt"></i>
+								<textarea name="message" placeholder="Your message"></textarea>
+							</div>
+							
+							<input type="hidden" name="_subject" value="Hiya Hayk!" />
+							<button type="submit">Send</button>
+							<input type="text" name="_gotcha" style="display:none" />
+						</form>	
+						<ul>
+							<li><a href="" title=""><i class="fas fa-envelope-square"></i></a></li>
+							<li><a href="http://github.com/haykkh/" title=""><i class="fab fa-github-square"></i></a></li>
+							<li><a href="http://linkedin.com/in/hayk-khachatryan-00010278" title=""><i class="fab fa-linkedin"></i></a></li>
+						</ul>						
 					</div>
 				</div>
 				<a href="#projects" class="controls left"><i class="fas fa-angle-left"></i> </a>
