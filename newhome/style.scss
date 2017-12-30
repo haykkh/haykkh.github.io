@@ -394,6 +394,12 @@ textarea {
       .work {
         overflow-y: scroll;
         padding: 0;
+        flex-grow: 1;
+        display: flex;
+        flex-wrap: wrap;
+        align-items:center;
+        justify-content: center;
+        flex-direction: column;
         .showcase {
           display: inline-flex;
           flex-wrap: wrap;

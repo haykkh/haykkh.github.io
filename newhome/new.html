@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<link rel="stylesheet" href="new.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700" rel="stylesheet">
+    <link href="https://use.fontawesome.com/releases/v5.0.2/css/all.css" rel="stylesheet">
+</head>
+<body>
+	<a id="home"></a>
+	<a id="about"></a>
+		<a id="me"></a>
+	<a id="projects"></a>
+	<a id="contact"></a>
+
+
+	<div class="header">        
+		<nav id="primary-nav" role="navigation">
+          <div id="menuToggle">
+            <!--
+            A fake / hidden checkbox is used as click reciever,
+            so you can use the :checked selector on it.
+            -->
+            <input type="checkbox" />
+            
+            <!--
+            Some spans to act as a hamburger.
+            
+            They are acting like a real hamburger,
+            not that McDonalds stuff.
+            -->
+            <span></span>
+            <span></span>
+            <span></span>
+            
+            <!--
+            Too bad the menu has to be inside of the button
+            but hey, it's pure CSS magic.
+            -->
+            <ul id="menu">
+              <a href="#home"><li>Home</li></a>
+              <a href="#about"><li>About</li></a>
+              <a href="#projects"><li>Projects</li></a>
+              <a href="#contact"><li>Contact</li></a>
+              <a href="http://hayk.khachatryan.io"><li>Resume</li></a>
+            </ul>
+          </div>
+        </nav>
+    </div>
+
+
+	<div class="full-screen">
+		
+		<div class="outer" id="projects">
+			<div class="inner empty"></div>
+			<div class="inner empty"></div>
+			<div class="inner empty"></div>
+			<div class="inner empty"></div>
+
+			<div class="inner v-center" id="portfolio">
+				<a href="#me" class="controls right" title=""><i class="fas fa-angle-right"></i></a>
+				<div class="title">
+					Projects
+				</div>
+
+				<div class="bottom v-center" >
+					<div class="sack">
+                    	<div class="showcase">                    
+                        	<div class="showcase-item" id="chloe">
+                        		<span>
+                        		    <a href="http://chloestavrou.com">chloestavrou.com</a>
+                        		</span>
+                        	</div>
+    	
+                        	<div class="showcase-item" id="aa">
+                        		<span>
+                        		    <a href="/analogaffairs" title="">hayk.io/analogaffairs</a>
+                        		</span>
+                        	</div>
+    	
+                        	<div class="showcase-item" id="cp">
+                        		<span>
+                        		    <a href="http://christodoulospanayiotou.com" title="">christodoulospanayiotou.com</a>
+                        		</span>
+                        	</div>
+    	
+                        	<div class="showcase-item" id="bark">
+                        		<span>
+                        		    <a href="/bark">hayk.io/bark</a>
+                        		</span>
+                        	</div>
+    	
+                        	<div class="showcase-item" id="tic">
+                        		<span>
+                        		    <a href="http://the-island-club.com">the-island-club.com</a>
+                        		</span>
+                        	</div>
+    	
+                        	<div class="showcase-item" id="parkwoods">
+                        		<span>
+                        		    <a href="http://parkwoods.net">parkwoods.net</a>
+                        		</span>
+                        	</div>
+    	
+                        	<div class="showcase-item" id="x">
+                        		<span>
+                        		    <a href="/x/">hayk.io/x</a>
+                        		</span>
+                        	</div>
+                    	</div>
+					</div>
+					<div class="footer">
+						<a href="#contact" title="">Get in touch and tell me what you think!</a>
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+		<div class="outer" id="home">
+			<div class="inner empty">
+				
+			</div>
+
+			<div class="inner v-center" id="hello">
+				<div class="container">
+					Hi, I'm Hayk. <br>
+                    <a href="#about" class="primary" title="">I'd love to meet you!</a>  
+				</div>
+			</div>
+		</div>
+
+		<div class="outer" id="contact">
+			<div class="inner v-center" id="sms">
+				<div class="title">
+					Contact
+				</div>
+
+				<div class="bottom v-center" >
+					<div class="sack">
+						Lick my balls
+					</div>
+				</div>
+				<a href="#projects" class="controls left"><i class="fas fa-angle-left"></i> </a>
+			</div>
+		</div>
+
+		<div class="outer" id="about">
+			<div class="inner empty"></div>
+			<div class="inner empty"></div>
+
+			<div class="inner v-center" id="banner">
+				<a href="#home" class="controls left"><i class="fas fa-angle-left"></i></a>
+                <a href="#me" class="controls down primary" ><i class="fas fa-angle-down"></i></a>
+			</div>
+
+			<div class="inner v-center" id="me">
+				<a href="#about" class="controls up"><i class="fas fa-angle-up"></i></a>
+				<div class="title">
+					About
+				</div>
+				<div class="bottom v-center">
+					<div class="sack">
+						<p>I'm an undergrad Physics student at UCL, (go Portico!).</p>
+                    	<p>When I'm not trying to calculate the mass of the sun, I like hacking doodads and doohickeys together into thingamajigs to bring smiles to people's faces.</p>
+                    	<p>(Yes you can think of me as Lucious Fox)</p>
+                    	<p>I dream of one day hacking the ultimate thingamajig together into a quantum computer.</p>
+                    	<p>I'm super excited for Q#.</p>
+                    	<p>I fear Facebook's impdending world domination.</p>
+                    	<p>Oh, I also dream about spaceships quite a bit.</p>				
+					</div>
+
+					<div class="footer">
+						<a href="#projects" title="">
+							Check out some of my work!	
+						</a>
+					</div>
+
+				</div>
+				
+			</div>
+		</div>
+
+
+
+	</div>
+
+
+</body>
+</html>
