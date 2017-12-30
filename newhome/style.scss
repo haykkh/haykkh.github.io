@@ -270,6 +270,14 @@ textarea {
     position: relative;
     align-items: center;
   
+      .title {
+      margin-top: 50px;
+      font-size: 2rem;
+      padding: 0 0 25px 0!important;
+      width: 100%;
+      text-align: center;
+      border-bottom: 1px solid black;
+    }
     a {
       color: tomato;
       white-space: nowrap;
@@ -288,7 +296,7 @@ textarea {
     color: black;
 
     &.up {
-      left: 50vw;
+      text-align: center;
       top: 5px;
     }
     &.right {
@@ -299,14 +307,14 @@ textarea {
     }
     &.down {
       bottom:25px;
-      left: 50vw;
+      text-align: center;
     }
   }
   .vertical {
     justify-content: flex-start;
     .inner {
       display: flex;
-      justify-content: center;
+      justify-content: space-between;
       flex-flow: column;
       flex-basis: 100%;
       width: 100vw;
@@ -315,6 +323,19 @@ textarea {
       }
     }
   }
+
+  #home {
+    #hello {
+      div {
+        justify-content: center;
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+      }
+    }
+  }
+
+
   #about {
 
     #banner {
@@ -327,6 +348,7 @@ textarea {
       color: white;
       height: 100%;
       width: 100vw;
+      justify-content: center;
       background-image: url(img/bg-3072.jpg);
       /*
       @media screen and (min-width: 641px), (min-height: 428px){
@@ -355,11 +377,12 @@ textarea {
       .controls {
         color: black;
       }
-      div {
-        padding:50px;
+      .life-story {
+        padding:25px 50px 50px 50px;
         font-size: 1.3rem;
         line-height: 1.5rem;
         max-width: 550px;
+        flex-grow:1; 
       }
     }
   }
@@ -368,124 +391,133 @@ textarea {
 
     #portfolio {
 
-
-      .showcase {
-        display: inline-flex;
-        flex-wrap: wrap;
-        justify-content: center;
+      .work {
         overflow-y: scroll;
-
-
-        .showcase-item {
-          max-width: 600px;
-          max-height: 400px;
-          min-width: 300px;
-          min-height: 200px;
-          background-size: 200%;
-          background-position: 0 center;
-          padding:0;
-          position: relative;
-          line-height: 0;
-          margin: 10px;
-          display: flex;
-
-          span {
-            height: 0;
-            opacity: 0;
-            background-position: 100% center;
-            background-size:200%;
-            top: 0; left: 0; bottom: 0; right: 0;
-            position: absolute;
-            align-items: center;
-            justify-content: center;
-          }
-
-          a {
-
-            font-size: 1.2rem;
-            color: white;
-            height: 0;
-            width: 100%;
+        padding: 0;
+        .showcase {
+          display: inline-flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          padding:25px;
+  
+  
+          .showcase-item {
+            max-width: 600px;
+            max-height: 400px;
+            min-width: 300px;
+            min-height: 200px;
+            background-size: 200%;
+            background-position: 0 center;
+            border:1px black solid;
+            padding:0;
+            position: relative;
+            line-height: 0;
+            margin: 10px;
             display: flex;
-            justify-content: center;
-            align-items: center;
-            text-decoration: none;
-            opacity: 0;
-            margin-top:50px;
-          }
-
-          &:hover span, &:active span {
-            opacity: 1;
-            height: auto;
-            transition: opacity 0.5s ease, height 0.5s ease;
-          }
-          &:hover a, &:active a {
-            animation: grow 0.001ms forwards;
-            margin-top: 0;
-
-          }
-
-          @keyframes grow {
-            from { height:    0; 
-                   opacity:   0; }
-            50%  { height: 100%; 
-                   opacity:   1; }
-            to   { height: 100%; 
-                   opacity:   1; }
-          }
-          &#bark {
-            background-image: url(img/bark.jpg);
+  
             span {
+              height: 0;
+              opacity: 0;
+              background-position: 100% center;
+              background-size:200%;
+              top: 0; left: 0; bottom: 0; right: 0;
+              position: absolute;
+              align-items: center;
+              justify-content: center;
+            }
+  
+            a {
+  
+              font-size: 1.2rem;
+              color: white;
+              height: 0;
+              width: 100%;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              text-decoration: none;
+              opacity: 0;
+              margin-top:50px;
+            }
+  
+            &:hover span, &:active span {
+              opacity: 1;
+              height: auto;
+              transition: opacity 0.5s ease, height 0.5s ease;
+            }
+            &:hover a, &:active a {
+              animation: grow 0.001ms forwards;
+              margin-top: 0;
+  
+            }
+  
+            @keyframes grow {
+              from { height:    0; 
+                     opacity:   0; }
+              50%  { height: 100%; 
+                     opacity:   1; }
+              to   { height: 100%; 
+                     opacity:   1; }
+            }
+            &#bark {
               background-image: url(img/bark.jpg);
+              span {
+                background-image: url(img/bark.jpg);
+              }
             }
-          }
-          &#x {
-            background-image: url(img/x.jpg);
-            background-position:0 bottom;
-
-            span {
-              background-image:url(img/x.jpg);
-              background-position: 100% bottom;
-              color: black;
-            } 
-          }
-          &#chloe {
-            background-image: url(img/chloe.jpg);
-            span {
+            &#x {
+              background-image: url(img/x.jpg);
+              background-position:0 bottom;
+  
+              span {
+                background-image:url(img/x.jpg);
+                background-position: 100% bottom;
+                color: black;
+              } 
+            }
+            &#chloe {
               background-image: url(img/chloe.jpg);
+              span {
+                background-image: url(img/chloe.jpg);
+              }
             }
-          }
-          &#tic {
-            background-image: url(img/tic.jpg);
-            span {
+            &#tic {
               background-image: url(img/tic.jpg);
+              span {
+                background-image: url(img/tic.jpg);
+              }
             }
-          }
-          &#cp {
-            background-image: url(img/cp.jpg);
-            span {
+            &#cp {
               background-image: url(img/cp.jpg);
+              span {
+                background-image: url(img/cp.jpg);
+              }
             }
-          }
-          &#aa {
-            background-image: url(img/aa.jpg);
-            span {
+            &#aa {
               background-image: url(img/aa.jpg);
+              span {
+                background-image: url(img/aa.jpg);
+              }
             }
-          }
-          &#parkwoods {
-            background-image: url(img/parkwoods.jpg);
-            span {
+            &#parkwoods {
               background-image: url(img/parkwoods.jpg);
+              span {
+                background-image: url(img/parkwoods.jpg);
+              }
             }
           }
+        }
+
+        .in-touch {
+          font-size: 1.3rem;
+          text-align: center;
         }
       }
 
 
       .controls.right {
         transform:rotate(-30deg);
-        top: 25px;
+        top: 50px;
         color: black;
       }
 
@@ -493,6 +525,23 @@ textarea {
     }
   }
 
+  #contact {
+    #sms {
+      #hi {
+        justify-content: center;
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+      } 
+
+      .controls.left {
+        bottom: 25px;
+        left:40px;
+        transform: rotate(-60deg);
+        color:black;
+      }
+    }
+  }
 }
 
 

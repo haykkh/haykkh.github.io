@@ -290,6 +290,13 @@ textarea {
       -ms-flex-align: center;
               -ms-grid-row-align: center;
           align-items: center; }
+  .full-screen .inner .title {
+    margin-top: 50px;
+    font-size: 2rem;
+    padding: 0 0 25px 0 !important;
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid black; }
   .full-screen .inner a {
     color: tomato;
     white-space: nowrap;
@@ -306,7 +313,7 @@ textarea {
   text-decoration: none;
   color: black; }
   .full-screen .controls.up {
-    left: 50vw;
+    text-align: center;
     top: 5px; }
   .full-screen .controls.right {
     right: 25px; }
@@ -314,7 +321,7 @@ textarea {
     left: 25px; }
   .full-screen .controls.down {
     bottom: 25px;
-    left: 50vw; }
+    text-align: center; }
 .full-screen .vertical {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
@@ -323,9 +330,9 @@ textarea {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     -ms-flex-flow: column;
         flex-flow: column;
     -ms-flex-preferred-size: 100%;
@@ -333,6 +340,20 @@ textarea {
     width: 100vw; }
     .full-screen .vertical .inner div {
       padding: 50px; }
+.full-screen #home #hello div {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
 .full-screen #about #banner {
   /*
   background-repeat: repeat, no-repeat,  no-repeat;
@@ -343,6 +364,9 @@ textarea {
   color: white;
   height: 100%;
   width: 100vw;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   background-image: url(img/bg-3072.jpg);
   /*
   @media screen and (min-width: 641px), (min-height: 428px){
@@ -365,78 +389,85 @@ textarea {
             transform: rotate(45deg); }
 .full-screen #about #me .controls {
   color: black; }
-.full-screen #about #me div {
-  padding: 50px;
+.full-screen #about #me .life-story {
+  padding: 25px 50px 50px 50px;
   font-size: 1.3rem;
   line-height: 1.5rem;
-  max-width: 550px; }
-.full-screen #projects #portfolio .showcase {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  overflow-y: scroll; }
-  .full-screen #projects #portfolio .showcase .showcase-item {
-    max-width: 600px;
-    max-height: 400px;
-    min-width: 300px;
-    min-height: 200px;
-    background-size: 200%;
-    background-position: 0 center;
-    padding: 0;
-    position: relative;
-    line-height: 0;
-    margin: 10px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex; }
-    .full-screen #projects #portfolio .showcase .showcase-item span {
-      height: 0;
-      opacity: 0;
-      background-position: 100% center;
+  max-width: 550px;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1; }
+.full-screen #projects #portfolio .work {
+  overflow-y: scroll;
+  padding: 0; }
+  .full-screen #projects #portfolio .work .showcase {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 25px; }
+    .full-screen #projects #portfolio .work .showcase .showcase-item {
+      max-width: 600px;
+      max-height: 400px;
+      min-width: 300px;
+      min-height: 200px;
       background-size: 200%;
-      top: 0;
-      left: 0;
-      bottom: 0;
-      right: 0;
-      position: absolute;
-      -webkit-box-align: center;
-          -ms-flex-align: center;
-                  -ms-grid-row-align: center;
-              align-items: center;
-      -webkit-box-pack: center;
-          -ms-flex-pack: center;
-              justify-content: center; }
-    .full-screen #projects #portfolio .showcase .showcase-item a {
-      font-size: 1.2rem;
-      color: white;
-      height: 0;
-      width: 100%;
+      background-position: 0 center;
+      border: 1px black solid;
+      padding: 0;
+      position: relative;
+      line-height: 0;
+      margin: 10px;
       display: -webkit-box;
       display: -ms-flexbox;
-      display: flex;
-      -webkit-box-pack: center;
-          -ms-flex-pack: center;
-              justify-content: center;
-      -webkit-box-align: center;
-          -ms-flex-align: center;
-              align-items: center;
-      text-decoration: none;
-      opacity: 0;
-      margin-top: 50px; }
-    .full-screen #projects #portfolio .showcase .showcase-item:hover span, .full-screen #projects #portfolio .showcase .showcase-item:active span {
-      opacity: 1;
-      height: auto;
-      -webkit-transition: opacity 0.5s ease, height 0.5s ease;
-      transition: opacity 0.5s ease, height 0.5s ease; }
-    .full-screen #projects #portfolio .showcase .showcase-item:hover a, .full-screen #projects #portfolio .showcase .showcase-item:active a {
-      -webkit-animation: grow 0.001ms forwards;
-              animation: grow 0.001ms forwards;
-      margin-top: 0; }
+      display: flex; }
+      .full-screen #projects #portfolio .work .showcase .showcase-item span {
+        height: 0;
+        opacity: 0;
+        background-position: 100% center;
+        background-size: 200%;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        position: absolute;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                    -ms-grid-row-align: center;
+                align-items: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center; }
+      .full-screen #projects #portfolio .work .showcase .showcase-item a {
+        font-size: 1.2rem;
+        color: white;
+        height: 0;
+        width: 100%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        text-decoration: none;
+        opacity: 0;
+        margin-top: 50px; }
+      .full-screen #projects #portfolio .work .showcase .showcase-item:hover span, .full-screen #projects #portfolio .work .showcase .showcase-item:active span {
+        opacity: 1;
+        height: auto;
+        -webkit-transition: opacity 0.5s ease, height 0.5s ease;
+        transition: opacity 0.5s ease, height 0.5s ease; }
+      .full-screen #projects #portfolio .work .showcase .showcase-item:hover a, .full-screen #projects #portfolio .work .showcase .showcase-item:active a {
+        -webkit-animation: grow 0.001ms forwards;
+                animation: grow 0.001ms forwards;
+        margin-top: 0; }
 @-webkit-keyframes grow {
   from {
     height: 0;
@@ -457,41 +488,64 @@ textarea {
   to {
     height: 100%;
     opacity: 1; } }
-    .full-screen #projects #portfolio .showcase .showcase-item#bark {
-      background-image: url(img/bark.jpg); }
-      .full-screen #projects #portfolio .showcase .showcase-item#bark span {
+      .full-screen #projects #portfolio .work .showcase .showcase-item#bark {
         background-image: url(img/bark.jpg); }
-    .full-screen #projects #portfolio .showcase .showcase-item#x {
-      background-image: url(img/x.jpg);
-      background-position: 0 bottom; }
-      .full-screen #projects #portfolio .showcase .showcase-item#x span {
+        .full-screen #projects #portfolio .work .showcase .showcase-item#bark span {
+          background-image: url(img/bark.jpg); }
+      .full-screen #projects #portfolio .work .showcase .showcase-item#x {
         background-image: url(img/x.jpg);
-        background-position: 100% bottom;
-        color: black; }
-    .full-screen #projects #portfolio .showcase .showcase-item#chloe {
-      background-image: url(img/chloe.jpg); }
-      .full-screen #projects #portfolio .showcase .showcase-item#chloe span {
+        background-position: 0 bottom; }
+        .full-screen #projects #portfolio .work .showcase .showcase-item#x span {
+          background-image: url(img/x.jpg);
+          background-position: 100% bottom;
+          color: black; }
+      .full-screen #projects #portfolio .work .showcase .showcase-item#chloe {
         background-image: url(img/chloe.jpg); }
-    .full-screen #projects #portfolio .showcase .showcase-item#tic {
-      background-image: url(img/tic.jpg); }
-      .full-screen #projects #portfolio .showcase .showcase-item#tic span {
+        .full-screen #projects #portfolio .work .showcase .showcase-item#chloe span {
+          background-image: url(img/chloe.jpg); }
+      .full-screen #projects #portfolio .work .showcase .showcase-item#tic {
         background-image: url(img/tic.jpg); }
-    .full-screen #projects #portfolio .showcase .showcase-item#cp {
-      background-image: url(img/cp.jpg); }
-      .full-screen #projects #portfolio .showcase .showcase-item#cp span {
+        .full-screen #projects #portfolio .work .showcase .showcase-item#tic span {
+          background-image: url(img/tic.jpg); }
+      .full-screen #projects #portfolio .work .showcase .showcase-item#cp {
         background-image: url(img/cp.jpg); }
-    .full-screen #projects #portfolio .showcase .showcase-item#aa {
-      background-image: url(img/aa.jpg); }
-      .full-screen #projects #portfolio .showcase .showcase-item#aa span {
+        .full-screen #projects #portfolio .work .showcase .showcase-item#cp span {
+          background-image: url(img/cp.jpg); }
+      .full-screen #projects #portfolio .work .showcase .showcase-item#aa {
         background-image: url(img/aa.jpg); }
-    .full-screen #projects #portfolio .showcase .showcase-item#parkwoods {
-      background-image: url(img/parkwoods.jpg); }
-      .full-screen #projects #portfolio .showcase .showcase-item#parkwoods span {
+        .full-screen #projects #portfolio .work .showcase .showcase-item#aa span {
+          background-image: url(img/aa.jpg); }
+      .full-screen #projects #portfolio .work .showcase .showcase-item#parkwoods {
         background-image: url(img/parkwoods.jpg); }
+        .full-screen #projects #portfolio .work .showcase .showcase-item#parkwoods span {
+          background-image: url(img/parkwoods.jpg); }
+  .full-screen #projects #portfolio .work .in-touch {
+    font-size: 1.3rem;
+    text-align: center; }
 .full-screen #projects #portfolio .controls.right {
   -webkit-transform: rotate(-30deg);
           transform: rotate(-30deg);
-  top: 25px;
+  top: 50px;
+  color: black; }
+.full-screen #contact #sms #hi {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+.full-screen #contact #sms .controls.left {
+  bottom: 25px;
+  left: 40px;
+  -webkit-transform: rotate(-60deg);
+          transform: rotate(-60deg);
   color: black; }
 
 /* ==========================================================================
