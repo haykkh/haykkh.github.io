@@ -659,112 +659,100 @@ body {
               margin: 10px;
               display: flex;
     
-               .hover-box {
-                height: 0;
-                opacity: 0;
-                background-position: 100% center;
-                background-size:200%;
-                top: 0; left: 0; bottom: 0; right: 0;
-                position: absolute;
-                align-items: center;
-                justify-content: center;
-                transition: opacity 0.5s ease, height 0.5s ease;
-                line-height: 1.5rem;
-                font-size: 1rem;
+
+    
+              a {
+    
+                font-size: 1.2rem;
+                color: white;
+                height: 100%;
+                width:100%;
                 display: flex;
+                justify-content: center;
                 flex-direction: column;
-                justify-content: space-between;
+                align-items: center;
+                text-decoration: none;
+                visibility: hidden;
+                margin: 0;
+                position: relative;
 
-
-                h1 {
-                      font-size: 1.2rem;
-                      font-weight: normal;
-                      text-align: center;
-                      /* margin-top: 25px; */
-                      border-bottom: 1px white solid;
-                      line-height: 3rem;
-                      margin: 0;
-                      flex: 0 0 auto;
-                      width: 100%;
-                }
-
-                p {
-                  width: 220px;
-                  margin:0 auto;
-                  align-self: flex-start;
-                }
-                ul {
-                  list-style: none;
-                  padding: 0;
-                  text-align: center;
-                  margin: 0;
-                  li {
-                    display: inline-block;
-                    margin: 0 10px 10px 10px;
-                    line-height: 1.8rem;
-                    font-size: 1.5rem;
-
-                    &.text {
-                      font-size: 1.3rem;
-                    }
-
-                    svg {
-                      fill: white;
-
-                      &.php {
-                        height: 1.4rem;
-                        width: 2.8rem;
+                .hover-box {
+                  height: 100%;
+                  opacity: 0;
+                  background-position: 100% center;
+                  background-size:200%;
+                  top: 0; left: 0; bottom: 0; right: 0;
+                  position: absolute;
+                  align-items: center;
+                  justify-content: center;
+                  transition: opacity 0.5s ease, height 0.5s ease;
+                  line-height: 1.5rem;
+                  font-size: 1rem;
+                  display: flex;
+                  flex-direction: column;
+                  justify-content: space-between;
+  
+                  h1 {
+                        font-size: 1.2rem;
+                        font-weight: normal;
+                        text-align: center;
+                        /* margin-top: 25px; */
+                        border-bottom: 1px white solid;
+                        line-height: 3rem;
+                        margin: 0;
+                        flex: 0 0 auto;
+                        width: 100%;
+                  }
+  
+                  p {
+                    width: 220px;
+                    max-width: 220px;
+                    margin:0 auto;
+                    align-self: flex-start;
+                  }
+                  ul {
+                    list-style: none;
+                    padding: 0;
+                    text-align: center;
+                    margin: 0;
+                    li {
+                      display: inline-block;
+                      margin: 0 10px 10px 10px;
+                      line-height: 1.8rem;
+                      font-size: 1.5rem;
+  
+                      &.text {
+                        font-size: 1.3rem;
                       }
-
-                      &.bootstrap {
-                        height: 1.4rem;
-                        width: 1.4rem;
+  
+                      svg {
+                        fill: white;
+  
+                        &.php {
+                          height: 1.4rem;
+                          width: 2.8rem;
+                        }
+  
+                        &.bootstrap {
+                          height: 1.4rem;
+                          width: 1.4rem;
+                        }
                       }
                     }
                   }
                 }
               }
     
-              a {
-    
-                font-size: 1.2rem;
-                color: white;
-                height: 0;
-                width: 100%;
-                display: flex;
-                justify-content: center;
-                flex-direction: column;
-                align-items: center;
-                text-decoration: none;
-                opacity: 0;
-                margin-top:50px;
-              }
-    
               &:hover .hover-box, &:active .hover-box {
                 opacity: 1;
-                height: auto;
-                transition: opacity 0.5s ease, height 0.5s ease;
+                transition: all 0.5s ease;
                 backface-visibility:hidden;
               }
 
-              &#resulter:hover {
-                background: linear-gradient(
-                               rgba(0, 0, 0, 0.4), 
-                               rgba(0, 0, 0, 0.4)
-    )                         ,
-                            url(img/resulter.png);
-                background-size: 100%;
-              }
-
-              &#domainer:hover {
-                background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(img/domainer.png);
-                background-size:100%;
-              }
               &:hover a, &:active a {
-                animation: grow 0.001ms forwards;
+                transition: all 0.0001ms 0.0001ms;
                 backface-visibility:hidden;
-                margin-top: 0;
-    
+                visibility: visible;
               }
     
               @keyframes grow {
@@ -792,13 +780,18 @@ body {
               }
               &#resulter {
                 background-image: url(img/resulter.png);
-                background-size:100%;
 
+                .hover-box {
+                  background-image: url(img/resulter.png)
+                }
               }
 
               &#domainer {
                 background-image: url(img/domainer.png);
-                background-size: 100%;
+
+                .hover-box {
+                  background-image: url(img/domainer.png)
+                }
               }
               &#chloe {
                 background-image: url(img/chloe.jpg);

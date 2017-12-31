@@ -617,77 +617,10 @@ body {
               display: -webkit-box;
               display: -ms-flexbox;
               display: flex; }
-              .full-screen .outer .inner .bottom .sack .showcase .showcase-item .hover-box {
-                height: 0;
-                opacity: 0;
-                background-position: 100% center;
-                background-size: 200%;
-                top: 0;
-                left: 0;
-                bottom: 0;
-                right: 0;
-                position: absolute;
-                -webkit-box-align: center;
-                    -ms-flex-align: center;
-                        align-items: center;
-                -webkit-box-pack: center;
-                    -ms-flex-pack: center;
-                        justify-content: center;
-                -webkit-transition: opacity 0.5s ease, height 0.5s ease;
-                transition: opacity 0.5s ease, height 0.5s ease;
-                line-height: 1.5rem;
-                font-size: 1rem;
-                display: -webkit-box;
-                display: -ms-flexbox;
-                display: flex;
-                -webkit-box-orient: vertical;
-                -webkit-box-direction: normal;
-                    -ms-flex-direction: column;
-                        flex-direction: column;
-                -webkit-box-pack: justify;
-                    -ms-flex-pack: justify;
-                        justify-content: space-between; }
-                .full-screen .outer .inner .bottom .sack .showcase .showcase-item .hover-box h1 {
-                  font-size: 1.2rem;
-                  font-weight: normal;
-                  text-align: center;
-                  /* margin-top: 25px; */
-                  border-bottom: 1px white solid;
-                  line-height: 3rem;
-                  margin: 0;
-                  -webkit-box-flex: 0;
-                      -ms-flex: 0 0 auto;
-                          flex: 0 0 auto;
-                  width: 100%; }
-                .full-screen .outer .inner .bottom .sack .showcase .showcase-item .hover-box p {
-                  width: 220px;
-                  margin: 0 auto;
-                  -ms-flex-item-align: start;
-                      align-self: flex-start; }
-                .full-screen .outer .inner .bottom .sack .showcase .showcase-item .hover-box ul {
-                  list-style: none;
-                  padding: 0;
-                  text-align: center;
-                  margin: 0; }
-                  .full-screen .outer .inner .bottom .sack .showcase .showcase-item .hover-box ul li {
-                    display: inline-block;
-                    margin: 0 10px 10px 10px;
-                    line-height: 1.8rem;
-                    font-size: 1.5rem; }
-                    .full-screen .outer .inner .bottom .sack .showcase .showcase-item .hover-box ul li.text {
-                      font-size: 1.3rem; }
-                    .full-screen .outer .inner .bottom .sack .showcase .showcase-item .hover-box ul li svg {
-                      fill: white; }
-                      .full-screen .outer .inner .bottom .sack .showcase .showcase-item .hover-box ul li svg.php {
-                        height: 1.4rem;
-                        width: 2.8rem; }
-                      .full-screen .outer .inner .bottom .sack .showcase .showcase-item .hover-box ul li svg.bootstrap {
-                        height: 1.4rem;
-                        width: 1.4rem; }
               .full-screen .outer .inner .bottom .sack .showcase .showcase-item a {
                 font-size: 1.2rem;
                 color: white;
-                height: 0;
+                height: 100%;
                 width: 100%;
                 display: -webkit-box;
                 display: -ms-flexbox;
@@ -703,29 +636,89 @@ body {
                     -ms-flex-align: center;
                         align-items: center;
                 text-decoration: none;
-                opacity: 0;
-                margin-top: 50px; }
+                visibility: hidden;
+                margin: 0;
+                position: relative; }
+                .full-screen .outer .inner .bottom .sack .showcase .showcase-item a .hover-box {
+                  height: 100%;
+                  opacity: 0;
+                  background-position: 100% center;
+                  background-size: 200%;
+                  top: 0;
+                  left: 0;
+                  bottom: 0;
+                  right: 0;
+                  position: absolute;
+                  -webkit-box-align: center;
+                      -ms-flex-align: center;
+                          align-items: center;
+                  -webkit-box-pack: center;
+                      -ms-flex-pack: center;
+                          justify-content: center;
+                  -webkit-transition: opacity 0.5s ease, height 0.5s ease;
+                  transition: opacity 0.5s ease, height 0.5s ease;
+                  line-height: 1.5rem;
+                  font-size: 1rem;
+                  display: -webkit-box;
+                  display: -ms-flexbox;
+                  display: flex;
+                  -webkit-box-orient: vertical;
+                  -webkit-box-direction: normal;
+                      -ms-flex-direction: column;
+                          flex-direction: column;
+                  -webkit-box-pack: justify;
+                      -ms-flex-pack: justify;
+                          justify-content: space-between; }
+                  .full-screen .outer .inner .bottom .sack .showcase .showcase-item a .hover-box h1 {
+                    font-size: 1.2rem;
+                    font-weight: normal;
+                    text-align: center;
+                    /* margin-top: 25px; */
+                    border-bottom: 1px white solid;
+                    line-height: 3rem;
+                    margin: 0;
+                    -webkit-box-flex: 0;
+                        -ms-flex: 0 0 auto;
+                            flex: 0 0 auto;
+                    width: 100%; }
+                  .full-screen .outer .inner .bottom .sack .showcase .showcase-item a .hover-box p {
+                    width: 220px;
+                    max-width: 220px;
+                    margin: 0 auto;
+                    -ms-flex-item-align: start;
+                        align-self: flex-start; }
+                  .full-screen .outer .inner .bottom .sack .showcase .showcase-item a .hover-box ul {
+                    list-style: none;
+                    padding: 0;
+                    text-align: center;
+                    margin: 0; }
+                    .full-screen .outer .inner .bottom .sack .showcase .showcase-item a .hover-box ul li {
+                      display: inline-block;
+                      margin: 0 10px 10px 10px;
+                      line-height: 1.8rem;
+                      font-size: 1.5rem; }
+                      .full-screen .outer .inner .bottom .sack .showcase .showcase-item a .hover-box ul li.text {
+                        font-size: 1.3rem; }
+                      .full-screen .outer .inner .bottom .sack .showcase .showcase-item a .hover-box ul li svg {
+                        fill: white; }
+                        .full-screen .outer .inner .bottom .sack .showcase .showcase-item a .hover-box ul li svg.php {
+                          height: 1.4rem;
+                          width: 2.8rem; }
+                        .full-screen .outer .inner .bottom .sack .showcase .showcase-item a .hover-box ul li svg.bootstrap {
+                          height: 1.4rem;
+                          width: 1.4rem; }
               .full-screen .outer .inner .bottom .sack .showcase .showcase-item:hover .hover-box, .full-screen .outer .inner .bottom .sack .showcase .showcase-item:active .hover-box {
                 opacity: 1;
-                height: auto;
-                -webkit-transition: opacity 0.5s ease, height 0.5s ease;
-                transition: opacity 0.5s ease, height 0.5s ease;
+                -webkit-transition: all 0.5s ease;
+                transition: all 0.5s ease;
                 -webkit-backface-visibility: hidden;
                         backface-visibility: hidden; }
-              .full-screen .outer .inner .bottom .sack .showcase .showcase-item#resulter:hover {
-                background: -webkit-linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(img/resulter.png);
-                background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(img/resulter.png);
-                background-size: 100%; }
-              .full-screen .outer .inner .bottom .sack .showcase .showcase-item#domainer:hover {
-                background: -webkit-linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(img/domainer.png);
-                background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(img/domainer.png);
-                background-size: 100%; }
               .full-screen .outer .inner .bottom .sack .showcase .showcase-item:hover a, .full-screen .outer .inner .bottom .sack .showcase .showcase-item:active a {
-                -webkit-animation: grow 0.001ms forwards;
-                        animation: grow 0.001ms forwards;
+                -webkit-transition: all 0.0001ms 0.0001ms;
+                transition: all 0.0001ms 0.0001ms;
                 -webkit-backface-visibility: hidden;
                         backface-visibility: hidden;
-                margin-top: 0; }
+                visibility: visible; }
 @-webkit-keyframes grow {
   from {
     height: 0;
@@ -757,11 +750,13 @@ body {
                   background-image: url(img/x.jpg);
                   background-position: 100% bottom; }
               .full-screen .outer .inner .bottom .sack .showcase .showcase-item#resulter {
-                background-image: url(img/resulter.png);
-                background-size: 100%; }
+                background-image: url(img/resulter.png); }
+                .full-screen .outer .inner .bottom .sack .showcase .showcase-item#resulter .hover-box {
+                  background-image: url(img/resulter.png); }
               .full-screen .outer .inner .bottom .sack .showcase .showcase-item#domainer {
-                background-image: url(img/domainer.png);
-                background-size: 100%; }
+                background-image: url(img/domainer.png); }
+                .full-screen .outer .inner .bottom .sack .showcase .showcase-item#domainer .hover-box {
+                  background-image: url(img/domainer.png); }
               .full-screen .outer .inner .bottom .sack .showcase .showcase-item#chloe {
                 background-image: url(img/chloe.jpg); }
                 .full-screen .outer .inner .bottom .sack .showcase .showcase-item#chloe .hover-box {
