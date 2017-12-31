@@ -79,6 +79,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/img\/domainer.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 2442,
+		"inputAbbreviatedPath": "\/img\/domainer.png",
+		"outputAbbreviatedPath": "\/img\/domainer.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/img\/overlay.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -119,6 +130,17 @@
 		"initialSize": 356818,
 		"inputAbbreviatedPath": "\/img\/psd\/tic.png",
 		"outputAbbreviatedPath": "\/img\/psd\/tic.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/resulter.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 2282,
+		"inputAbbreviatedPath": "\/img\/resulter.png",
+		"outputAbbreviatedPath": "\/img\/resulter.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0

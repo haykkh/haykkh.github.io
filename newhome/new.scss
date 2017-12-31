@@ -659,7 +659,7 @@ body {
               margin: 10px;
               display: flex;
     
-              > span {
+               .hover-box {
                 height: 0;
                 opacity: 0;
                 background-position: 100% center;
@@ -669,6 +669,60 @@ body {
                 align-items: center;
                 justify-content: center;
                 transition: opacity 0.5s ease, height 0.5s ease;
+                line-height: 1.5rem;
+                font-size: 1rem;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+
+
+                h1 {
+                      font-size: 1.2rem;
+                      font-weight: normal;
+                      text-align: center;
+                      /* margin-top: 25px; */
+                      border-bottom: 1px white solid;
+                      line-height: 3rem;
+                      margin: 0;
+                      flex: 0 0 auto;
+                      width: 100%;
+                }
+
+                p {
+                  width: 220px;
+                  margin:0 auto;
+                  align-self: flex-start;
+                }
+                ul {
+                  list-style: none;
+                  padding: 0;
+                  text-align: center;
+                  margin: 0;
+                  li {
+                    display: inline-block;
+                    margin: 0 10px 10px 10px;
+                    line-height: 1.8rem;
+                    font-size: 1.5rem;
+
+                    &.text {
+                      font-size: 1.3rem;
+                    }
+
+                    svg {
+                      fill: white;
+
+                      &.php {
+                        height: 1.4rem;
+                        width: 2.8rem;
+                      }
+
+                      &.bootstrap {
+                        height: 1.4rem;
+                        width: 1.4rem;
+                      }
+                    }
+                  }
+                }
               }
     
               a {
@@ -686,11 +740,25 @@ body {
                 margin-top:50px;
               }
     
-              &:hover > span, &:active > span {
+              &:hover .hover-box, &:active .hover-box {
                 opacity: 1;
                 height: auto;
                 transition: opacity 0.5s ease, height 0.5s ease;
                 backface-visibility:hidden;
+              }
+
+              &#resulter:hover {
+                background: linear-gradient(
+                               rgba(0, 0, 0, 0.4), 
+                               rgba(0, 0, 0, 0.4)
+    )                         ,
+                            url(img/resulter.png);
+                background-size: 100%;
+              }
+
+              &#domainer:hover {
+                background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(img/domainer.png);
+                background-size:100%;
               }
               &:hover a, &:active a {
                 animation: grow 0.001ms forwards;
@@ -709,7 +777,7 @@ body {
               }
               &#bark {
                 background-image: url(img/bark.jpg);
-                > span {
+                .hover-box {
                   background-image: url(img/bark.jpg);
                 }
               }
@@ -717,39 +785,48 @@ body {
                 background-image: url(img/x.jpg);
                 background-position:0 bottom;
     
-                > span {
+                .hover-box {
                   background-image:url(img/x.jpg);
                   background-position: 100% bottom;
-                  color: black;
                 } 
+              }
+              &#resulter {
+                background-image: url(img/resulter.png);
+                background-size:100%;
+
+              }
+
+              &#domainer {
+                background-image: url(img/domainer.png);
+                background-size: 100%;
               }
               &#chloe {
                 background-image: url(img/chloe.jpg);
-                > span {
+                .hover-box {
                   background-image: url(img/chloe.jpg);
                 }
               }
               &#tic {
                 background-image: url(img/tic.jpg);
-                > span {
+                .hover-box {
                   background-image: url(img/tic.jpg);
                 }
               }
               &#cp {
                 background-image: url(img/cp.jpg);
-                > span {
+                .hover-box {
                   background-image: url(img/cp.jpg);
                 }
               }
               &#aa {
                 background-image: url(img/aa.jpg);
-                > span {
+                .hover-box {
                   background-image: url(img/aa.jpg);
                 }
               }
               &#parkwoods {
                 background-image: url(img/parkwoods.jpg);
-                > span {
+                .hover-box {
                   background-image: url(img/parkwoods.jpg);
                 }
               }
@@ -826,6 +903,7 @@ body {
         color: dodgerblue;
         text-decoration: none;
       }
+
     }
 
   }
@@ -983,8 +1061,15 @@ a {
 
 .primary {
   animation: floating 3s ease infinite;
+  display: inline-block;
   text-decoration: none;
   color:crimson!important;
+}
+
+.secondary {
+  display: inline-block;
+  color: dodgerblue;
+  text-decoration: none;
 }
 @keyframes floating {
   from { transform: translate(0,  0px); }
