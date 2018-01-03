@@ -927,7 +927,80 @@ body {
 
   #me {
     .sack {
-      max-width: 600px;
+      max-width: 1000px;
+      .about-mes {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        max-width: 1000px;
+        flex-wrap: wrap;
+        margin:25px;
+
+        p {
+          flex: 1 1 auto;
+          margin: 15px;
+        }
+        img {
+          width: 100%;
+        }        
+
+        &#ucl {
+
+          > div:nth-child(1) {
+            flex-direction: column;
+            flex-basis: 30%
+          }
+
+          > div:nth-child(2) {
+            flex-basis: 60%
+          }
+        }
+
+        &#thingamajig {
+          flex-direction: column;
+
+          > div {
+            margin:10px;
+            &:nth-child(1) {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              > div:nth-child(1) {
+                }
+            }
+
+            &:nth-child(2) {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+            }
+
+            &:nth-child(3) {
+              display: flex;
+              align-items:center;
+              justify-content: center;
+              > div:nth-child(1) {
+                flex-basis: 60%;
+              }
+          }
+        }
+
+
+        }
+
+        &#quantum {
+          div:nth-child(1) {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+        }
+
+        .pcb-tablet {
+          align-items: flex-end;
+        }
+      }
+
     }
 
     .footer {
