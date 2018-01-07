@@ -376,11 +376,22 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/img\/wc\/quantumhand.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 160328,
+		"inputAbbreviatedPath": "\/img\/wc\/quantumhand.jpg",
+		"outputAbbreviatedPath": "\/img\/wc\/quantumhand.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/img\/wc\/question.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 1.89427e+06,
+		"initialSize": 2.40087e+06,
 		"inputAbbreviatedPath": "\/img\/wc\/question.jpg",
 		"outputAbbreviatedPath": "\/img\/wc\/question.jpg",
 		"outputPathIsOutsideProject": 0,
