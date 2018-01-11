@@ -1074,6 +1074,17 @@ body {
       transform: rotate(-60deg);
     }
     .sack {
+      .say-hi {
+       
+       img {
+        width: 400px;
+        @media screen and(max-width 450px){ 
+          width: 250px;
+        }
+      }
+
+
+      }
 
       form {
         > * {

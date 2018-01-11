@@ -816,6 +816,11 @@ body {
 
 #contact #sms .controls {
   transform: rotate(-60deg); }
+#contact #sms .sack .say-hi img {
+  width: 400px; }
+  @media screen and (max-width 450px) {
+    #contact #sms .sack .say-hi img {
+      width: 250px; } }
 #contact #sms .sack form > * {
   display: block;
   margin: 10px;
