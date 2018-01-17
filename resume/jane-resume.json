@@ -1,0 +1,547 @@
+{
+
+  "name": "Hayk Khachatryan",
+
+  "meta": {
+    "format": "FRESH@0.6.0",
+    "version": "0.4.0"
+  },
+
+  "info": {
+    "label": "Developer",
+    "characterClass": "Programmer",
+    "brief": "Second year UCL Theoretical Physics student (1st expected). Self taught intermediate programmer (Python, Mathematica). Freelance Web Developer. Representative for Physics students in my year",
+    "quote": "Be the change you want to see in the world."
+  },
+
+  "contact": {
+    "website": "hayk.io",
+    "phone": "+44 (0) 7555 724 204",
+    "email": "hi@hayk.io",
+    "other": [
+      {
+        "label": "Home Phone",
+        "flavor": "phone",
+        "value": "1-650-999-4321"
+      },
+      {
+        "label": "Work Phone",
+        "flavor": "phone",
+        "value": "1-650-777-1234"
+      },
+      {
+        "label": "Personal Email",
+        "flavor": "email",
+        "value": "jane@janef.me"
+      }
+    ]
+  },
+
+  "location": {
+    "address": "Flat 1, 20 Oakley Road",
+    "city": "London",
+    "country": "GB",
+    "region": "United Kingdom",
+    "code": "N1 3LS"
+  },
+
+  "projects": [
+    {
+      "title": "HackMyResume",
+      "category": "FOSS",
+      "role": "contributor",
+      "url": "http://please.hackmyresume.com",
+      "start": "2015-09",
+      "repo": "https://github.com/hacksalot/hackmyresume",
+      "description": "A resume authoring and analysis tool for OS X, Linux, and Windows.",
+      "summary": "Exemplar user for HackMyResume and FluentCV!",
+      "keywords": ["JavaScript", "Node.js", "cross-platform", "JSON"],
+      "media": [
+        {
+          "category": "download",
+          "url": "https://www.npmjs.com/package/hackmyresume"
+        }
+      ]
+    },
+    {
+      "title": "Augmented Android",
+      "category": "commercial",
+      "role": "co-creator",
+      "url": "http://project.website.com",
+      "repo": "http://repo.website.com",
+      "description": "An augmented reality app for Android.",
+      "start": "2012-02",
+      "end": "2014-01",
+      "summary": "Performed flagship product conceptualization and development.",
+      "keywords": ["Android", "Java", "Xamarin"]
+    },
+    {
+      "title": "Blog",
+      "category": "personal",
+      "role": "creator",
+      "url": "http://myblog.jane.com/blog",
+      "description": "My programming blog. Powered by Jekyll.",
+      "summary": "Conceptualization, design, development, and deployment.",
+      "keywords": ["Jekyll", "Ruby", "HTML 5", "JavaScript", "HTTP", "LAMP"]
+    }
+  ],
+
+  "social": [
+
+    {
+      "label": "GitHub",
+      "network": "GitHub",
+      "user": "haykkh",
+      "url": "https://github.com/haykkh"
+    }
+  ],
+
+  "employment": {
+
+    "summary": "7+ years industry IT and software development experience.",
+
+    "history": [
+
+      {
+        "employer": "",
+        "url": "hayk.io",
+        "pos": "first",
+        "position": "Freelance Web Development",
+        "summary": "Responsible for full stack for all clients.  Experience with:",
+        "start": "2016-12",
+        "keywords": ["Agile","PM","C","C++","R","OpenGL","Boost","MySQL","PostgreSQL","JIRA"],
+        "highlights": ["Wordpress, ghost, and JekyllNow", "Bootstrap, Polymer", "LAMP stacks"]
+      },
+
+      {
+        "employer": "",
+        "url": "",
+        "position": "Independent Social Media Consultant",
+        "summary": "Projects included: ",
+        "start": "2015-02",
+        "end": "2015-08",
+        "keywords": ["C++","C","Linux","R","Clojure"],
+        "highlights": ["Setting up their social media", "Creating ad campaigns"]
+      },
+
+      {
+        "employer": "OptionRally",
+        "position": "Sales Account Manager",
+        "summary": "Speaking with clients about their finances helped improve my communication skills as well as training me in the high pressure environment of sales",
+        "start": "2016-03",
+        "end": "2016-05",
+        "keywords": ["Novell","Active Directory","Linux","Windows"]
+      },
+
+      {
+        "employer": "ZIGZAG",
+        "url": "https://zigzag.am/en",
+        "position": "IT Assistant",
+        "summary": "Assisted the IT department at a big office, including networking, troubleshooting, and technical support.",
+        "start": "2013-07",
+        "end": "2013-07",
+        "keywords": ["Novell","Active Directory","Linux","Windows"]
+      },
+
+      {
+        "employer": "Vitesse",
+        "url": "https://vitesse.am/en",
+        "position": "Intern Mechanic",
+        "summary": "Assisted the mechanical department of the BRP Service Center repairing and servicing ATVs, Jetskis, and Snowmobiles.",
+        "start": "2011-07",
+        "end": "2011-07",
+        "keywords": ["Novell","Active Directory","Linux","Windows"]
+      }
+    ]
+
+  },
+
+  "education": {
+
+    "summary": "",
+
+    "level": "degree",
+
+    "degree": "BSCS",
+
+    "history": [
+
+      {
+        "institution": "University College London",
+        "title": "Theoretical Physics",
+        "studyType": "BSc",
+        "title": "BSCS",
+        "url": "https://www.cornell.edu/",
+        "start": "2016-09",
+        "end": "2019-06",
+        "grade": "75%",
+        "summary": "A multiline summary of the education.",
+        "curriculum": ["Course 1", "Course 2", "Course 2"],
+        "highlights": ["Finished first year with 75%" ,"Teamworking skills developed through group research projects and presentations."]
+      }
+
+    ]
+
+  },
+
+  "affiliation": {
+    "summary": "Member of numerous collegiate and professional groups and organizations.",
+    "history": [
+      {
+        "role": "Member",
+        "organization": "IEEE",
+        "url": "https://www.ieee.org/index.html",
+        "start": "2013-06",
+        "summary": "Member in good standing since 2013-06."
+      },
+      {
+        "role": "Member",
+        "organization": "Apple Developer Network",
+        "url": "https://developer.apple.com/",
+        "summary": "Member of the [Apple Developer program](https://developer.apple.com/) since 2008."
+      },
+      {
+        "role": "Subscriber",
+        "organization": "MSDN",
+        "url": "https://msdn.microsoft.com",
+        "start": "2010",
+        "summary": "Super-Ultra-gold level Ultimate Access MSDN subscriber package with subscription toaster and XBox ping pong racket."
+      },
+      {
+        "role": "Coordinator",
+        "organization": "Campus Coder's Meetup",
+        "start": "2003-02",
+        "end": "2004-04",
+        "summary": "Host of a monthly **campus-wide meetup for CS students**. Code, coffee, and crullers!"
+      }
+    ]
+  },
+
+  "service": {
+
+    "summary": "Active US Army Reserve member and Technology for Tots technical consultant and volunteer coordinator.",
+
+    "history": [
+      {
+        "flavor": "volunteer",
+        "position": "Technical Consultant",
+        "organization": "Technology for Tots",
+        "url": "http://technology-for-tots.org",
+        "start": "2003-11",
+        "end": "2005-06",
+        "summary": "Summary of this volunteer stint.",
+        "highlights": ["Accomplishment 1", "Accomplishment 2", "etc"]
+      },
+      {
+        "flavor": "military",
+        "position": "NCO",
+        "organization": "US Army Reserves",
+        "url": "http://www.usar.army.mil/",
+        "start": "1999-11",
+        "end": "2003-06",
+        "summary": "Summary of this military stint.",
+        "highlights": ["Accomplishment 1", "Accomplishment 2", "etc"]
+      }
+    ]
+
+  },
+
+  "skills": {
+
+    "sets": [
+      {
+        "name": "Web",
+        "level": "advanced",
+        "skills": [
+          "JavaScript", "HTML 5", "CSS", "LAMP", "MVC", "REST"
+        ]
+      },
+      {
+        "name": "JavaScript",
+        "level": "master",
+        "skills": [
+          "Node.js", "Angular.js", "jQuery", "Bootstrap", "React.js", "Backbone.js"
+        ]
+      },
+      {
+        "name": "Database",
+        "level": "intermediate",
+        "skills": [
+          "MySQL", "PostgreSQL", "NoSQL", "ORM", "Hibernate"
+        ]
+      },
+      {
+        "name": "Cloud",
+        "level": "intermediate",
+        "skills": [
+          "AWS", "EC2", "RDS", "S3", "Azure", "Dropbox"
+        ]
+      },
+      {
+        "name": "Project",
+        "level": "beginner",
+        "skills": [
+          "Agile", "TFS", "JIRA", "GitHub", "Unified Process", "MS Project"
+        ]
+      }
+    ],
+
+    "list": [
+      {
+        "name": "C++",
+        "id": "1",
+        "summary": "Optional summary of your experience with the skill.",
+        "level": "9",
+        "years": 7,
+        "proof": "http://myblog.com/interesting-cplusplus-post"
+      },
+      {
+        "name": "Ruby",
+        "id": "2",
+        "summary": "Optional summary of your experience with the skill.",
+        "level": "9",
+        "years": 7,
+        "proof": "http://myblog.com/interesting-cplusplus-post"
+      },
+      {
+        "name": "Xcode",
+        "summary": "Xcode 6 development.",
+        "level": "5",
+        "years": "3"
+      },
+      {
+        "name": "Linux",
+        "summary": "Optional summary of your experience with the skill.",
+        "level": "advanced",
+        "years": "4+"
+      },
+      {
+        "name": "Agile",
+        "summary": "Optional summary of your experience with the skill.",
+        "level": "B+",
+        "years": 2
+      }
+    ]
+  },
+
+  "samples": [
+    {
+      "title": "Asteroids",
+      "summary": "A browser-based space shooter built on Three.js.",
+      "url": "http://janef.me/asteroids",
+      "date": "2014-09"
+    },
+    {
+      "title": "Rememberpedia",
+      "summary": "A website to help you remember things.",
+      "url": "https://rememberpedia.com",
+      "date": "2015-07"
+    }
+  ],
+
+  "writing": [
+    {
+      "title": "Teach Yourself GORFF in 21 Days",
+      "flavor": "book",
+      "date": "2008",
+      "publisher": {
+        "name": "Amazon",
+        "url": "https://www.amazon.com"
+      },
+      "url": "http://url.to.publication.com/blah",
+      "author": [ "Jane Fullstacker", "John Smith" ],
+      "summary": "A primer on the programming language of GORFF, whose for loops are coterminous with all of time and space."
+    },
+    {
+      "title": "Building User Interfaces with Electron and Atom",
+      "flavor": "article",
+      "date": "2011",
+      "publisher": {
+        "name": "Code Project",
+        "url": "http://codeproject.com"
+      },
+      "url": "http://codeproject.com/build-ui-electron-atom.aspx"
+    },
+    {
+      "title": "Jane Fullstacker's Blog",
+      "flavor": "blog",
+      "date": "2011",
+      "publisher": {
+        "name": "self",
+        "url": "http://janef.me"
+      },
+      "url": "http://janef.me"
+    }
+  ],
+
+  "reading": [
+    {
+      "title": "r/programming",
+      "flavor": "website",
+      "url": "https://www.reddit.com/r/programming/",
+      "summary": "Daily reader and longtime lurker."
+    },
+    {
+      "title": "Hacker News / YCombinator",
+      "flavor": "website",
+      "url": "https://news.ycombinator.com/",
+      "summary": "Daily reader and longtime lurker."
+    },
+    {
+      "title": "Coding Horror",
+      "flavor": "blog",
+      "url": "http://www.codinghorror.com",
+      "author": "Jeff Atwood",
+      "summary": "Reader since 2007; member of the StackOverflow Beta."
+    },
+    {
+      "title": "Code Complete",
+      "flavor": "book",
+      "url": "http://www.cc2e.com/Default.aspx",
+      "author": "Steve McConnell",
+      "date": "2014-09",
+      "summary": "My 'desert-island' software construction manual."
+    }
+  ],
+
+  "speaking": [
+    {
+      "title": "Data Warehousing Evolved: DARMA 2.0",
+      "role": "Speaker",
+      "event": "OPENSTART 2013 Developer's Conference",
+      "location": "Portland, OR",
+      "date": "2012",
+      "highlights": [
+        "Won 'Best Presentation on an Emerging Technical Field' prize."
+      ]
+    }
+  ],
+
+  "recognition": [
+    {
+      "flavor": "award",
+      "from": "Google",
+      "title": "Honorable Mention",
+      "event": "Summer of Code",
+      "date": "2012"
+    },
+    {
+      "flavor": "honor",
+      "from": "Cornell University",
+      "title": "Summa cum laude",
+      "event": "graduation",
+      "date": "2012"
+    }
+  ],
+
+  "references": [
+    {
+      "name": "John Davidson",
+      "flavor": "professional",
+      "private": true,
+      "contact": [
+        {
+          "label": "Mobile",
+          "flavor": "phone",
+          "value": "9-(999)-999-9999"
+        },
+        {
+          "label": "Work email",
+          "flavor": "email",
+          "value": "jdavidson@veridiandynamics.com"
+        }
+      ]
+    }
+  ],
+
+  "testimonials": [
+    {
+      "name": "John Davidson",
+      "flavor": "professional",
+      "quote": "Jane is awesome! I'd hire her again in a heartbeat.",
+      "private": true
+    },
+    {
+      "name": "Elias Fullstacker",
+      "flavor": "technical",
+      "quote": "I worked with Jane on Jabberwocky and can vouch for her awesome technical capabilities and attention to detail. Insta-hire."
+    },
+    {
+      "name": "Dana Nevins",
+      "flavor": "personal",
+      "quote": "I've known Jane personally and professionally for almost ten years. She is one in a million."
+    }
+  ],
+
+  "languages": [
+    {
+      "language": "English",
+      "level": "Native"
+    },
+    {
+      "language": "Spanish",
+      "level": "Moderate",
+      "years": 10
+    }
+  ],
+
+  "extracurricular": [
+    {
+      "title": "Bay Area Crew Club",
+      "activity": "",
+      "location": "San Francisco, CA",
+      "start": "2014-05"
+    },
+    {
+      "title": "Organizer / Manager",
+      "activity": "JavaScript Game Development Meetup",
+      "location": "Austin, TX",
+      "start": "2011-03",
+      "end": "2014-01",
+      "highlights": [
+        "Monthly speaker on creative JavaScript development.",
+        "Founded group and oversaw growth to 500+ members."
+      ]
+
+    }
+  ],
+
+  "governance": [
+    {
+      "flavor": "board",
+      "role": "Member",
+      "organization": "The Mommies Network",
+      "url": "http://themommiesnetwork.org",
+      "start": "2008-02",
+      "end": "2010-01",
+      "summary": "Since 2008 I've been a full-time member of the board of directors for TMN."
+    },
+    {
+      "flavor": "committee",
+      "role": "Academic Contributor",
+      "organization": "Khronos Group",
+      "url": "https://www.khronos.org",
+      "start": "2015-01",
+      "highlights": [
+        "Participated in GORFF standardization process (Draft 2)."
+      ]
+    }
+  ],
+
+  "interests": [
+    {
+      "name": "reading",
+      "summary": "Jane is a fan of mystery novels and courtroom dramas including Agatha Christie and John Grisham.",
+      "keywords": [ "mystery", "Agatha Christie", "John Grisham" ]
+    },
+    {
+      "name": "hiking",
+      "summary": "Jane enjoys hiking, light mountain climbing, and has four summits under her belt!"
+    },
+    {
+      "name": "yoga"
+    }
+  ]
+
+
+}

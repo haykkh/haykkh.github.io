@@ -1,0 +1,153 @@
+{
+  "basics": {
+    "name": "Hayk Khachatryan",
+    "label": "Programmer",
+    "email": "hi@hayk.io",
+    "phone": "+44 (0) 7555 724 204",
+    "website": "hayk.io",
+    "summary": ["Second year UCL Theoretical Physics student (1st expected)", "Self taught intermediate programmer (Python, Mathematica)", "Freelance Web Developer", "Representative for Physics students in my year"],
+    "location": {
+      "address": "Flat 1, 20 Oakley Road",
+      "postalCode": "N1 3LS",
+      "city": "London",
+      "countryCode": "GB",
+      "region": "United Kingdom"
+    },
+    "profiles": [
+      {
+        "network": "GitHub",
+        "username": "haykkh",
+        "url": "https://github.com/haykkh"
+      }
+    ]
+  },
+    "education": [
+    {
+      "institution": "University College London",
+      "url": "https://ucl.ac.uk/",
+      "title": "Theoretical Physics",
+      "area": "Theoretical Physics",
+      "summary": "Achieved a grade of 75% in my first year",
+      "studyType": "BSc",
+      "startDate": "2016-09",
+      "endDate": "2019-06",
+      "gpa": "75%",
+      "courses": [
+        "Practical Mathematics and Computing (Python and Mathematica): 84%",
+        "Mathematical Methods II: 91%"
+      ]
+    }
+  ],
+  "work": [
+    {
+      "position": "Freelance Web Developmer",
+      "website": "",
+      "startDate": "2015-01",
+      "endDate": "",
+      "summary": "Developed full stack, responsive websites for my clients.",
+      "highlights": [
+        "JekyllNow, Wordpress",
+        "Bootstrap, Polymer",
+        "LAMP stacks"
+      ]
+    },
+    {
+      "company": "OptionRally",
+      "position": "Sales Account Manager",
+      "website": "",
+      "startDate": "2016-03",
+      "endDate": "2016-05",
+      "summary": "Addressed clients issues with their finances and resolved their concerns with investments. Improved my communication skills through the high pressure environment of finance sales.",
+      "highlights": []
+    },
+    {
+      "position": "Independant Social Media Consultant",
+      "website": "",
+      "startDate": "2015-02",
+      "endDate": "2015-08",
+      "summary": "Launched  social media presences and designed ad campaigns that increased my clients' following by over 60%.",
+      "highlights": [
+      ]
+    },
+    {
+      "company": "ZIGZAG",
+      "position": "IT Assistant",
+      "website": "zigzag.am/en",
+      "startDate": "2013-07",
+      "endDate": "2013-07",
+      "summary": "Diagnosed and troubleshooted networking and technical issues at the IT department of an office of 50 employees.",
+      "highlights": []
+    },
+    {
+      "company": "Vitesse",
+      "position": "Intern Mechanic",
+      "website": "vitesse.am",
+      "startDate": "2011-07",
+      "endDate": "2011-07",
+      "summary": "Repaired and serviced ATVs, jetskis, and snowmobiles at the mechanical department of the BRP Service Center.",
+      "highlights": []
+    }
+  ],
+  "volunteer": [],
+
+  "awards": [],
+  "publications": [],
+  "skills": [
+    {
+      "name": "Web Development",
+      "level": "Intermediate",
+      "keywords": [
+        "HTML5",
+        "CSS3/SASS",
+        "Javascript",
+        "Polymer"
+      ]
+    },
+    {
+      "name": "Programming",
+      "level": "Intermediate",
+      "keywords": [
+        "Python",
+        "Mathematica",
+        "Haskell",
+        "Git",
+        "LATEX",
+        "Unix"
+      ]
+    },
+    {
+      "name": "Software",
+      "level": "Advanced",
+      "keywords": [
+        "Photoshop",
+        "Lightroom",
+        "Final Cut Pro",
+        "spreadsheets"
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "language": "English",
+      "fluency": "Native speaker"
+    },
+    {
+      "language": "Armenian",
+      "fluency": "Native speaker"
+    },
+    {
+      "language": "Greek",
+      "fluency": "Fluent"
+    }
+  ],
+  "interests": [
+    {
+      "name": "Wildlife",
+      "keywords": [
+        "Ferrets",
+        "Unicorns"
+      ]
+    }
+  ],
+  "references": []
+}

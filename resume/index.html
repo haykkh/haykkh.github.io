@@ -1,222 +1,700 @@
-<!doctype html>
-<html class="no-js" lang="">
+<!DOCTYPE html>
+<html>
+    
     <head>
         <meta charset="utf-8">
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>Hayk Khacahtryan</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-
-        <link rel="manifest" href="site.webmanifest">
-        <link rel="apple-touch-icon" href="icon.png">
-        <!-- Place favicon.ico in the root directory -->
-
-        <link rel="stylesheet" href="normalize.css">
-        <link rel="stylesheet" href="style.css">
-        <link href="https://fonts.googleapis.com/css?family=Josefin+Slab:600,700" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, user-scalable=no, minimal-ui">
+        <title>Hayk Khachatryan</title>
+        <link href='http://fonts.googleapis.com/css?family=Merriweather:400,300,700'
+        rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600'
+        rel='stylesheet' type='text/css'>
+        <style>
+            body, html {
+              padding-top:2.5em;
+              margin:0;
+              background-color:#fafafa;
+            }
+            
+            .note {
+              display:block;
+              position: absolute;
+              top:10px;
+              left:10px;
+            
+              font-family: "Open Sans";
+              font-size: 0.6em;
+            }
+            
+            .new {
+              background-color: #81C784;
+            
+              border: 1px solid #757575;
+              padding: 1px;
+              border-radius: 4px;
+            
+            }
+            
+            /* Header */
+            
+            header {
+              width:100%;
+              vertical-align: middle;
+              text-align: center;
+             
+            }
+            
+            .header-content {
+              display: inline-block;
+            }
+            
+            .pic {
+              margin: 0 auto;
+              margin-top:-2.5em;
+              
+              border-radius:10em;
+              height:4em;
+              width:4em;
+              
+              border: 2px solid #e0e0e0;
+              transition : all 0.5s linear;
+              
+            }
+            
+            @-webkit-keyframes wiggle {
+              0%   {
+                transform: rotate(0deg);
+              }
+              25%  {
+                transform: rotate(-30deg);
+              }
+              50%  {
+                transform: rotate(15deg);
+              }
+              100% {
+                transform: rotate(0deg);
+              }
+            }
+            
+            .pic:hover {
+              /*Webkit fix*/
+              -webkit-transform: translateZ(0);
+              
+              cursor:pointer;
+              
+              -webkit-animation: wiggle 0.7s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+            }
+            
+            .header-text {
+              margin-top:0.5em;
+              margin-left:1em;
+            }
+            
+            header p {
+              text-align:center;
+              font-family: "Merriweather";
+              
+              margin:0;
+              
+              color: #212121;
+            }
+            
+            .first-name {
+               font-size: 1.05em;
+            }
+            
+            .subtitle {
+              font-family: "Merriweather";
+              padding-top:.3em;
+              font-size:0.55em;
+              font-weight:500;
+              color: #424242;
+            }
+            
+            /* Information */
+            
+            .paper {
+              margin: 0 auto;
+              margin-bottom:1em;
+              
+              background-color:white;
+              width:60%;
+              
+              padding:0.5em 0 0.5em 0;
+              
+              border-top: 1px solid #e0e0e0;
+              border-left: 1px solid #e0e0e0;
+              border-right: 1px solid #e0e0e0;
+              border-bottom: 3px solid #e0e0e0;
+              border-radius:3px;
+            }
+            
+            @media(max-width:992px) {
+              .paper {
+                width:80%;
+              }
+            }
+            
+            /* Content Part */
+            
+            .content-wrapper {
+              padding-right:7.25%;
+            }
+            
+            .content {
+              display:table;
+              width:100%;
+              
+              padding-top:1.5em;
+              
+              /*border-top: 1px solid #eeeeee;*/
+            }
+            
+            .content:last-child {
+              margin-bottom: 2em;
+            }
+            
+            body > div > article > div > section:last-child {
+              padding-bottom:1.5em;
+            }
+            
+            .row {
+                display:table-row;
+            }
+            .row div {
+                display:table-cell;
+            }
+            
+            .content-cat {
+              font-family: "Merriweather";
+              font-variant:small-caps;
+              font-weight:300;
+              letter-spacing: 1px;
+              
+              color: #212121;
+              
+              font-size:0.975em;
+              
+              text-align:center;
+              vertical-align:middle;
+            
+              padding-left:6.66%;
+              width:30%;
+            }
+            
+            .content-cat p {
+              font-size:0.55em;
+              font-weight:600;
+              
+              margin-bottom:0;
+            }
+            
+            .content-text {
+              border-left:1px solid #e0e0e0;
+              transition: border 0.66s ease-in;
+            }
+            
+            .big-text {
+              vertical-align:top;
+            }
+            
+            .content-text ul {
+              padding:0;
+              margin:0;
+              margin-top:0.15em;
+              
+              width:85%;
+              margin-left:1.5em;
+            }
+            
+            .content-text ul:last-child {
+              margin-bottom:0.5em;
+            }
+            
+            .content-text ul li {
+              font-family: "Open Sans";
+              font-size:0.7em;
+              
+              display:inline-block;
+              
+            }
+            
+            .content-text ul li:first-child {
+              width:35%;
+              
+              color: #424242;
+              
+              font-weight:600;
+            }
+            
+            .content-text ul li a, div.content-text.work-listing.education-listing > p > strong > a {
+              text-decoration: none;
+              color: #0277bd;
+            }
+            
+            .content-text ul li a:hover {
+              color:#4fc3f7;
+            }
+            
+            .work-listing p {
+              font-family: "Open Sans";
+              font-size:0.7em;
+              
+              color: #424242;
+              
+              margin-left:2em;
+              margin-top:0.45em;
+              margin-bottom: 0.45em;
+            }
+            
+            div.content-text.work-listing.education-listing > p:nth-child(2) {
+              margin-top:0.25em;
+            }
+            
+            .work-listing .highlight {
+              font-family: "Open Sans";
+              font-size:0.7em;
+              font-weight:400;
+              
+              color: #424242;
+              
+              margin-left:3.25em;
+              padding-left:0.5em;
+              
+              border-left:1px solid #e0e0e0;
+              
+            }
+            
+            .education-listing > .heading {
+              font-weight:600;
+              
+              margin-top:0.75em;
+              margin-left:2em;
+            }
+            
+            .education-listing > .highlight {
+              margin-left:3.25em;
+            }
+            
+            .highlight {
+              transition: border .33s ease-in;
+            }
+            
+            .profiles-listing ul li, .profiles-listing ul li:first-child {
+              width:32%;
+              font-weight: normal;
+            }
+            
+            .work-content, .education-content {
+              padding-top: .75em;
+            }
+            
+            section.content.education-content > div > div.content-cat {
+              vertical-align: top;
+            }
+            
+            div.content-text.skills-listing > p {
+              font-family: "Open Sans";
+              font-size:0.7em;
+              font-weight:400;
+            
+              margin-left: 2em;
+              margin-top: 0.45em;
+              margin-bottom: 0.45em;
+            }
+            
+            div.content-text.skills-listing > p > {
+              color:#212121;
+            }
+            
+            @media screen and (max-width: 600px) {
+              body, html {
+                padding-top: 30px;
+              }
+            
+              .paper {
+                width:95%;
+              }
+            
+              .row div {
+                display: block;
+              }
+            
+              .content-cat {
+                width: 100%;
+              }
+            
+              .content-text ul li {
+                width: 100%;
+              }
+            
+              .content-text ul li:first-child {
+                width: 100%;
+              }
+              
+              .education-listing > .highlight {
+                margin-left: 30px;
+              }
+            }
+        </style>
+        <style media="print">
+            body, html {
+              background-color: white;
+              padding-top: 1.5em;
+            }
+            
+            .paper {
+              width:100%;
+              border: 0;
+            
+              padding-top: 0;
+            }
+            
+            header p {
+              font-size: 1.3em;
+            }
+            
+            .subtitle {
+              font-size: 0.7em;
+            }
+            
+            .header-pic {
+              float:left;
+            }
+            
+            .profiles {
+              display:none;
+            }
+            
+            .content {
+              page-break-inside:avoid; 
+              page-break-after:auto;
+            }
+            
+            .header-text {
+              float:left;
+              margin-top: -1.6em;
+            }
+            
+            .content-wrapper > .content:first-child {
+              padding-top: 2em;
+            }
+            
+            .content:last-child {
+              padding-bottom: 0;
+            }
+            
+            .content-cat {
+              width:33%;
+              color:black;
+              text-align: left;
+            }
+            
+            .content-cat p {
+              font-size:0.6em;
+              font-weight: 600;
+            }
+            
+            header p, .content-text, .work-listing p, .content-text ul li:first-child, .work-listing .highlight, .content-text.skills-listing > ul > li > .highlight {
+              color:black;
+            }
+            
+            .content-text.skills-listing > ul > li span, .subtitle {
+              color:#212121;
+            }
+            
+            .content-text ul:last-child {
+              margin-bottom: 0.25em;
+            }
+            
+            .content-text ul li:first-child {
+              width:50%;
+            }
+            
+            .profiles-listing ul li:first-child {
+              width:32%;
+            }
+            
+            div.content-text.skills-listing > ul > li {
+              width:33%;
+            }
+            
+            .work-listing p {
+              margin-bottom: 0.1em;
+            }
+            
+            div.content-text.skills-listing > ul > li > p {
+              margin-top: 0.4em;
+              margin-bottom: 0.5em;
+            }
+            
+            div.content-text.skills-listing > ul > li {
+              padding-left: 1.5em;
+            }
+            
+            div.content-text.skills-listing > ul > li:first-child {
+              padding-left: 2em;
+            }
+            
+            .note {
+              display:none;
+            }
+            
+            .content-text:hover {
+              border-left:1px solid #eeeeee;
+            }
+            
+            .content-text ul li a:hover {
+              color:#4fc3f7;
+            }
+            
+            .highlight:hover, .content-text.skills-listing > ul > li > .highlight:hover {
+              border-left:1px solid #eeeeee;
+            }
+            
+            .big-text {
+              padding-top: 0;
+            }
+        </style>
     </head>
+    
     <body>
-        <!--[if lte IE 9]>
-            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
-        <![endif]-->
+        <div class="resume-wrapper">
+            <article class="paper">
+                <header>
+                    <div class="header-content">
+                        <div class="header-text">
+                            <p>Hayk Khachatryan</p>
+                            <p class="subtitle">Programmer</p>
+                        </div>
+                    </div>
+                </header>
+                <div class="content-wrapper">
+                    <!-- SUMMARY -->
+                    <section class="content">
+                        <div class="row">
+                            <div class="content-cat">About</div>
+                            <div class="content-text work-listing education-listing">
+                                <p>Second year UCL Theoretical Physics student (1st expected)</p>
+                                <p>Self taught intermediate programmer (Python, Mathematica)</p>
+                                <p>Freelance Web Developer</p>
+                                <p>Representative for Physics students in my year</p>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- CONTACT -->
+                    <section class="content">
+                        <div class="row">
+                            <div class="content-cat">Contact</div>
+                            <div class="content-text">
+                                <ul>
+                                    <li>Website</li>
+                                    <li><a href="hayk.io">hayk.io</a>
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <li>Email</li>
+                                    <li><a href="mailto:hi@hayk.io" "email me">hi@hayk.io</a>
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <li>Phone</li>
+                                    <li>+44 (0) 7555 724 204</li>
+                                </ul>
+                                <ul>
+                                    <li>Based in</li>
+                                    <li>London, United Kingdom</li>
+                                </ul>
+                                <ul>
+                                    <li>GitHub</li>
+                                    <li><a href="https://github.com/haykkh">haykkh</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="content">
+                        <div class="row">
+                            <div class="content-cat big-text">Education
+                                <p>2016-09 till 2019-06</p>
+                            </div>
+                            <div class="content-text work-listing education-listing">
+                                <p style="margin-top:2.4em;"> <strong>Theoretical Physics BSc</strong>
+at <strong>University College London:</strong>
 
-        <!-- Add your site or application content here -->
+                                </p>
+                                <p>Achieved a grade of 75% in my first year</p>
+                                <p class="highlight">Practical Mathematics and Computing (Python and Mathematica): 84%</p>
+                                <p
+                                class="highlight">Mathematical Methods II: 91%</p>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="content">
+                        <div class="row">
+                            <div class="content-cat big-text">Work Experience
+                                <p>2016-03 till 2016-05</p>
+                            </div>
+                            <div class="content-text work-listing education-listing">
+                                <p style="margin-top:2.4em;"> <strong>Sales Account Manager</strong>
+at <strong>OptionRally:</strong>
 
-        <header>
-        	<div id="details">
-        		<div>
-        			<h1>        	
-        				Hayk
-        			<br>Khachatryan
-        			</h1>
-		
-        			<a href="http://hayk.io" title="hayk.io">hayk.io</a>
-        			<a href="mailto:hi@hayk.io?subject=Hi Hayk!" "hi@hayk.io">	hi@hayk.io</a>
-        			<a href="http://github.com/haykkh" title="">github</a>
-					<a href="sms:+44-7555-724-204">+44 (0) 7555 724 204</a>
-                    <a href="http://hayk.io/hayk-khachatryan.pdf">[pdf download]</a>
-        		</div>
-        	</div>
+                                </p>
+                                <p>Addressed clients issues with their finances and resolved their concerns
+                                    with investments. Improved my communication skills through the high pressure
+                                    environment of finance sales.</p>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="content work-content">
+                        <div class="row">
+                            <div class="content-cat big-text">
+                                <p>2015-02 till 2015-08</p>
+                            </div>
+                            <div class="content-text work-listing education-listing">
+                                <p> <strong>Independant Social Media Consultant:</strong>
 
+                                </p>
+                                <p>Launched social media presences and designed ad campaigns that increased
+                                    my clients&#x27; following by over 60%.</p>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="content work-content">
+                        <div class="row">
+                            <div class="content-cat big-text">
+                                <p>2015-01 till today</p>
+                            </div>
+                            <div class="content-text work-listing education-listing">
+                                <p> <strong>Freelance Web Developmer:</strong>
 
-        	<div id="profile">
-        		<ul>
-        			<li>Second year UCL Theoretical Physics student (<strong class="redder">1st&nbsp;expected</strong>)</li>
+                                </p>
+                                <p>Developed full stack, responsive websites for my clients.</p>
+                                <p class="highlight">JekyllNow, Wordpress</p>
+                                <p class="highlight">Bootstrap, Polymer</p>
+                                <p class="highlight">LAMP stacks</p>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="content work-content">
+                        <div class="row">
+                            <div class="content-cat big-text">
+                                <p>2013-07 till 2013-07</p>
+                            </div>
+                            <div class="content-text work-listing education-listing">
+                                <p> <strong>IT Assistant</strong>
+at <strong><a href="zigzag.am/en">ZIGZAG:</a></strong>
 
-        			<li>Self taught intermediate programmer (<strong class="redder">Python,&nbsp;Mathematica</strong>)</li>
-        			<li>Freelance <strong class="redder">Web&nbsp;Developer</strong></li>
+                                </p>
+                                <p>Diagnosed and troubleshooted networking and technical issues at the IT
+                                    department of an office of 50 employees.</p>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="content work-content">
+                        <div class="row">
+                            <div class="content-cat big-text">
+                                <p>2011-07 till 2011-07</p>
+                            </div>
+                            <div class="content-text work-listing education-listing">
+                                <p> <strong>Intern Mechanic</strong>
+at <strong><a href="vitesse.am">Vitesse:</a></strong>
 
-        			<li>Representative for Physics students in my year</li>
-        		</ul>
-        		<br>
-        		Seeking internship in technology company
-        	</div>
-
-        </header>
-        
-
-
-        <div class="content">
-
-        	
-        <div class="section" id="education">
-        		<h1>Education</h1>
-        		<div class="sub-section" id="ucl" >
-        			<h2><strong>University College London</strong>/ <strong class="redder">Theoretical&nbsp;Physics</strong> BSc</h2>
-
-        				<ul>
-        					<li>Finished first year with <strong class="redder">75%</strong></li>
-
-        					<li>
-        						Notable modules:
-        						<ul>
-        							<li>Practical Mathematics and <strong class="redder">Computing</strong>: 84%
-        								<ul>
-        									<li><strong>Python</strong> and <strong>Mathematica</strong></li>
-        								</ul>
-        							</li>
-        							<li>Mathematical Methods II: 91%</li>
-        						</ul>
-        					</li>
-        					<li>Teamworking skills developed through group research projects and presentations.</li>
-
-        				</ul>        					
-        		</div>
-        		<div class="sub-section" id="foleys">
-        			<h2><strong>Foley's School</strong> </h2>
-        				<ul>
-        					<li>
-        						A Levels
-        						<ul>
-        							<li>Maths: A*, Further Maths: A, Physics: A</li>
-        							<li>Greek: B (at AS level)</li>
-        						</ul>
-        					</li>
-        					<li>GCSE
-        						<ul>
-        							<li>9 A* - B </li>
-        						</ul>
-        					</li>
-        				</ul>        					
-        		</div>
-        	</div>
-
-        				<div class="section" id="skills">
-        		<h1>Skills</h1>
-        		<div class="sub-section" id="programming" >
-        			<h2><span class="redder">Programming&nbsp;Languages</span></h2>
-
-        				<ul>
-        					<li>
-        						Competent in Python, Mathematica, Git, HTML5, CSS
-        					</li>
-        					<li>Some knowledge in Javascript, Haskell, LATEX, jQuery, PHP and C</li>
-        				</ul>        					
-        		</div>
-
-        		<div class="sub-section" id="systems">
-        			<h2><strong>Systems</strong></h2>
-        				<ul>
-        					<li>
-        						Mac OS X, Linux/Unix
-        					</li>
-        				</ul>        					
-        		</div>
-
-        		<div class="sub-section" id="software">
-        			<h2><strong>Software</strong></h2>
-        				<ul>
-        					<li>
-        						Photoshop, Lightroom, Final Cut Pro, spreadsheets, database management  
-        					</li>
-        				</ul>        					
-        		</div>
-        	     <div class="sub-section" id="languages" >
-        			<h2><strong>Languages</strong></h2>
-
-        				<ul>
-        					<li>
-        						English, Armenian, Greek
-        					</li>
-        				</ul>        					
-        		</div>
-
-        	</div>
-
-        	<div class="section" id="experience">
-        		<h1>Experience</h1>
-        		<div class="sub-section" id="web-dev" >
-        			<h2><strong class="redder">Freelance&nbsp;Web&nbsp;Development</strong></h2>
-        				<ul>
-        					<li>Responsible for full stack for all clients</li>
-        					<li>
-        						Some experience with:
-        						<ul>
-        							<li>Wordpress, ghost, and JekyllNow</li>
-        							<li>Bootstrap, Polymer</li>
-        							<li>LAMP stacks</li>
-
-        						</ul>
-        					</li>
-        				</ul>        					
-        		</div>
-				<div class="sub-section" id="web-dev" >
-        			<h2><strong>Independent Social Media Consultant</strong>/ Zigie, ZIGZAG</h2>
-        				<ul>
-        					<li>
-        						Projects included:
-        						<ul>
-        							<li>Setting up their social media</li>
-        							<li>Creating ad campaigns</li>
-        						</ul>
-        					</li>
-        				</ul>        					
-        		</div>
-        		<div class="sub-section" id="option-rally" >
-        			<h2><strong>Sales Account Manager</strong>/ OptionRally</h2>
-        			<h3>March 2016 - May 2016 | Limassol, Cyprus</h3>
-
-        				<ul>
-        					<li>
-        						Speaking with clients about their finances helped improve my <strong>communication</strong> skills as well as training me in the <strong>high pressure environment</strong> of sales
-        					</li>
-        				</ul>        					
-        		</div>
-        		<div class="sub-section" id="zigzag" >
-        			<h2><strong class="redder">IT Assistant</strong>/ ZIGZAG</h2>
-        			<h3>July 2013 | Yerevan, Armenia </h3>
-
-        				<ul>
-        					<li>
-        						Assisted the IT department at a big office, including networking, troubleshooting, and technical support.
-        					</li>
-        				</ul>        					
-        		</div>
-        		<div class="sub-section" id="vitesse">
-        			<h2><strong>Intern Mechanic</strong>/ Vitesse</h2>
-        			<h3>July 2011 | Yerevan, Armenia</h3>
-        				<ul>
-        					<li>
-        						Assisted the mechanical department of the BRP Service Center repairing and servicing ATVs, Jetskis, and Snowmobiles.
-        					</li>
-
-
-        				</ul>        					
-        		</div>
-        	</div>
-
-     	
-
+                                </p>
+                                <p>Repaired and serviced ATVs, jetskis, and snowmobiles at the mechanical
+                                    department of the BRP Service Center.</p>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="content">
+                        <div class="row">
+                            <div class="content-cat">Skills</div>
+                            <div class="content-text skills-listing">
+                                <p> <span class="name">
+                        <strong>
+                          Web Development
+                        </strong>
+                    </span>
+ <span>(Intermediate):</span>
+HTML5, CSS3/SASS,
+                                    Javascript, Polymer</p>
+                                <p> <span class="name">
+                        <strong>
+                          Programming
+                        </strong>
+                    </span>
+ <span>(Intermediate):</span>
+Python, Mathematica,
+                                    Haskell, Git, LATEX, Unix</p>
+                                <p> <span class="name">
+                        <strong>
+                          Software
+                        </strong>
+                    </span>
+ <span>(Advanced):</span>
+Photoshop, Lightroom,
+                                    Final Cut Pro, spreadsheets</p>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- LANGUAGE -->
+                    <section class="content">
+                        <div class="row">
+                            <div class="content-cat">Languages</div>
+                            <div class="content-text">
+                                <ul>
+                                    <li>English</li>
+                                    <li>Native speaker</li>
+                                </ul>
+                                <ul>
+                                    <li>Armenian</li>
+                                    <li>Native speaker</li>
+                                </ul>
+                                <ul>
+                                    <li>Greek</li>
+                                    <li>Fluent</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- PROFILES <section class="content profiles">
+                <div class="row">
+                  <div class="content-cat">
+                    Profiles
+                  </div>
+                  <div class="content-text profiles-listing">
+                    <ul>
+                          <li>
+                            <a href="https://github.com/haykkh" target="_blank">
+                              GitHub
+                            </a>
+                          </li>
+                    </ul>
+                  </div>
+                </div>
+              </section>
+             -->
+                    <!-- <section class="content">
+              <div class="row">
+                <div class="content-cat">
+                  Interests
+                </div>
+                <div class="content-text skills-listing">
+                    <p>
+                      <span class="name">
+                          <strong>
+                            Wildlife:
+                          </strong>
+                      </span>
+                        Ferrets, Unicorns
+                    </p>
+                </div>
+              </div>
+            </section>
+           -->
+                </div>
+            </article>
         </div>
-
-
-
-
-        <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
-        <script>
-            window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
-            ga('create','UA-XXXXX-Y','auto');ga('send','pageview')
-        </script>
-        <script src="https://www.google-analytics.com/analytics.js" async defer></script>
     </body>
+
 </html>
