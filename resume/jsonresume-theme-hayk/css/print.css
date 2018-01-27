@@ -105,8 +105,15 @@ div.content-text.skills-listing > ul > li:first-child {
   border-left:1px solid #eeeeee;
 }
 
+.content-text ul li a {
+  color:black!important;
+}
+.content-text ul li a, div.content-text.work-listing.education-listing > p > strong > a {
+  color: black;
+}
+
 .content-text ul li a:hover {
-  color:#4fc3f7;
+  color:black;
 }
 
 .highlight:hover, .content-text.skills-listing > ul > li > .highlight:hover {

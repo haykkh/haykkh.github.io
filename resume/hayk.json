@@ -24,7 +24,7 @@
     "education": [
     {
       "institution": "University College London",
-      "url": "https://ucl.ac.uk/",
+      "website": "https://ucl.ac.uk/",
       "title": "Theoretical Physics",
       "area": "Theoretical Physics",
       "summary": "Achieved a grade of 75% in my first year",
@@ -72,7 +72,7 @@
     {
       "company": "ZIGZAG",
       "position": "IT Assistant",
-      "website": "zigzag.am/en",
+      "website": "http://zigzag.am/en",
       "startDate": "2013-07",
       "endDate": "2013-07",
       "summary": "Diagnosed and troubleshooted networking and technical issues at the IT department of an office of 50 employees.",
@@ -81,17 +81,41 @@
     {
       "company": "Vitesse",
       "position": "Intern Mechanic",
-      "website": "vitesse.am",
+      "website": "http://vitesse.am",
       "startDate": "2011-07",
       "endDate": "2011-07",
       "summary": "Repaired and serviced ATVs, jetskis, and snowmobiles at the mechanical department of the BRP Service Center.",
       "highlights": []
     }
   ],
-  "volunteer": [],
+  "volunteer": [
+    
+  ],
 
   "awards": [],
   "publications": [],
+  "projects": [
+    {
+      "title": "Intergrated Engineering Challenge #2: Global Health",
+      "category": "educational",
+      "website": "http://www.cs.ucl.ac.uk/current_students/syllabus_index_2016_2017/undergrad/engs101p_integrated_engineering/",
+      "organization": "UCL",
+      "role": "Systems Engineer and Liaison Officer",
+      "startDate": "2015-10",
+      "endDate": "2015-11",
+      "summary": "A university project where a a multi-disciplinary team of specialist engineers  formulate, design and verify an effective strategy for the production and distribution (and monitoring) of a vaccine to combat a Tuberculosis Pandemic in Sub Saharan Africa. ",
+      "highlights": ["Designed and developed a control system for the temperature, pH, and stirring of a bio-reactor.", "Developed in C and Processing on a Launchpad microprocessor.", "Liaised with engineers from other disciplines on specifications and requirements."]
+    },
+    {
+      "title": "Analog Affairs",
+      "category": "personal",
+      "role": "Creator",
+      "startDate": "2015-09",
+      "endDate": "",
+      "website": "http://analogaffairs.com",
+      "summary": "My analog photography portfolio."   }
+  ],
+
   "skills": [
     {
       "name": "Web Development",

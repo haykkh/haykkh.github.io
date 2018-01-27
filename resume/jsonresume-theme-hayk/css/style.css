@@ -126,7 +126,7 @@ header p {
 /* Content Part */
 
 .content-wrapper {
-  padding-right:7.25%;
+  padding-right:5%;
 }
 
 .content {
@@ -166,7 +166,7 @@ body > div > article > div > section:last-child {
   text-align:center;
   vertical-align:middle;
 
-  padding-left:6.66%;
+  padding-left:3%;
   width:30%;
 }
 

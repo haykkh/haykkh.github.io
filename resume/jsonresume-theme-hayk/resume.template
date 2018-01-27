@@ -202,38 +202,89 @@
             {{/foreach}}
           {{/if}}
 
-
-          {{#if resume.volunteer.length}}
-            {{#each resume.volunteer}}
-              <section class="content">
-                <div class="row">
-                  <div class="content-cat big-text">
-                    {{#if organization}}
-                      {{organization}}
-                    {{/if}}
-                    {{#if startDate}}
-                      {{#if endDate}}
-                        <p>{{startDate}} till {{endDate}}</p>
+          {{#if resume.skills.length}}
+          <section class="content">
+            <div class="row">
+              <div class="content-cat">
+                Skills
+              </div>
+              <div class="content-text skills-listing">
+                {{#foreach resume.skills}}
+                  <p>
+                    <span class="name">
+                      {{#if name}}
+                        <strong>
+                          {{name}}{{#if level}}{{else}}:{{/if}}
+                        </strong>
                       {{/if}}
+                    </span>
+                    {{#if level}}
+                      <span>({{level}}):</span>
                     {{/if}}
-                  </div>
-                  <div class="content-text work-listing">
-                    {{#if summary}}
-                      <p>
-                        {{summary}}
-                      </p>
+                    {{#if keywords.length}}
+                      {{#commalist keywords}}{{.}}{{/commalist}}
                     {{/if}}
-                    {{#if highlights.length}}
-                      {{#each highlights}}
-                        <p class="highlight">{{.}}</p>
-                      {{/each}}
-                    {{/if}}
-                  </div>
-                </div>
-              </section>
-            {{/each}}
+                  </p>
+                {{/foreach}}
+              </div>
+            </div>
+          </section>
           {{/if}}
 
+          {{#if resume.projects.length}}
+            {{#foreach resume.projects}}
+              {{#if $first}}
+                <section class="content">
+              {{else}}
+                <section class="content work-content">
+              {{/if}}
+                  <div class="row">
+                    <div class="content-cat big-text">
+                      {{#if $first}}
+                        Projects
+                      {{/if}}
+                      {{#if startDate}}
+                        {{#if endDate}}
+                          <p>{{startDate}} till {{endDate}}</p>
+                        {{else}}
+                          <p>{{startDate}} till today</p>
+                        {{/if}}
+                      {{/if}}
+                    </div>
+                    <div class="content-text work-listing education-listing">
+                      {{#ifCond title '||' role}}
+                        {{#if $first}}
+                          <p style="margin-top:2.4em;">
+                        {{else}}
+                          <p>
+                        {{/if}}
+                        {{#ifCond website '&&' title}}
+                          <strong>{{role}}</strong>
+                          at <strong><a href="{{website}}">{{title}}:</a></strong>
+                        {{else}}
+                          {{#if title.length}}
+                            <strong>{{role}}</strong>
+                            at <strong>{{title}}:</strong>
+                          {{else}}
+                            <strong>{{role}}:</strong>
+                          {{/if}}
+                        {{/ifCond}}
+                        </p>
+                      {{/ifCond}}
+                      {{#if summary}}
+                        <p>{{summary}}</p>
+                      {{/if}}
+                      {{#if highlights.length}}
+                        {{#each highlights}}
+                          <p class="highlight">{{.}}</p>
+                        {{/each}}
+                      {{/if}}
+                    </div>
+                  </div>
+                </section>
+            {{/foreach}}
+          {{/if}}
+          
 
 
           {{#if resume.awards.length}}
@@ -264,34 +315,7 @@
             {{/foreach}}
           {{/if}}
 
-          {{#if resume.skills.length}}
-          <section class="content">
-            <div class="row">
-              <div class="content-cat">
-                Skills
-              </div>
-              <div class="content-text skills-listing">
-                {{#foreach resume.skills}}
-                  <p>
-                    <span class="name">
-                      {{#if name}}
-                        <strong>
-                          {{name}}{{#if level}}{{else}}:{{/if}}
-                        </strong>
-                      {{/if}}
-                    </span>
-                    {{#if level}}
-                      <span>({{level}}):</span>
-                    {{/if}}
-                    {{#if keywords.length}}
-                      {{#commalist keywords}}{{.}}{{/commalist}}
-                    {{/if}}
-                  </p>
-                {{/foreach}}
-              </div>
-            </div>
-          </section>
-          {{/if}}
+
 
   <!-- LANGUAGE -->
           {{#if resume.languages.length}}
