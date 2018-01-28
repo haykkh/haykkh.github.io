@@ -55,6 +55,7 @@
       "company": "OptionRally",
       "position": "Sales Account Manager",
       "website": "",
+      "location": "Limassol, Cyprus",
       "startDate": "2016-03",
       "endDate": "2016-05",
       "summary": "Addressed clients issues with their finances and resolved their concerns with investments. Improved my communication skills through the high pressure environment of finance sales.",
@@ -72,6 +73,7 @@
     {
       "company": "ZIGZAG",
       "position": "IT Assistant",
+      "location": "Yerevan, Armenia",
       "website": "http://zigzag.am/en",
       "startDate": "2013-07",
       "endDate": "2013-07",
@@ -81,6 +83,7 @@
     {
       "company": "Vitesse",
       "position": "Intern Mechanic",
+      "location": "Yerevan, Armenia",
       "website": "http://vitesse.am",
       "startDate": "2011-07",
       "endDate": "2011-07",
@@ -133,12 +136,27 @@
       "keywords": [
         "Python",
         "Mathematica",
-        "Haskell",
         "Git",
+        "Unix"
+      ]
+    },
+    {
+      "name": "Programming",
+      "level": "Beginner",
+      "keywords": [
+        "Java",
+        "C",
+        "Haskell",
         "npm",
-        "Unix",
         "JSON"
       ]
+    },
+
+    {
+      "name": "Cloud",
+      "level": "Intermediate",
+      "keywords": [
+        "DigitalOcean"]
     },
     {
       "name": "Software",
