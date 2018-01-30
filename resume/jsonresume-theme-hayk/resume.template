@@ -57,7 +57,7 @@
                 {{#if website}}
                   <ul>
                     <li>Website</li>
-                    <li><a href="{{website}}">{{website}}</a></li>
+                    <li><a href="https://{{website}}">{{website}}</a></li>
                   </ul>
                 {{/if}}
                 {{#if email}}
