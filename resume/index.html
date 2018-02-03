@@ -3,755 +3,361 @@
     
     <head>
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, user-scalable=no, minimal-ui">
         <title>Hayk Khachatryan</title>
-        <link href='http://fonts.googleapis.com/css?family=Merriweather:400,300,700'
-        rel='stylesheet' type='text/css'>
-        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600'
-        rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
         <style>
-            body, html {
-              padding-top:2.5em;
-              margin:0;
-              background-color:#fafafa;
+            html, body, main, section, header, ul, p, h1, h2, h3 {
+              font-family: 'Calibri', 'Helvetica Neue', 'Helvetica', 'Segoe UI', 'sans-serif';
+              font-size: 12px;
+              margin: 0; padding: 0;
+              display: block;
+              line-height: 1.5em;
             }
             
-            .note {
-              display:block;
-              position: absolute;
-              top:10px;
-              left:10px;
-            
-              font-family: "Open Sans";
-              font-size: 0.6em;
-            }
-            
-            .new {
-              background-color: #81C784;
-            
-              border: 1px solid #757575;
-              padding: 1px;
-              border-radius: 4px;
-            
-            }
-            
-            /* Header */
-            
-            header {
-              width:100%;
-              vertical-align: middle;
-              text-align: center;
-             
-            }
-            
-            .header-content {
-              display: inline-block;
-            }
-            
-            .pic {
-              margin: 0 auto;
-              margin-top:-2.5em;
-              
-              border-radius:10em;
-              height:4em;
-              width:4em;
-              
-              border: 2px solid #e0e0e0;
-              transition : all 0.5s linear;
-              
-            }
-            
-            @-webkit-keyframes wiggle {
-              0%   {
-                transform: rotate(0deg);
-              }
-              25%  {
-                transform: rotate(-30deg);
-              }
-              50%  {
-                transform: rotate(15deg);
-              }
-              100% {
-                transform: rotate(0deg);
-              }
-            }
-            
-            .pic:hover {
-              /*Webkit fix*/
-              -webkit-transform: translateZ(0);
-              
-              cursor:pointer;
-              
-              -webkit-animation: wiggle 0.7s cubic-bezier(0.6, -0.28, 0.735, 0.045);
-            }
-            
-            .header-text {
-              margin-top:0.5em;
-              margin-left:1em;
-            }
-            
-            header p {
-              text-align:center;
-              font-family: "Merriweather";
-              
-              margin:0;
-              
-              color: #212121;
-            }
-            
-            .first-name {
-               font-size: 1.05em;
-            }
-            
-            .subtitle {
-              font-family: "Merriweather";
-              padding-top:.3em;
-              font-size:0.55em;
-              font-weight:500;
-              color: #424242;
-            }
-            
-            /* Information */
-            
-            .paper {
-              margin: 0 auto;
-              margin-bottom:1em;
-              
-              background-color:white;
-              width:60%;
-              
-              padding:0.5em 0 0.5em 0;
-              
-              border-top: 1px solid #e0e0e0;
-              border-left: 1px solid #e0e0e0;
-              border-right: 1px solid #e0e0e0;
-              border-bottom: 3px solid #e0e0e0;
-              border-radius:3px;
-            }
-            
-            @media(max-width:992px) {
-              .paper {
-                width:80%;
-              }
-            }
-            
-            /* Content Part */
-            
-            .content-wrapper {
-              padding-right:5%;
-            }
-            
-            .content {
-              display:table;
-              width:100%;
-              
-              padding-top:1.5em;
-              
-              /*border-top: 1px solid #eeeeee;*/
-            }
-            
-            .content:last-child {
-              margin-bottom: 2em;
-            }
-            
-            body > div > article > div > section:last-child {
-              padding-bottom:1.5em;
-            }
-            
-            .row {
-                display:table-row;
-            }
-            .row div {
-                display:table-cell;
-            }
-            
-            .content-cat {
-              font-family: "Merriweather";
-              font-variant:small-caps;
-              font-weight:300;
-              letter-spacing: 1px;
-              
-              color: #212121;
-              
-              font-size:0.975em;
-              
-              text-align:center;
-              vertical-align:middle;
-            
-              padding-left:3%;
-              width:30%;
-            }
-            
-            .content-cat p {
-              font-size:0.55em;
-              font-weight:600;
-              
-              margin-bottom:0;
-            }
-            
-            .content-text {
-              border-left:1px solid #e0e0e0;
-              transition: border 0.66s ease-in;
-            }
-            
-            .big-text {
-              vertical-align:top;
-            }
-            
-            .content-text ul {
-              padding:0;
-              margin:0;
-              margin-top:0.15em;
-              
-              width:85%;
-              margin-left:1.5em;
-            }
-            
-            .content-text ul:last-child {
-              margin-bottom:0.5em;
-            }
-            
-            .content-text ul li {
-              font-family: "Open Sans";
-              font-size:0.7em;
-              
-              display:inline-block;
-              
-            }
-            
-            .content-text ul li:first-child {
-              width:35%;
-              
-              color: #424242;
-              
-              font-weight:600;
-            }
-            
-            .content-text ul li a, div.content-text.work-listing.education-listing > p > strong > a {
+            a {
+              color: #0064BD;
               text-decoration: none;
-              color: #0277bd;
             }
             
-            .content-text ul li a:hover {
-              color:#4fc3f7;
+            a:visited {
+              color: #0064BD;
             }
             
-            .work-listing p {
-              font-family: "Open Sans";
-              font-size:0.7em;
-              
-              color: #424242;
-              
-              margin-left:2em;
-              margin-top:0.45em;
-              margin-bottom: 0.45em;
+            a:hover {
+              text-decoration: underline;
             }
             
-            div.content-text.work-listing.education-listing > p:nth-child(2) {
-              margin-top:0.25em;
+            h2 {
+              text-transform: uppercase;
             }
             
-            .work-listing .highlight {
-              font-family: "Open Sans";
-              font-size:0.7em;
-              font-weight:400;
-              
-              color: #424242;
-              
-              margin-left:3.25em;
-              padding-left:0.5em;
-              
-              border-left:1px solid #e0e0e0;
-              
+            h3 {
+              font-size: 1em;
             }
             
-            .education-listing > .heading {
-              font-weight:600;
-              
-              margin-top:0.75em;
-              margin-left:2em;
+            hr {
+              border: none;
+              border-top: 1px solid #B3B3B3;
             }
             
-            .education-listing > .highlight {
-              margin-left:3.25em;
+            main {
+              padding: 15px;
+              max-width: 700px;
+              margin: 0 auto;
             }
             
-            .highlight {
-              transition: border .33s ease-in;
+            section {
+              margin-top: 1em;
             }
             
-            .profiles-listing ul li, .profiles-listing ul li:first-child {
-              width:32%;
-              font-weight: normal;
-            }
-            
-            .work-content, .education-content {
-              padding-top: .75em;
-            }
-            
-            section.content.education-content > div > div.content-cat {
-              vertical-align: top;
-            }
-            
-            div.content-text.skills-listing > p {
-              font-family: "Open Sans";
-              font-size:0.7em;
-              font-weight:400;
-            
+            li {
               margin-left: 2em;
-              margin-top: 0.45em;
-              margin-bottom: 0.45em;
             }
             
-            div.content-text.skills-listing > p > {
-              color:#212121;
+            p, li {
+              text-align: justify;
+              clear: both;
             }
             
-            @media screen and (max-width: 600px) {
-              body, html {
-                padding-top: 30px;
-              }
-            
-              .paper {
-                width:95%;
-              }
-            
-              .row div {
-                display: block;
-              }
-            
-              .content-cat {
-                width: 100%;
-              }
-            
-              .content-text ul li {
-                width: 100%;
-              }
-            
-              .content-text ul li:first-child {
-                width: 100%;
-              }
-              
-              .education-listing > .highlight {
-                margin-left: 30px;
-              }
-            }
-        </style>
-        <style media="print">
-            body, html {
-              background-color: white;
-              padding-top: 1.5em;
+            .tenure {
+              float: right;
             }
             
-            .paper {
-              width:100%;
-              border: 0;
-            
-              padding-top: 0;
+            thead {
+              display: none;
             }
             
-            header p {
-              font-size: 1.3em;
+            main > header {
+              width: 100%;
+              float: left;
+              margin-bottom: 20px;
+              position: relative;
             }
             
-            .subtitle {
-              font-size: 0.7em;
+            main > header > h1 {
+              font-size: 20px;
             }
             
-            .header-pic {
-              float:left;
+            
+            h3 {
+              display: inline-block;
+              line-height: 1.25em;
+            }
+            #contact {
+              float: right;
+              position: absolute;
+              right: 0;
+              bottom: 0;
             }
             
-            .profiles {
-              display:none;
+            #contact > div {
+              display: inline-block;
+              margin-left: 5px;
             }
             
-            .content {
-              page-break-inside:avoid; 
-              page-break-after:auto;
-            }
-            
-            .header-text {
-              float:left;
-              margin-top: -1.6em;
-            }
-            
-            .content-wrapper > .content:first-child {
-              padding-top: 2em;
-            }
-            
-            .content:last-child {
-              padding-bottom: 0;
-            }
-            
-            .content-cat {
-              width:33%;
-              color:black;
+            span.fa {
               text-align: left;
+              margin-right: 3px;
+              float: left;
             }
             
-            .content-cat p {
-              font-size:0.6em;
-              font-weight: 600;
+            section > div {
+              margin-bottom: 1em;
+              clear: both;
             }
             
-            header p, .content-text, .work-listing p, .content-text ul li:first-child, .work-listing .highlight, .content-text.skills-listing > ul > li > .highlight {
-              color:black;
-            }
-            
-            .content-text.skills-listing > ul > li span, .subtitle {
-              color:#212121;
-            }
-            
-            .content-text ul:last-child {
-              margin-bottom: 0.25em;
-            }
-            
-            .content-text ul li:first-child {
-              width:50%;
-            }
-            
-            .profiles-listing ul li:first-child {
-              width:32%;
-            }
-            
-            div.content-text.skills-listing > ul > li {
-              width:33%;
-            }
-            
-            .work-listing p {
-              margin-bottom: 0.1em;
-            }
-            
-            div.content-text.skills-listing > ul > li > p {
-              margin-top: 0.4em;
-              margin-bottom: 0.5em;
-            }
-            
-            div.content-text.skills-listing > ul > li {
-              padding-left: 1.5em;
-            }
-            
-            div.content-text.skills-listing > ul > li:first-child {
-              padding-left: 2em;
-            }
-            
-            .note {
-              display:none;
-            }
-            
-            .content-text:hover {
-              border-left:1px solid #eeeeee;
-            }
-            
-            .content-text ul li a {
-              color:black!important;
-            }
-            .content-text ul li a, div.content-text.work-listing.education-listing > p > strong > a {
-              color: black;
-            }
-            
-            .content-text ul li a:hover {
-              color:black;
-            }
-            
-            .highlight:hover, .content-text.skills-listing > ul > li > .highlight:hover {
-              border-left:1px solid #eeeeee;
-            }
-            
-            .big-text {
-              padding-top: 0;
+            span.keywords {
+              font-size: 10px;
+              color: gray;
+              text-align: right;
             }
         </style>
     </head>
     
     <body>
-        <div class="resume-wrapper">
-            <article class="paper">
-                <header>
-                    <div class="header-content">
-                        <div class="header-text">
-                            <p>Hayk Khachatryan</p>
-                            <p class="subtitle">Software Engineer</p>
-                        </div>
+        <main>
+            <header>
+                 <h1>Hayk Khachatryan </h1>
+
+                <div id="contact">
+                    <div class="location">London, United Kingdom</div>
+                    <div class="email"><a href="mailto:hi@hayk.io">hi@hayk.io</a>
                     </div>
+                    <div class="phone">+44 (0) 7555 724 204</div>
+                    <div class="website"><a href="http://hayk.io">hayk.io</a>
+                    </div>
+                </div>
+            </header>
+            <hr>
+            <section id="summary">Second year UCL Theoretical Physics student (1st expected); Self taught
+                intermediate programmer (Python, Mathematica); Freelance Web Developer;
+                Representative for 200 Physics students</section>
+            <hr>
+            <section id="education">
+                <header> <span class="fa fa-mortar-board"></span> 
+                     <h2>education</h2>
+
                 </header>
-                <div class="content-wrapper">
-                    <!-- SUMMARY -->
-                    <section class="content">
-                        <div class="row">
-                            <div class="content-cat">About</div>
-                            <div class="content-text work-listing education-listing">
-                                <p>Second year UCL Theoretical Physics student (1st expected)</p>
-                                <p>Self taught intermediate programmer (Python, Mathematica)</p>
-                                <p>Freelance Web Developer</p>
-                                <p>Representative for 200 Physics students</p>
-                            </div>
-                        </div>
-                    </section>
-                    <!-- CONTACT -->
-                    <section class="content">
-                        <div class="row">
-                            <div class="content-cat">Contact</div>
-                            <div class="content-text">
-                                <ul>
-                                    <li>Website</li>
-                                    <li><a href="https://hayk.io">hayk.io</a>
-                                    </li>
-                                </ul>
-                                <ul>
-                                    <li>Email</li>
-                                    <li><a href="mailto:hi@hayk.io" "email me">hi@hayk.io</a>
-                                    </li>
-                                </ul>
-                                <ul>
-                                    <li>Phone</li>
-                                    <li>+44 (0) 7555 724 204</li>
-                                </ul>
-                                <ul>
-                                    <li>Based in</li>
-                                    <li>London, United Kingdom</li>
-                                </ul>
-                                <ul>
-                                    <li>GitHub</li>
-                                    <li><a href="https://github.com/haykkh">haykkh</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </section>
-                    <section class="content">
-                        <div class="row">
-                            <div class="content-cat big-text">Education
-                                <p>2016-09 till 2019-06</p>
-                            </div>
-                            <div class="content-text work-listing education-listing">
-                                <p style="margin-top:2.4em;"> <strong>Theoretical Physics BSc</strong>
-at <strong><a href="https://ucl.ac.uk/">University College London:</a></strong>
+                <div>
+                     <h3><em>Theoretical Physics</em></h3>
+at <a href="https://www.ucl.ac.uk/"><h3><em>University College London</em></h3></a>
 
-                                </p>
-                                <p>Achieved a grade of 75% in my first year</p>
-                                <p class="highlight">Practical Mathematics and Computing (Python and Mathematica): 84%</p>
-                                <p
-                                class="highlight">Mathematical Methods II: 91%</p>
-                            </div>
-                        </div>
-                    </section>
-                    <section class="content">
-                        <div class="row">
-                            <div class="content-cat big-text">Work Experience
-                                <p>2016-03 till 2016-05</p>
-                            </div>
-                            <div class="content-text work-listing education-listing">
-                                <p style="margin-top:2.4em;"> <strong>Sales Account Manager</strong>
-at <strong>OptionRally</strong>
-in
-                                    Limassol, Cyprus:</p>
-                                <p>Addressed clients issues with their finances and resolved their concerns
-                                    with investments. Improved my communication skills through the high pressure
-                                    environment of finance sales.</p>
-                            </div>
-                        </div>
-                    </section>
-                    <section class="content work-content">
-                        <div class="row">
-                            <div class="content-cat big-text">
-                                <p>2015-02 till 2015-08</p>
-                            </div>
-                            <div class="content-text work-listing education-listing">
-                                <p> <strong>Independant Social Media Consultant:</strong>
-
-                                </p>
-                                <p>Launched social media presences and designed advertising campaigns that
-                                    increased my clients&#x27; following by over 60%.</p>
-                            </div>
-                        </div>
-                    </section>
-                    <section class="content work-content">
-                        <div class="row">
-                            <div class="content-cat big-text">
-                                <p>2015-01 till today</p>
-                            </div>
-                            <div class="content-text work-listing education-listing">
-                                <p> <strong>Freelance Web Developmer:</strong>
-
-                                </p>
-                                <p>Developed full stack, responsive websites for my clients.</p>
-                                <p class="highlight">JekyllNow, Wordpress</p>
-                                <p class="highlight">Bootstrap, Polymer</p>
-                                <p class="highlight">LAMP stacks</p>
-                            </div>
-                        </div>
-                    </section>
-                    <section class="content work-content">
-                        <div class="row">
-                            <div class="content-cat big-text">
-                                <p>2013-07 till 2013-07</p>
-                            </div>
-                            <div class="content-text work-listing education-listing">
-                                <p> <strong>IT Assistant</strong>
-at <strong><a href="http://zigzag.am/en">ZIGZAG</a></strong>
-in
-                                    Yerevan, Armenia:</p>
-                                <p>Diagnosed and troubleshooted networking and technical issues at the IT
-                                    department of an office of 50 employees.</p>
-                            </div>
-                        </div>
-                    </section>
-                    <section class="content work-content">
-                        <div class="row">
-                            <div class="content-cat big-text">
-                                <p>2011-07 till 2011-07</p>
-                            </div>
-                            <div class="content-text work-listing education-listing">
-                                <p> <strong>Intern Mechanic</strong>
-at <strong><a href="http://vitesse.am">Vitesse</a></strong>
-in
-                                    Yerevan, Armenia:</p>
-                                <p>Repaired and serviced ATVs, jetskis, and snowmobiles at the mechanical
-                                    department of the BRP Service Center.</p>
-                            </div>
-                        </div>
-                    </section>
-                    <section class="content">
-                        <div class="row">
-                            <div class="content-cat">Skills</div>
-                            <div class="content-text skills-listing">
-                                <p> <span class="name">
-                        <strong>
-                          Web Development
-                        </strong>
-                    </span>
- <span>(Intermediate):</span>
-HTML 5, CSS 3 /
-                                    SASS, Javascript, Polymer</p>
-                                <p> <span class="name">
-                        <strong>
-                          Programming
-                        </strong>
-                    </span>
- <span>(Intermediate):</span>
-Python, Mathematica,
-                                    Git, Unix</p>
-                                <p> <span class="name">
-                        <strong>
-                          Programming
-                        </strong>
-                    </span>
- <span>(Beginner):</span>
-Java, C, Haskell, npm,
-                                    JSON</p>
-                                <p> <span class="name">
-                        <strong>
-                          Cloud
-                        </strong>
-                    </span>
- <span>(Intermediate):</span>
-DigitalOcean</p>
-                                <p> <span class="name">
-                        <strong>
-                          Software
-                        </strong>
-                    </span>
- <span>(Advanced):</span>
-Photoshop, Lightroom,
-                                    Final Cut Pro, spreadsheets</p>
-                            </div>
-                        </div>
-                    </section>
-                    <section class="content">
-                        <div class="row">
-                            <div class="content-cat big-text">Projects
-                                <p>2015-10 till 2015-11</p>
-                            </div>
-                            <div class="content-text work-listing education-listing">
-                                <p style="margin-top:2.4em;"> <strong>Systems Engineer and Liaison Officer</strong>
-at <strong><a href="http://www.cs.ucl.ac.uk/current_students/syllabus_index_2016_2017/undergrad/engs101p_integrated_engineering/">Intergrated Engineering Challenge #2: Global Health:</a></strong>
-
-                                </p>
-                                <p>A university project where a a multi-disciplinary team of specialist engineers
-                                    formulate, design and verify an effective strategy for the production and
-                                    distribution (and monitoring) of a vaccine to combat a Tuberculosis Pandemic
-                                    in Sub Saharan Africa.</p>
-                                <p class="highlight">Designed and developed a control system for the temperature, pH, and stirring
-                                    of a bio-reactor.</p>
-                                <p class="highlight">Developed in C and Processing on a Launchpad microprocessor.</p>
-                                <p class="highlight">Liaised with engineers from other disciplines on specifications and requirements.</p>
-                            </div>
-                        </div>
-                    </section>
-                    <section class="content work-content">
-                        <div class="row">
-                            <div class="content-cat big-text">
-                                <p>2015-09 till today</p>
-                            </div>
-                            <div class="content-text work-listing education-listing">
-                                <p> <strong>Creator</strong>
-at <strong><a href="http://analogaffairs.com">Analog Affairs:</a></strong>
-
-                                </p>
-                                <p>My analog photography portfolio.</p>
-                            </div>
-                        </div>
-                    </section>
-                    <!-- LANGUAGE -->
-                    <section class="content">
-                        <div class="row">
-                            <div class="content-cat">Languages</div>
-                            <div class="content-text">
-                                <ul>
-                                    <li>English</li>
-                                    <li>Native speaker</li>
-                                </ul>
-                                <ul>
-                                    <li>Armenian</li>
-                                    <li>Native speaker</li>
-                                </ul>
-                                <ul>
-                                    <li>Greek</li>
-                                    <li>Fluent</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </section>
-                    <!-- PROFILES <section class="content profiles">
-                <div class="row">
-                  <div class="content-cat">
-                    Profiles
-                  </div>
-                  <div class="content-text profiles-listing">
-                    <ul>
-                          <li>
-                            <a href="https://github.com/haykkh" target="_blank">
-                              GitHub
-                            </a>
-                          </li>
-                    </ul>
-                  </div>
+                    <span
+                    class="tenure">2016-09 — 2019-06</span>
+                        <p>
+                            <p>Achieved a grade of 75% in my first year.</p>
+                        </p>
+                        <ul>
+                            <li>Practical Mathematics and Computing (Python and Mathematica): 84%</li>
+                            <li>Mathematical Methods II: 91%</li>
+                        </ul>
                 </div>
-              </section>
-             -->
-                    <!-- <section class="content">
-              <div class="row">
-                <div class="content-cat">
-                  Interests
-                </div>
-                <div class="content-text skills-listing">
+            </section>
+            <hr>
+            <section id="employment">
+                <header> <span class="fa fa-building"></span> 
+                     <h2>employment</h2>
+
+                </header>
+                <div>
+                     <h3><em>Freelance Web Development</em></h3>
+ <span class="tenure">2015-01 — Present</span>
+
                     <p>
-                      <span class="name">
-                          <strong>
-                            Wildlife:
-                          </strong>
-                      </span>
-                        Ferrets, Unicorns
+                        <p>Developed full stack, responsive websites for my clients.</p>
+                    </p>
+                    <ul>
+                        <li>JekyllNow, Wordpress</li>
+                        <li>Bootstrap, Polymer</li>
+                        <li>LAMP stacks</li>
+                    </ul> <span class="keywords">HTML 5 - CSS3 / SASS - JS</span>
+
+                </div>
+                <div>
+                     <h3><em>Sales Account Manager</em></h3>
+at
+                     <h3><em>OptionRally</em></h3>
+in Limassol, Cyprus <span class="tenure">2016-03 — 2016-05</span>
+
+                    <p>
+                        <p>Addressed clients issues with their finances and resolved their concerns
+                            with investments. Improved my communication skills through the high pressure
+                            environment of finance sales.</p>
+                    </p> <span class="keywords">CRM - Windows - VOIP</span>
+
+                </div>
+                <div>
+                     <h3><em>Independent Social Media Consultant</em></h3>
+ <span class="tenure">2015-02 — 2015-08</span>
+
+                    <p>
+                        <p>Launched social media presences and designed advertising campaigns that
+                            increased my clients&#39; following by over 60%.</p>
+                    </p> <span class="keywords">Facebook - Instagram</span>
+
+                </div>
+                <div>
+                     <h3><em>IT Assistant</em></h3>
+at <a href="https://zigzag.am/en"><h3><em>ZIGZAG</em></h3></a>
+in Yerevan,
+                    Armenia <span class="tenure">2013-07 — 2013-07</span>
+
+                    <p>
+                        <p>Diagnosed and troubleshooted networking and technical issues at the IT
+                            department of an office of 50 employees.</p>
                     </p>
                 </div>
-              </div>
-            </section>
-           -->
+                <div>
+                     <h3><em>Intern Mechanic</em></h3>
+at <a href="https://vitesse.am/en"><h3><em>Vitesse</em></h3></a>
+in Yerevan,
+                    Armenia <span class="tenure">2011-07 — 2011-07</span>
+
+                    <p>
+                        <p>Repaired and serviced ATVs, jetskis, and snowmobiles at the mechanical
+                            department of the BRP Service Center.</p>
+                    </p>
                 </div>
-            </article>
-        </div>
+            </section>
+            <hr>
+            <section id="projects">
+                <header> <span class="fa fa-star"></span> 
+                     <h2>projects</h2>
+
+                </header>
+                <div>
+                     <h3><em>Systems Engineer and Liaison Officer</em></h3> at
+                     <h3><em>
+    <a href="http://www.cs.ucl.ac.uk/current_students/syllabus_index_2016_2017/undergrad/engs101p_integrated_engineering/">Intergrated Engineering Challenge #2: Global Health</a>
+    </em></h3>
+ <span class="tenure">2015-11 — 2015-12</span>
+
+                    <p>
+                        <p>A university project where a a multi-disciplinary team of specialist engineers
+                            formulate, design and verify an effective strategy for the production and
+                            distribution (and monitoring) of a vaccine to combat a Tuberculosis Pandemic
+                            in Sub Saharan Africa.</p>
+                    </p>
+                    <ul>
+                        <li>Designed and developed a control system for the temperature, pH, and stirring
+                            of a bio-reactor.</li>
+                        <li>Developed in C and Processing on a Launchpad microprocessor.</li>
+                        <li>Liaised with engineers from other disciplines on specifications and requirements.</li>
+                    </ul> <span class="keywords">C -  Processing </span>
+
+                </div>
+            </section>
+            <hr>
+            <section id="speaking">
+                <header> <span class="fa fa-users"></span> 
+                     <h2>speaking</h2>
+
+                </header>
+                <div>
+                     <h3><em>Delegate of Iran</em></h3>
+at
+                     <h3><em>Mediterranean Model United Nations</em></h3>
+in Nicosia, CY <span class="tenure">2015-02</span>
+
+                    <p>
+                        <p>A simulation of the United Nations, done by students from various schools
+                            as they discuss and try to find solutions to current world problems.</p>
+                    </p>
+                    <ul>
+                        <li>Debated and discussed issues in a formal UN-like setting.</li>
+                    </ul>
+                </div>
+                <div>
+                     <h3><em>Member of Medical Ethics committee</em></h3>
+at
+                     <h3><em>Youth Voice</em></h3>
+in Nicosia, CY <span class="tenure">2014-04</span>
+
+                    <p>
+                        <p>An annual weekend conference where young people between the ages of 15-19
+                            from schools convene to discuss and express themselves on current affairs.</p>
+                    </p>
+                    <ul>
+                        <li>Debated and discussed various ethical issues in the medical field.</li>
+                    </ul>
+                </div>
+                <div>
+                     <h3><em>Speaker</em></h3>
+at
+                     <h3><em>Science Rocks</em></h3>
+in Limassol, CY <span class="tenure">2013-03</span>
+
+                    <p>
+                        <p>&#39;Does anything touch?&#39;</p>
+                    </p>
+                    <ul>
+                        <li>Gave a five minute speech on the effects of the electromagnetic force.</li>
+                    </ul>
+                </div>
+            </section>
+            <hr>
+            <section id="service">
+                <header> <span class="fa fa-child"></span> 
+                     <h2>service</h2>
+
+                </header>
+                <div>
+                     <h3><em>Technical Consultant</em></h3>
+at <a href="https://www.facebook.com/Limassolphoenicianleoclub/"><h3><em>Limassol Phoenician Leo’s Charity Club </em></h3></a>
+
+                    <span
+                    class="tenure">2014-09 — 2015-07</span>
+                        <p>
+                            <p>Helped raise €5365 over two charity events (October - December 2014)</p>
+                        </p>
+                        <ul>
+                            <li>Social media management</li>
+                            <li>Graphic design</li>
+                        </ul>
+                </div>
+            </section>
+            <hr>
+            <section id="skills">
+                <header> <span class="fa fa-lg fa-code"></span> 
+                     <h2>skills</h2>
+
+                </header>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Skill</th>
+                            <th>Keywords</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td style="width: 25%;">Web</td>
+                            <td class="keywords">HTML 5 CSS 3 / SASS Javascript Polymer</td>
+                        </tr>
+                        <tr>
+                            <td style="width: 25%;">Programming</td>
+                            <td class="keywords">Python Mathematica Git Unix</td>
+                        </tr>
+                        <tr>
+                            <td style="width: 25%;">Programming</td>
+                            <td class="keywords">Java C Haskell npm JSON</td>
+                        </tr>
+                        <tr>
+                            <td style="width: 25%;">Cloud</td>
+                            <td class="keywords">DigitalOcean</td>
+                        </tr>
+                        <tr>
+                            <td style="width: 25%;">Software</td>
+                            <td class="keywords">Photoshop Lightroom Final Cut Pro spreadsheets</td>
+                        </tr>
+                        <tr>
+                            <td style="width: 25%;">Languages</td>
+                            <td class="keywords">English Armenian</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </main>
     </body>
 
 </html>
