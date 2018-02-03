@@ -44,9 +44,9 @@
   <h3><em>{{ title }}</em></h3>
     {{#if institution}} at
       {{#if url }}
-      <a href="{{{ url }}}"><h3><em>{{ institution }}</em></h3></a>
+      <a href="{{{ url }}}"><h3>{{ institution }}</h3></a>
       {{else}}
-      <h3><em>{{ institution }}</em></h3>
+      <h3>{{ institution }}</h3>
       {{/if}}
     {{/if}}
     {{#if location}}
@@ -66,9 +66,9 @@
   <h3><em>{{ position }}</em></h3>
     {{#if employer}} at
       {{#if url }}
-      <a href="{{{ url }}}"><h3><em>{{ employer }}</em></h3></a>
+      <a href="{{{ url }}}"><h3>{{ employer }}</h3></a>
       {{else}}
-      <h3><em>{{ employer }}</em></h3>
+      <h3>{{ employer }}</h3>
       {{/if}}
     {{/if}}
     {{#if location}}
@@ -86,12 +86,12 @@
 {{#*inline "body-projects" }}
 <div>
   <h3><em>{{ role }}</em></h3> at
-    <h3><em>{{#if url }}
+    <h3>{{#if url }}
     <a href="{{{ url }}}">{{ title }}</a>
     {{else}}
     {{ title }}
     {{/if}}
-    </em></h3>
+    </h3>
     <span class="tenure">{{dateRange .}}</span>
   <p>{{{ summary }}}</p>
   {{> highlights }}
@@ -108,7 +108,7 @@
       {{#if url }}
       <a href="{{{ url }}}"><h3><em>{{ event }}</em></h3></a>
       {{else}}
-      <h3><em>{{ event }}</em></h3>
+      <h3>{{ event }}</h3>
       {{/if}}
     {{/if}}
     {{#if location}}
@@ -118,7 +118,7 @@
   <p>{{{ summary }}}</p>
   {{> highlights }}
   {{#if keywords}}
-  <span class="keywords">{{#each keywords}}{{{ . }}} {{/each}}</span>
+  <span class="keywords">{{#each keywords}}{{{ . }}} {{#unless @last}} - {{/unless}} {{/each}}</span>
   {{/if}}
 </div>
 {{/inline}}
@@ -127,11 +127,12 @@
 <div>
   <h3><em>{{ position }}</em></h3>
     {{#if organization}} at
-      {{#if url }}
-      <a href="{{{ url }}}"><h3><em>{{ organization }}</em></h3></a>
+      <h3>{{#if url }}
+      <a href="{{{ url }}}">{{ organization }}</a>
       {{else}}
-      <h3><em>{{ organization }}</em></h3>
+      {{ organization }}
       {{/if}}
+    </h3>
     {{/if}}
     {{#if location}}
       in {{ location }}
@@ -140,7 +141,7 @@
   <p>{{{ summary }}}</p>
   {{> highlights }}
   {{#if keywords}}
-  <span class="keywords">{{#each keywords}}{{{ . }}} {{/each}}</span>
+  <span class="keywords">{{#each keywords}}{{{ . }}}{{#unless @last}} - {{/unless}} {{/each}}</span>
   {{/if}}
 </div>
 {{/inline}}

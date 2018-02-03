@@ -38,7 +38,7 @@
       "end": "2015-12",
       "summary": "A university project where a a multi-disciplinary team of specialist engineers  formulate, design and verify an effective strategy for the production and distribution (and monitoring) of a vaccine to combat a Tuberculosis Pandemic in Sub Saharan Africa. ",
       "highlights": ["Designed and developed a control system for the temperature, pH, and stirring of a bio-reactor.", "Developed in C and Processing on a Launchpad microprocessor.", "Liaised with engineers from other disciplines on specifications and requirements."],
-      "keywords": ["C", "Processing"]
+      "keywords": ["C", "Processing", "Communication", "Leadership"]
     }
   ],
 
@@ -57,7 +57,6 @@
 
       {
         "employer": "",
-        "url": "hayk.io",
         "pos": "first",
         "position": "Freelance Web Development",
          "summary": "Developed full stack, responsive websites for my clients.  ",
@@ -76,17 +75,16 @@
         "start": "2016-03",
         "location": "Limassol, Cyprus",
         "end": "2016-05",
-        "keywords": ["CRM","Windows","VOIP"]
+        "keywords": ["CRM","Windows","VOIP", "Communication"]
       },
 
       {
         "employer": "",
-        "url": "",
         "position": "Independent Social Media Consultant",
         "summary": "Launched  social media presences and designed advertising campaigns that increased my clients' following by over 60%.",
         "start": "2015-02",
         "end": "2015-08",
-        "keywords": ["Facebook", "Instagram"]
+        "keywords": ["Facebook", "Instagram"] 
       },
 
 
@@ -97,7 +95,8 @@
         "location": "Yerevan, Armenia",
         "summary": "Diagnosed and troubleshooted networking and technical issues at the IT department of an office of 50 employees.",
         "start": "2013-07",
-        "end": "2013-07"      },
+        "end": "2013-07",
+        "keywords": ["Problem solving", "Logical thinking"]      },
 
       {
         "employer": "Vitesse",
@@ -106,7 +105,8 @@
         "location": "Yerevan, Armenia", 
         "summary": "Repaired and serviced ATVs, jetskis, and snowmobiles at the mechanical department of the BRP Service Center.",
         "start": "2011-07",
-        "end": "2011-07"      }
+        "end": "2011-07",
+        "keywords": ["Problem solving"]      }
     ]
 
   },
@@ -148,7 +148,8 @@
         "start": "2014-09",
         "end": "2015-07",
         "summary": "Helped raise €5365 over two charity events (October - December 2014)",
-        "highlights": ["Social media management", "Graphic design"]
+        "highlights": ["Social media management", "Graphic design"],
+        "keywords": ["Facebook", "Photoshop", "Delegation", "Communication"]
       }
     ]
 
@@ -179,7 +180,7 @@
       ]
       },
       {
-        "name": "Cloud (intermetiate)",
+        "name": "Cloud (intermediate)",
         "level": "Intermediate",
         "skills": [
           "DigitalOcean"
@@ -208,8 +209,9 @@
       "start": "2015-02",
       "summary": "A simulation of the United Nations, done by students from various schools as they discuss and try to find solutions to current world problems.",
       "highlights": [
-        "Debated and discussed issues in a formal UN-like setting."
-      ]
+        "Debated and discussed issues in a formal UN-like setting.", "Created resolutions to be debated."
+      ],
+      "keywords": ["Communication", "Debating", "Public speaking", "Research"]
     },
     {
       "title": "Member of Medical Ethics committee",
@@ -220,7 +222,8 @@
       "summary": "An annual weekend conference where young people between the ages of 15-19 from schools convene to discuss and express themselves on current affairs.",
       "highlights": [
         "Debated and discussed various ethical issues in the medical field."
-      ]
+      ],
+      "keywords": ["Communication", "Debating", "Public speaking", "Research"]
     },
     {
       "title": "Speaker",
@@ -231,7 +234,8 @@
       "summary": "'Does anything touch?'",
       "highlights": [
         "Gave a speech on how no particles ever really touch as a consequence of the electromagnetic force."
-      ]
+      ],
+      "keywords": ["Communication", "Debating", "Public speaking"]
     }
   ],
 
