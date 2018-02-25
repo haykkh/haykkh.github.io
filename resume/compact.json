@@ -61,7 +61,7 @@
         "position": "Freelance Web Development",
          "summary": "Developed full stack, responsive websites for my clients.  ",
         "start": "2015-01",
-        "keywords": ["HTML 5","CSS3 / SASS","JS"],
+        "keywords": ["HTML 5","CSS3 / SASS","JS", "PHP"],
         "highlights": [
           "JekyllNow, Wordpress",
           "Bootstrap, Polymer",
@@ -130,7 +130,7 @@
         "end": "2019-06",
         "grade": "75%",
         "summary": "Achieved a grade of 75% in my first year.",
-        "highlights": ["Practical Mathematics and Computing (Python and Mathematica): 84%" ,"Mathematical Methods II: 91%"]
+        "highlights": ["Practical Mathematics and Computing (Python and Mathematica): 84%" ,"Mathematical Methods II: 91%", "Developing Effective Communication I & II: 68% & 69%"]
       }
 
     ]

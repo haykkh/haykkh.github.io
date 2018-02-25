@@ -2029,6 +2029,17 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/resume\/compact.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/resume\/compact.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/resume\/compact-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
 	"\/resume\/hayk.json": {
 		"fileType": 524288,
 		"ignore": 1,
