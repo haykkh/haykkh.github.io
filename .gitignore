@@ -2,12 +2,17 @@ apacheconf.html
 
 apacheconf_files
 
-psd
+*/psd/*
+
+psd/*
 
 proxy.php
 
-psdx
+psdbark/*
 
+psdx/*
+
+bark/splash/psd/*
 work
 
 DSC03448done.jpg
@@ -16,34 +21,10 @@ hayk.sublime-project
 
 hayk.sublime-workspace
 
-psd/DSC03448.ARW
-
-psd/DSC03448.psd
-
-psd/DSC03448.xmp
-
-psd/title.psd
-
-psd/title2.psd
-
-psdbar/helneueback.psd
-
-psdbar/title.psd
-
-psdbar/titlehover.psd
-
-psdx/helneueback.psd
-
-psdx/thankpic.psd
-
-psdx/title.psd
-
-psdx/titlecircle.psd
-
-psdx/titlehover.psd
-
-psdx/titlesquare.psd
 
 Untitled-1.psd
 
 .DS_Store
+
+img/psd/*
+img/wc/psd/*
