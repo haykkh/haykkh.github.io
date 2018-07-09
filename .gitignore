@@ -28,3 +28,8 @@ Untitled-1.psd
 
 img/psd/*
 img/wc/psd/*
+
+*.sass-cache/
+*.css.map
+*.sass.map
+*.scss.map
