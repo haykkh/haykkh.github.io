@@ -59,6 +59,8 @@ body {
 
 header {
   font-size: 2rem; }
+  header p span {
+    color: crimson; }
 
 main {
   margin: 50px 0 50px 0;

@@ -71,7 +71,11 @@ body {
 
 header {
 		font-size: 2rem;
-
+		p {
+			span {
+				color: crimson;
+			}
+		}
 }
 
 main {
