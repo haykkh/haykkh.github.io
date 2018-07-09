@@ -59,16 +59,17 @@ q:before, q:after {
 
 
 
-
-
-body {
-	font-family: 'fixedsys', monospace;
-	max-width: 500px;
+html {
+	max-width: 600px;
 	margin: auto;
 }
 
+body {
+	font-family: 'fixedsys', monospace;
+	margin: 50px;
+}
+
 header {
-		margin: 50px 0 50px 0;
 		font-size: 2rem;
 
 }
