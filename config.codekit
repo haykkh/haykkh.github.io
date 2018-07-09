@@ -2082,6 +2082,26 @@
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1
 		},
+	"\/resume\/package.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/resume\/package.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/resume\/package-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
+	"\/resume\/rockbite.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/resume\/rockbite.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/resume\/theme\/basis\/helpers\/sample-helpers.js": {
 		"fileType": 64,
 		"ignore": 0,

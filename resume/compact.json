@@ -162,7 +162,7 @@
         "name": "Web (intermediate)",
         "level": "Intermediate",
         "skills": [
-          "HTML 5", "CSS 3 / SASS", "Javascript", "Polymer","Google Analytics"
+          "HTML 5", "CSS 3 / SASS", "Polymer","Google Analytics"
         ]
       },
       {
@@ -176,7 +176,7 @@
         "name": "Programming (beginner)",
         "level": "Beginner",
         "skills": [
-        "Java", "C", "Haskell", "npm","JSON"
+        "Java", "C", "Haskell", "npm","JSON", "Javascript"
       ]
       },
       {
