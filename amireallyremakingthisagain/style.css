@@ -41,19 +41,34 @@ q:before, q:after {
   content: '';
   content: none; }
 
+/* ****************** */
+/* 					 */
+/*   end of reset     */
+/* 				   */
+/* ****************** */
+@font-face {
+  font-family: 'fixedsys';
+  src: url("FSEX300.ttf") format("truetype"); }
 body {
-  font-family: 'Roboto Slab', serif;
-  width: 500px;
+  font-family: 'fixedsys', monospace;
+  max-width: 500px;
   margin: auto; }
 
 header {
-  font-family: 'Gaegu', cursive;
-  margin: 50px 0 0 50px;
-  font-size: 2rem;
-  text-align: center; }
+  margin: 50px 0 50px 0;
+  font-size: 2rem; }
 
 main {
-  margin: 100px 0 0 100px; }
-  main h1 {
-    font-weight: 800;
-    font-size: 2rem; }
+  margin: 100px 0 100px 0;
+  line-height: 2rem; }
+  main section {
+    margin: 40px 0 40px 0; }
+    main section h1 {
+      font-size: 1.5rem;
+      color: crimson;
+      margin: 10px 0 10px 0; }
+    main section ul li {
+      margin-left: 20px; }
+    main section a:hover {
+      background-color: black;
+      color: white; }
