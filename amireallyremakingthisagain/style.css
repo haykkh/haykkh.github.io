@@ -48,7 +48,8 @@ q:before, q:after {
 /* ****************** */
 @font-face {
   font-family: 'fixedsys';
-  src: url("FSEX300.ttf") format("truetype"); }
+  src: url("FSEX300.ttf") format("truetype");
+  src: url("FSEX300.woff") format("woff"); }
 html {
   max-width: 600px;
   margin: auto; }
