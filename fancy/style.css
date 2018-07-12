@@ -1,0 +1,931 @@
+/*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
+/* Document
+   ========================================================================== */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in
+ *    IE on Windows Phone and in iOS.
+ */
+html {
+  line-height: 1.15;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */ }
+
+/* Sections
+   ========================================================================== */
+/**
+ * Remove the margin in all browsers (opinionated).
+ */
+body {
+  margin: 0; }
+
+/**
+ * Add the correct display in IE 9-.
+ */
+article,
+aside,
+footer,
+header,
+nav,
+section {
+  display: block; }
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0; }
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * Add the correct display in IE 9-.
+ * 1. Add the correct display in IE.
+ */
+figcaption,
+figure,
+main {
+  /* 1 */
+  display: block; }
+
+/**
+ * Add the correct margin in IE 8.
+ */
+figure {
+  margin: 1em 40px; }
+
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */ }
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */ }
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * 1. Remove the gray background on active links in IE 10.
+ * 2. Remove gaps in links underline in iOS 8+ and Safari 8+.
+ */
+a {
+  background-color: transparent;
+  /* 1 */
+  -webkit-text-decoration-skip: objects;
+  /* 2 */ }
+
+/**
+ * 1. Remove the bottom border in Chrome 57- and Firefox 39-.
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  text-decoration: underline dotted;
+  /* 2 */ }
+
+/**
+ * Prevent the duplicate application of `bolder` by the next rule in Safari 6.
+ */
+b,
+strong {
+  font-weight: inherit; }
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder; }
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */ }
+
+/**
+ * Add the correct font style in Android 4.3-.
+ */
+dfn {
+  font-style: italic; }
+
+/**
+ * Add the correct background and color in IE 9-.
+ */
+mark {
+  background-color: #ff0;
+  color: #000; }
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%; }
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sub {
+  bottom: -0.25em; }
+
+sup {
+  top: -0.5em; }
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Add the correct display in IE 9-.
+ */
+audio,
+video {
+  display: inline-block; }
+
+/**
+ * Add the correct display in iOS 4-7.
+ */
+audio:not([controls]) {
+  display: none;
+  height: 0; }
+
+/**
+ * Remove the border on images inside links in IE 10-.
+ */
+img {
+  border-style: none; }
+
+/**
+ * Hide the overflow in IE.
+ */
+svg:not(:root) {
+  overflow: hidden; }
+
+/* Forms
+   ========================================================================== */
+/**
+ * 1. Change the font styles in all browsers (opinionated).
+ * 2. Remove the margin in Firefox and Safari.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: 'Roboto Slab', monospace;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */ }
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+button,
+input {
+  /* 1 */
+  overflow: visible; }
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+button,
+select {
+  /* 1 */
+  text-transform: none; }
+
+/**
+ * 1. Prevent a WebKit bug where (2) destroys native `audio` and `video`
+ *    controls in Android 4.
+ * 2. Correct the inability to style clickable types in iOS and Safari.
+ */
+button,
+html [type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */ }
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0; }
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText; }
+
+/**
+ * Correct the padding in Firefox.
+ */
+fieldset {
+  padding: 0.35em 0.75em 0.625em; }
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+legend {
+  box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */ }
+
+/**
+ * 1. Add the correct display in IE 9-.
+ * 2. Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  display: inline-block;
+  /* 1 */
+  vertical-align: baseline;
+  /* 2 */ }
+
+/**
+ * Remove the default vertical scrollbar in IE.
+ */
+textarea {
+  overflow: auto; }
+
+/**
+ * 1. Add the correct box sizing in IE 10-.
+ * 2. Remove the padding in IE 10-.
+ */
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto; }
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */ }
+
+/**
+ * Remove the inner padding and cancel buttons in Chrome and Safari on macOS.
+ */
+[type="search"]::-webkit-search-cancel-button,
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */ }
+
+/* Interactive
+   ========================================================================== */
+/*
+ * Add the correct display in IE 9-.
+ * 1. Add the correct display in Edge, IE, and Firefox.
+ */
+details,
+menu {
+  display: block; }
+
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+  display: list-item; }
+
+/* Scripting
+   ========================================================================== */
+/**
+ * Add the correct display in IE 9-.
+ */
+canvas {
+  display: inline-block; }
+
+/**
+ * Add the correct display in IE.
+ */
+template {
+  display: none; }
+
+/* Hidden
+   ========================================================================== */
+/**
+ * Add the correct display in IE 10-.
+ */
+[hidden] {
+  display: none; }
+
+/* User Defined
+   ========================================================================== */
+html, body, .full-screen {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  width: max-content;
+  overflow: hidden; }
+
+body {
+  font-size: 1em;
+  line-height: 1.4;
+  font-family: 'Roboto Slab', serif; }
+
+/******************/
+/*  HAMBURGER start */
+/******************/
+#menuToggle {
+  display: block;
+  position: fixed;
+  top: 15px;
+  left: 15px;
+  z-index: 1;
+  -webkit-user-select: none;
+  user-select: none;
+  /*
+  * Just a quick hamburger
+  */
+  /* 
+  * Transform all the slices of hamburger
+  * into a crossmark.
+  */ }
+  #menuToggle input {
+    display: block;
+    width: 26px;
+    height: 25px;
+    position: absolute;
+    top: -7px;
+    left: -5px;
+    cursor: pointer;
+    opacity: 0;
+    /* hide this */
+    z-index: 2;
+    /* and place it over the hamburger */
+    -webkit-touch-callout: none; }
+  #menuToggle .burger span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin-bottom: 5px;
+    position: relative;
+    background: black;
+    z-index: 1;
+    transform-origin: center;
+    transform: translateZ(0);
+    backface-visibility: hidden;
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease; }
+    #menuToggle .burger span:first-child {
+      transform-origin: center; }
+    #menuToggle .burger span:nth-last-child(2) {
+      transform-origin: 0% 100%; }
+  #menuToggle input:checked ~ div.burger span {
+    opacity: 1;
+    transform: translateY(8px) rotate(45deg);
+    transform-origin: center;
+    background: white; }
+    #menuToggle input:checked ~ div.burger span:nth-last-child(2) {
+      /* But let's hide the middle one */
+      opacity: 0;
+      transform: rotate(0deg) scale(0.2, 0.2); }
+    #menuToggle input:checked ~ div.burger span:nth-last-child(1) {
+      /* Ohyeah and the last one should go the other direction */
+      transform: translateY(-8px) rotate(-45deg); }
+
+/*
+ * Make this absolute positioned
+ * at the top left of the screen
+ */
+#menu {
+  position: absolute;
+  width: 100vw;
+  margin: -15px 0 0 -15px;
+  padding-left: 75px;
+  top: 0;
+  background: crimson;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  /* to stop flickering of text in safari */
+  transform-origin: 0% 0%;
+  transform: translate(0, -100%) translateZ(0);
+  backface-visibility: hidden;
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1); }
+  #menu a {
+    text-decoration: none; }
+  #menu li {
+    margin-right: 25px;
+    font-size: 1.2rem;
+    color: white;
+    line-height: 3.1rem;
+    text-decoration: none;
+    display: inline-block; }
+
+/*
+ * And let's slide it in from the top
+ */
+#menuToggle input:checked ~ ul {
+  transform: none; }
+
+/******************/
+/*  HAMBURGER END */
+/******************/
+.full-screen {
+  display: inline-flex;
+  flex-flow: column wrap;
+  flex-basis: 100%; }
+  .full-screen > * {
+    flex-grow: 0;
+    flex-shrink: 0;
+    width: 100vw; }
+  .full-screen .outer {
+    display: inherit;
+    flex-direction: inherit;
+    flex-basis: inherit;
+    transition: transform 0.6s ease-in-out;
+    backface-visibility: hidden;
+    position: relative;
+    transform: translateZ(0); }
+    .full-screen .outer .inner {
+      display: inherit;
+      align-items: safe center;
+      flex-grow: 0;
+      flex-shrink: 0;
+      flex-basis: inherit;
+      width: 100vw;
+      position: relative; }
+      .full-screen .outer .inner .container {
+        font-size: 2rem; }
+      .full-screen .outer .inner .title {
+        width: 100vw;
+        text-align: center;
+        padding: 0;
+        line-height: 3.1rem;
+        border-bottom: 1px solid crimson;
+        font-size: 1.6rem; }
+      .full-screen .outer .inner .bottom {
+        width: 100vw;
+        align-items: unset;
+        justify-content: unset;
+        overflow-y: scroll; }
+        .full-screen .outer .inner .bottom .sack {
+          padding-top: 25px;
+          margin: auto; }
+          .full-screen .outer .inner .bottom .sack .showcase {
+            display: inline-flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 25px 0; }
+            .full-screen .outer .inner .bottom .sack .showcase .showcase-item {
+              max-width: 600px;
+              max-height: 400px;
+              min-width: 300px;
+              min-height: 200px;
+              background-size: 200%;
+              background-position: 0 center;
+              border: 1px crimson solid;
+              padding: 0;
+              position: relative;
+              line-height: 0;
+              margin: 10px;
+              display: flex; }
+              .full-screen .outer .inner .bottom .sack .showcase .showcase-item a {
+                font-size: 1.2rem;
+                color: white;
+                height: 100%;
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                align-items: center;
+                text-decoration: none;
+                visibility: hidden;
+                margin: 0;
+                position: relative; }
+                .full-screen .outer .inner .bottom .sack .showcase .showcase-item a .hover-box {
+                  height: 100%;
+                  opacity: 0;
+                  background-position: 100% center;
+                  background-size: 200%;
+                  top: 0;
+                  left: 0;
+                  bottom: 0;
+                  right: 0;
+                  position: absolute;
+                  align-items: center;
+                  justify-content: center;
+                  transition: opacity 0.5s ease, height 0.5s ease;
+                  line-height: 1.5rem;
+                  font-size: 1rem;
+                  display: flex;
+                  flex-direction: column;
+                  justify-content: space-between; }
+                  .full-screen .outer .inner .bottom .sack .showcase .showcase-item a .hover-box h1 {
+                    font-size: 1.2rem;
+                    font-weight: normal;
+                    text-align: center;
+                    /* margin-top: 25px; */
+                    border-bottom: 1px white solid;
+                    line-height: 3rem;
+                    margin: 0;
+                    flex: 0 0 auto;
+                    width: 100%; }
+                  .full-screen .outer .inner .bottom .sack .showcase .showcase-item a .hover-box p {
+                    width: 220px;
+                    max-width: 220px;
+                    margin: 0 auto;
+                    align-self: flex-start; }
+                  .full-screen .outer .inner .bottom .sack .showcase .showcase-item a .hover-box ul {
+                    list-style: none;
+                    padding: 0;
+                    text-align: center;
+                    margin: 0; }
+                    .full-screen .outer .inner .bottom .sack .showcase .showcase-item a .hover-box ul li {
+                      display: inline-block;
+                      margin: 0 10px 10px 10px;
+                      line-height: 1.8rem;
+                      font-size: 1.5rem; }
+                      .full-screen .outer .inner .bottom .sack .showcase .showcase-item a .hover-box ul li.text {
+                        font-size: 1.3rem; }
+                      .full-screen .outer .inner .bottom .sack .showcase .showcase-item a .hover-box ul li svg {
+                        fill: white; }
+                        .full-screen .outer .inner .bottom .sack .showcase .showcase-item a .hover-box ul li svg.php {
+                          height: 1.4rem;
+                          width: 2.8rem; }
+                        .full-screen .outer .inner .bottom .sack .showcase .showcase-item a .hover-box ul li svg.bootstrap {
+                          height: 1.4rem;
+                          width: 1.4rem; }
+              .full-screen .outer .inner .bottom .sack .showcase .showcase-item:hover .hover-box, .full-screen .outer .inner .bottom .sack .showcase .showcase-item:active .hover-box {
+                opacity: 1;
+                transition: all 0.5s ease;
+                backface-visibility: hidden; }
+              .full-screen .outer .inner .bottom .sack .showcase .showcase-item:hover a, .full-screen .outer .inner .bottom .sack .showcase .showcase-item:active a {
+                transition: all 0.0001ms 0.0001ms;
+                backface-visibility: hidden;
+                visibility: visible; }
+@keyframes grow {
+  from {
+    height: 0;
+    opacity: 0; }
+  50% {
+    height: 100%;
+    opacity: 1; }
+  to {
+    height: 100%;
+    opacity: 1; } }
+              .full-screen .outer .inner .bottom .sack .showcase .showcase-item#bark {
+                background-image: url(img/bark.jpg); }
+                .full-screen .outer .inner .bottom .sack .showcase .showcase-item#bark .hover-box {
+                  background-image: url(img/bark.jpg); }
+              .full-screen .outer .inner .bottom .sack .showcase .showcase-item#x {
+                background-image: url(img/x.jpg);
+                background-position: 0 bottom; }
+                .full-screen .outer .inner .bottom .sack .showcase .showcase-item#x .hover-box {
+                  background-image: url(img/x.jpg);
+                  background-position: 100% bottom; }
+              .full-screen .outer .inner .bottom .sack .showcase .showcase-item#resulter {
+                background-image: url(img/resulter.png); }
+                .full-screen .outer .inner .bottom .sack .showcase .showcase-item#resulter .hover-box {
+                  background-image: url(img/resulter.png); }
+              .full-screen .outer .inner .bottom .sack .showcase .showcase-item#domainer {
+                background-image: url(img/domainer.jpg); }
+                .full-screen .outer .inner .bottom .sack .showcase .showcase-item#domainer .hover-box {
+                  background-image: url(img/domainer.jpg); }
+              .full-screen .outer .inner .bottom .sack .showcase .showcase-item#chloe {
+                background-image: url(img/chloe.jpg); }
+                .full-screen .outer .inner .bottom .sack .showcase .showcase-item#chloe .hover-box {
+                  background-image: url(img/chloe.jpg); }
+              .full-screen .outer .inner .bottom .sack .showcase .showcase-item#tic {
+                background-image: url(img/tic.jpg); }
+                .full-screen .outer .inner .bottom .sack .showcase .showcase-item#tic .hover-box {
+                  background-image: url(img/tic.jpg); }
+              .full-screen .outer .inner .bottom .sack .showcase .showcase-item#cp {
+                background-image: url(img/cp.jpg); }
+                .full-screen .outer .inner .bottom .sack .showcase .showcase-item#cp .hover-box {
+                  background-image: url(img/cp.jpg); }
+              .full-screen .outer .inner .bottom .sack .showcase .showcase-item#aa {
+                background-image: url(img/aa.jpg); }
+                .full-screen .outer .inner .bottom .sack .showcase .showcase-item#aa .hover-box {
+                  background-image: url(img/aa.jpg); }
+              .full-screen .outer .inner .bottom .sack .showcase .showcase-item#parkwoods {
+                background-image: url(img/parkwoods.jpg); }
+                .full-screen .outer .inner .bottom .sack .showcase .showcase-item#parkwoods .hover-box {
+                  background-image: url(img/parkwoods.jpg); }
+        .full-screen .outer .inner .bottom .footer {
+          text-align: center;
+          margin-bottom: 25px; }
+    .full-screen .outer .v-center {
+      /* content in here will be vertically centered */
+      justify-content: safe center;
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1; }
+
+.controls {
+  position: absolute;
+  color: black;
+  font-size: 2rem;
+  right: 25px;
+  top: 0;
+  line-height: 3.1rem; }
+
+#hello .primary {
+  text-decoration: underline dashed black;
+  text-decoration-skip: ink; }
+
+#about #banner {
+  background-image: url(img/bg-3072.jpg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  min-height: 100%;
+  min-width: 100vw; }
+  #about #banner a#me-banner {
+    width: 100%;
+    height: 100%;
+    z-index: 1; }
+  #about #banner .bg#left {
+    background-image: url(img/bg/left.jpg); }
+  #about #banner .bg#middle {
+    display: flex;
+    flex-direction: column; }
+    #about #banner .bg#middle #top {
+      background-image: url(img/bg/top.jpg); }
+    #about #banner .bg#middle #center {
+      background-image: url(img/bg/me.jpg); }
+    #about #banner .bg#middle #bottom {
+      background-image: url(img/bg/bottom.jpg); }
+  #about #banner .bg#right {
+    background-image: url(img/bg/right.jpg); }
+  #about #banner .controls.down {
+    bottom: 25px;
+    top: unset; }
+    #about #banner .controls.down i:before {
+      text-shadow: 0 0 40px white, 0 0 40px white, 0 0 40px white, 0 0 40px white, 0 0 40px white, 0 0 40px white, 0 0 40px white, 0 0 40px white, 0 0 40px white, 0 0 40px white, 0 0 40px white, 0 0 40px white, 0 0 40px white, 0 0 40px white, 0 0 40px white, 0 0 40px white;
+      display: block; }
+  #about #banner .controls.left {
+    color: white;
+    transform: rotate(45deg);
+    z-index: 2; }
+#about #me .sack {
+  max-width: 100vw; }
+  #about #me .sack .about-mes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1000px;
+    flex-wrap: wrap;
+    margin: 25px; }
+    #about #me .sack .about-mes p {
+      flex: 1 1 auto;
+      margin: 15px; }
+    #about #me .sack .about-mes img {
+      width: 100%; }
+    #about #me .sack .about-mes#ucl > div:nth-child(1) {
+      flex-direction: column;
+      flex-basis: 30%; }
+    #about #me .sack .about-mes#ucl > div:nth-child(2) {
+      flex-basis: 60%; }
+    #about #me .sack .about-mes#thingamajig {
+      flex-direction: column; }
+      #about #me .sack .about-mes#thingamajig > div {
+        margin: 35px; }
+        #about #me .sack .about-mes#thingamajig > div:nth-child(1) {
+          display: flex;
+          align-items: center;
+          justify-content: center; }
+        #about #me .sack .about-mes#thingamajig > div:nth-child(2) {
+          display: flex;
+          align-items: center;
+          justify-content: center; }
+          #about #me .sack .about-mes#thingamajig > div:nth-child(2) > div {
+            margin: 0 2.5vw; }
+        #about #me .sack .about-mes#thingamajig > div:nth-child(3) {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin-bottom: 100px; }
+          #about #me .sack .about-mes#thingamajig > div:nth-child(3) > div:nth-child(1) {
+            flex-basis: 60%; }
+    #about #me .sack .about-mes#quantum div:nth-child(1) {
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+      #about #me .sack .about-mes#quantum div:nth-child(1) div:nth-child(1) {
+        flex-direction: column; }
+        #about #me .sack .about-mes#quantum div:nth-child(1) div:nth-child(1) img {
+          width: 75%; }
+      #about #me .sack .about-mes#quantum div:nth-child(1) div:nth-child(2) img, #about #me .sack .about-mes#quantum div:nth-child(1) div:nth-child(3) img {
+        max-height: 400px;
+        height: 40vw;
+        width: unset; }
+    #about #me .sack .about-mes#space p {
+      z-index: 1; }
+    #about #me .sack .about-mes#space img {
+      z-index: -1;
+      transform: rotate(-45deg);
+      width: 80%; }
+    #about #me .sack .about-mes .pcb-tablet {
+      align-items: flex-end; }
+  #about #me .sack .row {
+    margin-bottom: 100px; }
+#about #me .footer {
+  margin-top: 50px; }
+  #about #me .footer a {
+    display: block; }
+  #about #me .footer .primary {
+    animation: floating-up 3s ease infinite; }
+  #about #me .footer .cv {
+    color: dodgerblue;
+    text-decoration: none; }
+
+#projects #portfolio .controls {
+  transform: rotate(-30deg); }
+
+#contact #sms .controls {
+  transform: rotate(-60deg); }
+#contact #sms .sack .say-hi img {
+  width: 400px; }
+  @media screen and (max-width 450px) {
+    #contact #sms .sack .say-hi img {
+      width: 250px; } }
+#contact #sms .sack form > * {
+  display: block;
+  margin: 10px;
+  width: 400px;
+  border: 1px solid crimson;
+  line-height: 2rem; }
+  @media screen and (max-width: 450px) {
+    #contact #sms .sack form > * {
+      width: 250px; } }
+#contact #sms .sack form .holder {
+  padding: 10px;
+  position: relative;
+  font-family: 'Roboto Slab', monospace; }
+  #contact #sms .sack form .holder > *:focus {
+    outline: none; }
+  #contact #sms .sack form .holder i {
+    color: crimson; }
+  #contact #sms .sack form .holder input {
+    border: none;
+    width: calc(100% - 1rem - 15px);
+    padding-left: 10px; }
+  #contact #sms .sack form .holder textarea {
+    border: none;
+    min-width: calc(100% - 1rem - 15px);
+    height: 100px;
+    padding-left: calc(15px + 1rem);
+    line-height: 1.3rem; }
+  #contact #sms .sack form .holder .fa-pencil-alt {
+    top: calc(10px + 0.25rem);
+    position: absolute; }
+#contact #sms .sack form button {
+  background: crimson;
+  transition: all 0.5s ease;
+  border-color: crimson;
+  color: white;
+  padding: 5px;
+  cursor: pointer;
+  width: 422px; }
+  @media screen and (max-width: 450px) {
+    #contact #sms .sack form button {
+      width: 272px; } }
+  #contact #sms .sack form button:hover {
+    background: black;
+    transition: all 0.5s ease;
+    border-color: black; }
+#contact #sms .sack ul {
+  border-top: 1px solid crimson;
+  list-style: none;
+  padding: 0;
+  padding-top: 15px;
+  width: fit-content;
+  margin: 25px auto; }
+  #contact #sms .sack ul li {
+    display: inline-block; }
+    #contact #sms .sack ul li a {
+      margin: 25px; }
+      #contact #sms .sack ul li a i {
+        font-size: 3rem;
+        color: black;
+        transition: color 0.5s ease; }
+        @media screen and (max-width: 450px) {
+          #contact #sms .sack ul li a i {
+            font-size: 2rem; } }
+        #contact #sms .sack ul li a i:hover {
+          color: crimson;
+          transition: color 0.5s ease; }
+
+:not(:target) div.full-screen .outer {
+  transform: translate(-100vw, -100%); }
+
+a[id="home"]:target ~ div.full-screen .outer {
+  transform: translate(-100vw, -100%); }
+a[id="about"]:target ~ div.full-screen .outer {
+  transform: translate(-300vw, -200%); }
+a[id="about"]:target ~ div.header nav#primary-nav span {
+  background: white; }
+a[id="me"]:target ~ div.full-screen .outer {
+  transform: translate(-300vw, -300%); }
+a[id="projects"]:target ~ div.full-screen .outer {
+  transform: translate(0, -400%); }
+a[id="contact"]:target ~ div.full-screen .outer {
+  transform: translate(-200vw, 0); }
+
+.primary {
+  animation: floating 3s ease infinite;
+  display: inline-block;
+  text-decoration: none;
+  color: crimson !important; }
+
+.secondary {
+  display: inline-block;
+  color: dodgerblue;
+  text-decoration: none; }
+
+@keyframes floating {
+  from {
+    transform: translate(0, 0px); }
+  65% {
+    transform: translate(0, 10px); }
+  to {
+    transform: translate(0, 0px); } }
+@keyframes floating-up {
+  from {
+    transform: translateY(0); }
+  65% {
+    transform: translateY(-10px); }
+  to {
+    transform: translateY(0); } }
