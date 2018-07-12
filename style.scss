@@ -64,6 +64,9 @@ html {
 body {
 	font-family: 'fixedsys', monospace;
 	margin: 50px;
+	@media only screen and (max-width : 400px) {
+		margin: 25px;
+	}
 }
 
 header {
