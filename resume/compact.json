@@ -54,10 +54,20 @@
 
   "employment": {
     "history": [
+      {
+        "employer": "Unicomp",
+        "pos": "first",
+        "url": "http://unicomp.am/",
+        "position": "Quantum Computing Intern",
+        "summary": "Designed and developed a quantum computer simulator in C++. Lectured on quantum computation.",
+        "start": "2018-07",
+        "end": "2018-09",
+        "keywords": ["C++", "Quantum Computing", "Communication", "Problem solving"]
+
+      },
 
       {
         "employer": "",
-        "pos": "first",
         "position": "Freelance Web Development",
          "summary": "Developed full stack, responsive websites for my clients.  ",
         "start": "2015-01",
