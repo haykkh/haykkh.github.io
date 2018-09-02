@@ -11,6 +11,18 @@
                 "kind": "build",
                 "isDefault": true
             }
+        },
+        {
+            "type": "npm",
+            "script": "install",
+            "path": "qSim/",
+            "problemMatcher": []
+        },
+        {
+            "label": "watch qSim",
+            "type": "shell",
+            "command": "cd qSim/ && brunch watch --server",
+            "problemMatcher": []
         }
     ]
 }
