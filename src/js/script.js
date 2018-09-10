@@ -34,4 +34,14 @@ function night() {
     document.getElementById("sun").style.display = "inline";
 }
 
-window.addEventListener("load", day());
+function autoDayNight() {
+    var hour = new Date().getHours();
+
+    if (hour < 6 || hour >= 19) {
+        night();
+    } else {
+        day();
+    }
+}
+
+window.addEventListener("load", autoDayNight());
