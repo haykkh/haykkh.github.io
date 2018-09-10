@@ -63,7 +63,7 @@ html {
 	max-width: 600px;
 	margin: auto;
 
-	&#night {
+	&.night {
 		background:  #1d2b53;
 		color: white;
 	}
@@ -77,13 +77,16 @@ body {
 	}
 }
 
+.accent {
+	color: crimson;
+
+	&.night {
+		color: #f875a7;
+	}
+}
+
 header {
 		font-size: 2rem;
-		p {
-			span {
-				color: crimson;
-			}
-		}
 
 		button {
 			background: none;
@@ -109,7 +112,6 @@ main {
 		margin: 40px 0 40px 0;
 		h1 {
 		font-size: 1.5rem;
-		color: crimson;
 		margin: 10px 0 10px 0;
 
 		}		
@@ -124,6 +126,19 @@ main {
 			&:hover {
 				background-color: crimson;
 				color: white;
+			}
+
+			&.night {
+				color: #EAF4D3;
+
+				&:visited {
+					color: #a5a283;
+				}
+
+				&:hover {
+					background-color:  #f875a7;
+					color: white;
+				}
 			}
 		}
 	}
