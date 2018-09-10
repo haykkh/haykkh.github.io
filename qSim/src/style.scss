@@ -1,9 +1,8 @@
 @font-face {
-  font-family: 'fixedsys';
-  src: url('FSEX300.ttf')  format('truetype');
-  src: url('FSEX300.woff') format('woff');
-}
-
+    font-family: 'fixedsys';
+    src: url('FSEX300.ttf')  format('truetype');
+    src: url('FSEX300.woff') format('woff');
+  }
 
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -49,67 +48,36 @@ q:before, q:after {
 	content: '';
 	content: none;
 }
-
-
-    /* ****************** */
-   /* 					 */
-  /*   end of reset     */
- /* 				   */
-/* ****************** */
-
-
-
-html {
-	max-width: 600px;
-	margin: auto;
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
 }
 
+
 body {
-	font-family: 'fixedsys', monospace;
-	margin: 50px;
-	@media only screen and (max-width : 400px) {
-		margin: 25px;
-	}
+    font-family: 'fixedsys';
+    font-size: 16px;
+    max-width: 800px;
+    margin: auto;
 }
 
 header {
-		font-size: 2rem;
-		p {
-			span {
-				color: crimson;
-			}
-		}
+    margin: 50px;
+    font-size: 96px;
+    display: flex;
+    #title {
+        vertical-align: middle;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 32px;
+    }
+
+    img {
+        height: 96px;
+    }
 }
 
 main {
-	margin: 50px 0 50px 0;
-	line-height: 2rem;
-
-	section	{
-		margin: 40px 0 40px 0;
-		h1 {
-		font-size: 1.5rem;
-		color: crimson;
-		margin: 10px 0 10px 0;
-
-		}		
-
-		ul {
-			li {
-				margin-left: 20px;
-			}
-		}
-
-		a {
-			&:hover {
-				background-color: crimson;
-				color: white;
-			}
-		}
-	}
-
-
-
+    margin:50px;
 }
-
-

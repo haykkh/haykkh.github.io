@@ -36,6 +36,8 @@ img/wc/psd/*
 *.sass.map
 *.scss.map
 
+tmp/
+
 
 *.psd
 
@@ -43,7 +45,6 @@ amireallyremakingthisagain/favicon.png
 
 .sass-cache/*
 
-qSim/src/*
 qSim/tmp/*
 
 */node_modules/*
