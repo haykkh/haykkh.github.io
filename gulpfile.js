@@ -27,7 +27,7 @@ var paths = {
     tmpWOFF: 'tmp/**/*.woff',
     tmpIMG: 'tmp/img/',
     
-    dist: './',
+    dist: '',
     distIndex: 'index.html',
     distJS: 'js/**/*.js',
     distCSS: 'css/**/*.css',
@@ -107,7 +107,7 @@ gulp.task('ttf:dist', function(){
 });
 
 gulp.task('woff:dist', function(){
-    return gulp.src(paths.srcWOFF).pipe(gulp.dest(paths.dist))
+    return gulp.src(paths.srcWOFF).pipe(gulp.dest(paths.dist));
 });
 
 gulp.task('img:dist', function(){
@@ -121,8 +121,8 @@ gulp.task('inject:dist', ['copy:dist'], function() {
     var css = gulp.src(paths.distCSS);
     var js = gulp.src(paths.distJS);
     return gulp.src(paths.distIndex)
-        .pipe(inject(css, {relative:true}))
-        .pipe(inject(js, {relative:true}))
+        .pipe(inject( css, {relative:true}))
+        .pipe(inject( js, {relative:true}))
         .pipe(gulp.dest(paths.dist));
 });
 
