@@ -129,6 +129,7 @@ main {
 			&:hover {
 				background-color: crimson;
 				color: white;
+				text-decoration: none;
 			}
 
 			&.night {
@@ -138,6 +139,7 @@ main {
 				&:hover {
 					background-color:  hotpink;
 					color: #1d2b53;
+					text-decoration: none;
 				}
 			}
 		}
