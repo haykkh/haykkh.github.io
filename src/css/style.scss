@@ -126,19 +126,16 @@ main {
 			padding: 5px;
 			&:hover {
 				background-color: crimson;
-				color: white;
+				color: #1d2b53;
 			}
 
 			&.night {
-				color: #EAF4D3;
+				color: aquamarine;
 
-				&:visited {
-					color: #a5a283;
-				}
 
 				&:hover {
 					background-color:  hotpink;
-					color: white;
+					color: #1d2b53;
 				}
 			}
 		}
