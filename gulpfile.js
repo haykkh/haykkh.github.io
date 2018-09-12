@@ -8,6 +8,7 @@ var uglify = require('gulp-uglify');
 var del = require('del');
 var sass = require('gulp-sass');
 var imagemin = require('gulp-imagemin');
+var minifyInline = require('gulp-minify-inline');
 
 
 var paths = {
@@ -90,7 +91,8 @@ gulp.task('watch', ['serve'], function() {
 
 gulp.task('html:dist', function() {
     return gulp.src(paths.srcHTML)
-        .pipe(htmlclean())    
+        .pipe(htmlclean())
+        .pipe(minifyInline()) 
         .pipe(gulp.dest(paths.dist));
 });
 
@@ -131,6 +133,13 @@ gulp.task('inject:dist', ['copy:dist'], function() {
     return gulp.src(paths.distIndex)
         .pipe(inject( css, {relative:true}))
         .pipe(inject( js, {relative:true}))
+        .pipe(inject(gulp.src(['./src/partials/head/*.html']), {
+            starttag: '<!-- inject:head:{{ext}} -->',
+            transform: function (filePath, file) {
+              // return file contents as string
+              return file.contents.toString('utf8')
+            }
+          }))
         .pipe(gulp.dest(paths.dist));
 });
 
