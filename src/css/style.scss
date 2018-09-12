@@ -123,22 +123,21 @@ main {
 
 		a {
 			padding: 5px;
-			color: dodgerblue;
+			color: white;
+			background: dodgerblue;
+			text-decoration: none;
 
 			&:hover {
 				background-color: crimson;
-				color: white;
-				text-decoration: none;
 			}
 
 			&.night {
-				color: aquamarine;
+				background: aquamarine;
+				color: #1d2b53;
 
 
 				&:hover {
 					background-color:  hotpink;
-					color: #1d2b53;
-					text-decoration: none;
 				}
 			}
 		}
