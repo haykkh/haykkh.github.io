@@ -98,6 +98,7 @@ gulp.task('html:dist', function() {
 
 gulp.task('js:dist', function() {
     return gulp.src(paths.srcJS)
+        .pipe(concat(paths.dist + 'js/script.js'))
         .pipe(uglify())
         .pipe(gulp.dest(paths.dist));
 });
@@ -132,7 +133,9 @@ gulp.task('inject:dist', ['copy:dist'], function() {
     var js = gulp.src(paths.distJS);
     return gulp.src(paths.distIndex)
         .pipe(inject( css, {relative:true}))
-        .pipe(inject( js, {relative:true}))
+        .pipe(inject( js, {relative:true, transform: ( path, file ) => {
+            return `<script async src="${ path }" ></script>`;
+        }}))
         .pipe(inject(gulp.src(['./src/partials/head/*.html']), {
             starttag: '<!-- inject:head:{{ext}} -->',
             transform: function (filePath, file) {
