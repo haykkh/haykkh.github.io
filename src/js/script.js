@@ -37,7 +37,7 @@ function night() {
 function autoDayNight() {
     var hour = new Date().getHours();
 
-    console.log(hour);
+    window.alert(hour);
 
     if (hour < 6 || hour >= 19) {
         night();
@@ -47,3 +47,5 @@ function autoDayNight() {
 }
 
 window.addEventListener("load", autoDayNight());
+
+window.alert('pooppoo');
