@@ -1,7 +1,4 @@
-@font-face {
-  font-family: 'fixedsys';
-  src: url('../fonts/FSEX300.woff2') format('woff2');
-}
+
 
 
 /* http://meyerweb.com/eric/tools/css/reset/ 
@@ -69,7 +66,6 @@ html {
 }
 
 body {
-	font-family: 'fixedsys', monospace;
 	margin: 50px;
 	@media only screen and (max-width : 400px) {
 		margin: 25px;
