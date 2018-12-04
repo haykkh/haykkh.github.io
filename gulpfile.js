@@ -132,7 +132,9 @@ gulp.task('inject:dist', ['copy:dist'], function() {
     var css = gulp.src(paths.distCSS);
     var js = gulp.src(paths.distJS);
     return gulp.src(paths.distIndex)
-        .pipe(inject( css, {relative:true}))
+        .pipe(inject( css, {relative:true, transform: ( path, file ) => {
+            return `<link rel="stylesheet" async href="${ path }" ></link>`;
+        }}))
         .pipe(inject( js, {relative:true, transform: ( path, file ) => {
             return `<script async src="${ path }" ></script>`;
         }}))
