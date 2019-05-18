@@ -60,7 +60,7 @@ html {
 	margin: auto;
 
 	&.night {
-		background:  #1d2b53;
+		background:  #383838;
 		color: white;
 	}
 }
@@ -76,7 +76,7 @@ body {
 	color: crimson;
 
 	&.night {
-		color: hotpink;
+		color: lightcoral;
 	}
 }
 
@@ -128,12 +128,12 @@ main {
 			}
 
 			&.night {
-				background: aquamarine;
-				color: #1d2b53;
+				background: darkseagreen;
+				color: #383838;
 
 
 				&:hover {
-					background-color:  hotpink;
+					background-color:  lightcoral;
 				}
 			}
 		}
