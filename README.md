@@ -1,5 +1,7 @@
 # hayk.io
 
+![](header.png)
+
 ### Requirements
 * gulp
 
