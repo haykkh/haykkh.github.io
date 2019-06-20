@@ -5,6 +5,16 @@
 ### Requirements
 * gulp
 
+### Installation
+
+```sh
+cd hayk.io/
+```
+
+```sh
+npm install
+```
+
 ### Gulps
 
 #### Development
