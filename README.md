@@ -8,18 +8,18 @@
 ### Installation
 
 ```sh
-cd hayk.io/
+$ cd hayk.io/
 ```
 
 ```sh
-npm install
+$ npm install
 ```
 
 ### Gulps
 
 #### Development
 ```sh
-gulp
+$ gulp
 ```
 * Builds files from `/src/` to `/tmp`
 * Injects CSS & JS into HTML
@@ -27,14 +27,14 @@ gulp
 
 #### Production
 ```sh
-gulp build
+$ gulp build
 ```
 * Builds files from `/src/` to `/`
 * Injects CSS & JS into HTML
 
 #### Cleaning up 
 ```sh
-gulp clean
+$ gulp clean
 ```
 * Clears `/tmp/`
 
