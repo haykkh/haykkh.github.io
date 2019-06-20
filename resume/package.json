@@ -14,7 +14,7 @@
       "resolved": "https://registry.npmjs.org/async/-/async-0.2.10.tgz",
       "version": "0.2.10"
     },
-    "handlebars": "^4.0.11",
+    "handlebars": "^4.1.2",
     "jsonresume-theme-paper": {
       "integrity": "sha1-BYNySfev72b4qszloaiRfQd6sBM=",
       "requires": {
