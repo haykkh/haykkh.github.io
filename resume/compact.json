@@ -10,7 +10,7 @@
   "info": {
     "label": "Software Engineer",
     "characterClass": "Programmer",
-    "brief": "Third year UCL Theoretical Physics student (1st expected); Self taught intermediate programmer (Python, Mathematica); Freelance Web Developer; Representative for 30 Physics students",
+    "brief": "UCL Theoretical Physics graduate (1st expected); Self taught intermediate programmer (Python, Mathematica); Freelance Web Developer; Representative for 30 Physics students",
     "quote": "Be the change you want to see in the world."
   },
 
@@ -29,6 +29,16 @@
   },
 
   "projects": [
+    {
+      "title": "Can Hot Water Freeze Faster Than Cold Water?",
+      "category": "educational",
+      "role": "Molecular Dynamics Researcher",
+      "start": "2019-01",
+      "end": "2019-03",
+      "summary": "A university research project tasked with investigating the effects of impurities and differing starting temperatures on the freezing of water.",
+      "highlights": ["Designed multiple molecular dynamics simulations in LAMMPS investigating the effects of impurities on the freezing of water.", "Analyzed the data, comparing to data gathered by the experimental team.", "Visualized our results using VMD and Jupyter.", "Assembled our research in LaTeX.", "Transcribed minutes for some meetings.", "Chaired some meetings."],
+      "keywords": ["MD simulations", "LAMMPS", "VMD", "LaTeX", "Communication", "Leadership", "Python", "Jupyter"]
+    },
     {
       "title": "Intergrated Engineering Challenge #2: Global Health",
       "category": "educational",
