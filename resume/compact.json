@@ -10,7 +10,7 @@
   "info": {
     "label": "Software Engineer",
     "characterClass": "Programmer",
-    "brief": "UCL Theoretical Physics graduate (1st expected); Self taught intermediate programmer (Python, Mathematica); Freelance Web Developer; Representative for 30 Physics students",
+    "brief": "UCL Theoretical Physics graduate (First Class Honors); Self taught intermediate programmer (Python, Mathematica); Freelance Web Developer; Representative for 30 Physics students",
     "quote": "Be the change you want to see in the world."
   },
 
@@ -149,8 +149,8 @@
         "start": "2016-09",
         "end": "2019-06",
         "grade": "74%",
-        "summary": "Achieved an average of 74% in my first two years (first class with honors)",
-        "highlights": ["Practical Mathematics and Computing I & II (Python and Mathematica): 84% & 86%" ,"Mathematical Methods II & III: 91% & 91%", "Developing Effective Communication I & II: 68% & 69%"]
+        "summary": "Achieved a degree with First Class Honors",
+        "highlights": ["Practical Mathematics and Computing I & II (Python and Mathematica): 84% & 86%" ,"Mathematical Methods II & III: 91% & 91%", "Climate & Energy: 83%", "Developing Effective Communication I & II: 68% & 69%"]
       }
 
     ]
