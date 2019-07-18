@@ -81,7 +81,7 @@
         "position": "Freelance Web Development",
          "summary": "Developed full stack, responsive websites for my clients.  ",
         "start": "2015-01",
-        "keywords": ["HTML 5","CSS3 / SASS","Handlebars","JS", "PHP"],
+        "keywords": ["HTML 5","CSS3 / SASS", "Flexbox", "Handlebars","JS", "PHP", "Node.js", "gulp.js", "Flask"],
         "highlights": [
           "JekyllNow, Wordpress",
           "Bootstrap, Polymer",
@@ -225,7 +225,7 @@
       "title": "Delegate of Iran",
       "role": "Delegate of Iran",
       "event": "Mediterranean Model United Nations",
-      "location": "Nicosia, CY",
+      "location": "Nicosia, Cyprus",
       "start": "2015-02",
       "summary": "A simulation of the United Nations, done by students from various schools as they discuss and try to find solutions to current world problems.",
       "highlights": [
@@ -237,7 +237,7 @@
       "title": "Member of Medical Ethics committee",
       "role": "Member of Medical Ethics committee",
       "event": "Youth Voice",
-      "location": "Nicosia, CY",
+      "location": "Nicosia, Cyprus",
       "start": "2014-04",
       "summary": "An annual weekend conference where young people between the ages of 15-19 from schools convene to discuss and express themselves on current affairs.",
       "highlights": [
@@ -249,7 +249,7 @@
       "title": "Speaker",
       "role": "Speaker",
       "event": "Science Rocks",
-      "location": "Limassol, CY",
+      "location": "Limassol, Cyprus",
       "start": "2013-03",
       "summary": "'Does anything touch?'",
       "highlights": [
