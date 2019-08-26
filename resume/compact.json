@@ -10,7 +10,7 @@
   "info": {
     "label": "Software Engineer",
     "characterClass": "Programmer",
-    "brief": "UCL Theoretical Physics graduate (First Class Honors); Self taught intermediate programmer (Python, Mathematica); Freelance Web Developer; Representative for 30 Physics students",
+    "brief": "UCL Theoretical Physics graduate (First Class Honors); Self taught intermediate programmer (Python, Mathematica); Freelance Web Developer",
     "quote": "Be the change you want to see in the world."
   },
 
@@ -81,6 +81,7 @@
         "position": "Freelance Web Development",
          "summary": "Developed full stack, responsive websites for my clients.  ",
         "start": "2015-01",
+        "end": "2018-04",
         "keywords": ["HTML 5","CSS3 / SASS", "Flexbox", "Handlebars","JS", "PHP", "Node.js", "gulp.js", "Flask"],
         "highlights": [
           "JekyllNow, Wordpress",
@@ -150,7 +151,7 @@
         "end": "2019-06",
         "grade": "74%",
         "summary": "Achieved a degree with First Class Honors",
-        "highlights": ["Practical Mathematics and Computing I & II (Python and Mathematica): 84% & 86%" ,"Mathematical Methods II & III: 91% & 91%", "Climate & Energy: 83%"]
+        "highlights": ["Practical Mathematics and Computing I & II (Python and Mathematica): 84% & 86%" ,"Mathematical Methods II & III: 91% & 91%", "Climate & Energy: 83%", "Representative for 30 Physics students"]
       }
 
     ]
