@@ -14,6 +14,7 @@
           {{#has 'location.city'}}<div class="location">{{r.location.city}}, {{r.location.country}}</div>{{/has}}{{#has 'contact.email'}}<div class="email"><a href="mailto:{{{ RAW.contact.email }}}">{{ RAW.contact.email }}</a></div>{{/has}}
           {{#has 'contact.phone'}}<div class="phone">{{ RAW.contact.phone }}</div>{{/has}}
           {{#has 'contact.website'}}<div class="website"><a href="{{{ RAW.contact.website }}}">{{trimURL RAW.contact.website }}</a></div>{{/has}}
+          {{#has 'contact.github'}}<div class="github"><a href="https://github.com/{{{ RAW.contact.github }}}">github.com/{{ RAW.contact.github }}</a></div>{{/has}}
         </div>
       </header>
 
