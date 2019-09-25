@@ -36,7 +36,7 @@
       "start": "2018-07",
       "end": "2018-07",
       "url": "https://chat.hayk.io",
-      "summary": "Flask & SocketIO based webapp that connects with a Slack workspace and carries messages between the two (hayk (owner) talks from Slack, user talks from webapp).",
+      "summary": "Flask & SocketIO based webapp that connects with a Slack workspace and carries messages between the two (Hayk (owner) talks from Slack, user talks from webapp).",
       "keywords": ["Python", "Flask", "HTML", "CSS", "Javascript", "SocketIO", "heroku"]
     },
     {
