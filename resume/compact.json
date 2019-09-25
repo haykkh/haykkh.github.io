@@ -31,6 +31,15 @@
 
   "projects": [
     {
+      "title": "chat.hayk.io",
+      "role": "Creator",
+      "start": "2018-07",
+      "end": "2018-07",
+      "url": "https://chat.hayk.io",
+      "summary": "Flask & SocketIO based webapp that connects with a Slack workspace and carries messages between the two (hayk (owner) talks from Slack, user talks from webapp).",
+      "keywords": ["Python", "Flask", "HTML", "CSS", "Javascript", "SocketIO", "heroku"]
+    },
+    {
       "title": "Can Hot Water Freeze Faster Than Cold Water?",
       "category": "educational",
       "role": "Molecular Dynamics Researcher",
@@ -73,7 +82,7 @@
         "summary": "Designed and developed a quantum computer simulator in C++. Lectured on quantum computation.",
         "start": "2018-07",
         "end": "2018-09",
-        "keywords": ["C++", "Quantum Computing", "Communication", "Problem solving"]
+        "keywords": ["C++", "OOP", "Quantum Computing", "Communication", "Problem solving"]
 
       },
 
