@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/haykkh
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://hayk.io
+  * I am haykkh (https://keybase.io/haykkh) on keybase.
+  * I have a public key ASCdg-Z0KWEMSBfMCilfsNA8qg-8tMjorAEMaP2h1X-i1Qo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "01209d83e67429610c4817cc0a295fb0d03caa0fbcb4c8e8ac010c68fda1d57fa2d50a",
+      "host": "keybase.io",
+      "kid": "01209d83e67429610c4817cc0a295fb0d03caa0fbcb4c8e8ac010c68fda1d57fa2d50a",
+      "uid": "6f4af16f0a5717635d131ffcd6817b19",
+      "username": "haykkh"
+    },
+    "merkle_root": {
+      "ctime": 1572479592,
+      "hash": "53351517eb26059e274c86d35aab2564a9f4553f6c65199607641088613d5d25e934d83ab3efe7dad3e81fa484ec8fb20f4036bd567554f4adc4d28de1a5440e",
+      "hash_meta": "6b98dfc36034925df8a8faff5d154875f4cdefc9f64f76e179b0e361aafa619e",
+      "seqno": 8542219
+    },
+    "service": {
+      "entropy": "lB50NblYik1dnipfw3pOXrN0",
+      "hostname": "hayk.io",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "4.7.2"
+  },
+  "ctime": 1572479600,
+  "expire_in": 504576000,
+  "prev": "ee04bf2cfbf218e0ce5da46995d26c5af234791b0faa5a54564d0f0b8afa19f9",
+  "seqno": 6,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgnYPmdClhDEgXzAopX7DQPKoPvLTI6KwBDGj9odV/otUKp3BheWxvYWTESpcCBsQg7gS/LPvyGODOXaRpldJsWvI0eRsPqlpUVk0PC4r6GfnEIGwTzqbhk7Zi0Wtz/9SqizRnwIwqxY0E2Kwkra8g/I5MAgHCo3NpZ8RAOrtiyi5oKQt+m2ToOEl1CDvxMS0TWZIDDNLlj7zFuQuxA/WHHrm55o5m/bM7guB5yp56LwojXWG+tE4VnAn8D6hzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIFSiwqVfOCUtRKm/8NbhubzaKQcbft2D91TpO2Z9kfO0o3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/haykkh
+
+==================================================================
