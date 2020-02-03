@@ -21,22 +21,9 @@ $ npm install
 ```sh
 $ gulp
 ```
-* Builds files from `/src/` to `/tmp`
-* Injects CSS & JS into HTML
-* Serves `/tmp/` to port 3000 with livereload
-
-#### Production
-```sh
-$ gulp build
-```
 * Builds files from `/src/` to `/`
-* Injects CSS & JS into HTML
+* Serves `/` to port 3000 with livereload
 
-#### Cleaning up 
-```sh
-$ gulp clean
-```
-* Clears `/tmp/`
 
 ## Meta
 
