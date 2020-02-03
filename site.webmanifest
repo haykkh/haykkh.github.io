@@ -1,6 +1,6 @@
 {
-    "name": "",
-    "short_name": "",
+    "name": "hayk khachatryan",
+    "short_name": "hayk khachatryan",
     "icons": [
         {
             "src": "/android-chrome-192x192.png",
@@ -8,12 +8,13 @@
             "type": "image/png"
         },
         {
-            "src": "/android-chrome-256x256.png",
-            "sizes": "256x256",
+            "src": "/android-chrome-512x512.png",
+            "sizes": "512x512",
             "type": "image/png"
         }
     ],
-    "theme_color": "#dc143c",
-    "background_color": "#dc143c",
+    "theme_color": "#ffffff",
+    "background_color": "#ffffff",
+    "start_url": "https://hayk.io",
     "display": "standalone"
 }
