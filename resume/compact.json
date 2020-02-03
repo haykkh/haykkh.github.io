@@ -85,7 +85,6 @@
         "keywords": ["C++", "OOP", "Quantum Computing", "Communication", "Problem solving"]
 
       },
-
       {
         "employer": "",
         "position": "Freelance Web Development",
@@ -98,6 +97,23 @@
           "Bootstrap, Polymer",
           "LAMP stacks"
         ]
+      },
+      {
+        "employer": "The Lamb Tavern",
+        "url": "https://www.lambtavernleadenhall.com/",
+        "position": "Bartender",
+        "summary": "Provided excellent bar service and guest satisfaction in high-volume, fast-paced bar.",
+        "start": "2019-11",
+        "end": "2020-01",
+        "highlights": [
+          "Utilized knowledge of mixed beverages, specialty liquors and craft beers to serve customers and provide wait staff with well prepared drinks in a timely fashion.",
+          "Stocked and tracked inventory and supplies.",
+          "Maintained a clean and organized work area.",
+          "Followed safety, sanitation and legal policies for handling food and beverages.",
+          "Developed excellent customer relations.",
+          "Prepared orders in fast-paced environment. "
+        ],
+        "keywords": ["Customer Service", "Communication", "Organization"]
       },
       {
         "employer": "OptionRally",
@@ -154,7 +170,7 @@
 
       {
         "institution": "University College London",
-        "title": "Theoretical Physics",
+        "title": "Theoretical Physics BSc",
         "studyType": "BSc",
         "url": "https://www.ucl.ac.uk/",
         "start": "2016-09",
