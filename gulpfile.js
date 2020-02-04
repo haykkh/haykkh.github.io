@@ -113,6 +113,7 @@ function watchFiles() {
 const js = scripts;
 const build = gulp.series(clean, gulp.parallel(html, css, images, js, fonts));
 const watch = gulp.parallel(watchFiles, browserSync);
+const dev = gulp.series(build, watch)
 
 // exports
 exports.html = html;
@@ -122,5 +123,5 @@ exports.js = js;
 exports.fonts = fonts;
 exports.clean = clean;
 exports.build = build;
-exports.dev = watch;
-exports.default = watch; 
+exports.dev = dev;
+exports.default = dev; 
