@@ -1,40 +1,54 @@
-# hayk.io
 
-![](header.png)
+# haykkh.github.io
 
-### Requirements
-* gulp
+> personal website
 
-### Installation
+![language](https://img.shields.io/badge/HTML-blue.svg?style=flat-square)![language](https://img.shields.io/badge/CSS-red.svg?style=flat-square)![language](https://img.shields.io/badge/Javascript-green.svg?style=flat-square)
+
+![Header](header.png)
+
+## 📦 Installation
+
+### 📋 Clone repo
 
 ```sh
-$ cd hayk.io/
+git clone https://github.com/haykkh/haykkh.github.io.git
+
+cd haykkh.github.io
+
+yarn
 ```
+
+### ⬇️ Direct download
+
+[haykkh.github.io-master.zip](https://github.com/haykkh/haykkh.github.io/archive/master.zip)
 
 ```sh
-$ npm install
+cd haykkh.github.io-master
+
+yarn
 ```
 
-### Gulps
+## 🚀 Usage
 
-#### Development
+Uses [Parcel](https://parceljs.org/) to bundle files.
+
 ```sh
-$ gulp
+yarn start  # start development server
+
+yarn build  # build website into ./docs/
 ```
-* Builds files from `/src/` to `/`
-* Serves `/` to port 3000 with livereload
 
+## 📝 Contributing
 
-## Meta
-
-Hayk Khachatryan – [chat w/ me](https://chat.hayk.io) – hi@hayk.io
-
-[https://github.com/haykkh/](https://github.com/haykkh/)
-
-## Contributing
-
-1. Fork it (<https://github.com/haykkh/hayk.io/fork>)
+1. Fork it (<https://github.com/haykkh/haykkh.github.io/fork>)
 2. Create your feature branch (`git checkout -b feature/fooBar`)
 3. Commit your changes (`git commit -am 'Add some fooBar'`)
 4. Push to the branch (`git push origin feature/fooBar`)
 5. Create a new Pull Request
+
+## 👨🏻 Meta
+
+Hayk Khachatryan – [hi@hayk.io](mailto:hi@hayk.io)
+
+[github.com/haykkh](https://github.com/haykkh/)

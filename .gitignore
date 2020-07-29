@@ -130,3 +130,7 @@ typings/
 
 resume/node_modules/*
 resume/specifics/
+
+# parcel stuffs
+.parcel-cache
+dist/

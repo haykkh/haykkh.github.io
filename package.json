@@ -2,33 +2,21 @@
   "name": "hayk.io",
   "version": "1.0.0",
   "description": "now on the world wide web!",
-  "main": "gulpfile.js",
+  "main": "docs/index.html",
+  "source": "src/html/index.html",
+  "repository": "https://github.com/haykkh/haykkh.github.io",
+  "author": "Hayk Khachatryan <hi@hayk.io>",
+  "license": "MIT",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "parcel src/html/index.html",
+    "build": "parcel build ."
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/haykkh/hayk.io.git"
+  "targets": {
+    "main": {
+      "distDir": "./docs"
+    }
   },
-  "author": "haykkh",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/haykkh/hayk.io/issues"
-  },
-  "homepage": "https://github.com/haykkh/hayk.io#readme",
   "devDependencies": {
-    "autoprefixer": "^9.7.4",
-    "browser-sync": "^2.26.7",
-    "cssnano": "^4.1.10",
-    "del": "^5.1.0",
-    "gulp": "^4.0.2",
-    "gulp-htmlmin": "^5.0.1",
-    "gulp-imagemin": "^7.1.0",
-    "gulp-minify-inline": "^1.1.0",
-    "gulp-newer": "^1.4.0",
-    "gulp-plumber": "^1.2.1",
-    "gulp-postcss": "^8.0.0",
-    "gulp-sass": "^4.0.2",
-    "gulp-uglify": "^3.0.2"
+    "parcel": "^2.0.0-alpha.3.2"
   }
 }
