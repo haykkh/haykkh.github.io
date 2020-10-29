@@ -2,19 +2,13 @@
   "name": "hayk.io",
   "version": "1.0.0",
   "description": "now on the world wide web!",
-  "main": "docs/index.html",
   "source": "src/html/index.html",
   "repository": "https://github.com/haykkh/haykkh.github.io",
   "author": "Hayk Khachatryan <hi@hayk.io>",
   "license": "MIT",
   "scripts": {
     "start": "parcel serve src/html/index.html",
-    "build": "parcel build ./src/html/index.html"
-  },
-  "targets": {
-    "main": {
-      "distDir": "./docs"
-    }
+    "build": "parcel build src/html/index.html --dist-dir docs"
   },
   "devDependencies": {
     "parcel": "^2.0.0-beta.1",

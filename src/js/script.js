@@ -29,7 +29,7 @@ function night() {
     for (var i = 0; i < hrefs.length; i++) {
         hrefs[i].classList.add("night");
     }
-    
+
     document.getElementById("moon").style.display = "none";
     document.getElementById("sun").style.display = "inline";
 }
@@ -43,5 +43,12 @@ function autoDayNight() {
     }
 }
 
-window.addEventListener("load", autoDayNight());
+window.addEventListener("DOMContentLoaded", () => {
+    autoDayNight()
 
+    const moon = document.getElementById("moon")
+    const sun = document.getElementById("sun")
+
+    moon.addEventListener("click", () => night())
+    sun.addEventListener("click", () => day())
+});
