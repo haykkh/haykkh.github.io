@@ -80,6 +80,11 @@ body {
 	}
 }
 
+#language{
+	position: fixed;
+	left: 0;
+}
+
 header {
 		font-size: 2rem;
 		p {
@@ -117,7 +122,7 @@ main {
 		font-size: 1.5rem;
 		margin: 10px 0 10px 0;
 
-		}		
+		}
 
 		ul {
 			li {
@@ -125,30 +130,29 @@ main {
 			}
 		}
 
-		a {
-			padding: 5px;
-			color: white;
-			background: dodgerblue;
-			text-decoration: none;
-
-			&:hover {
-				background-color: crimson;
-			}
-
-			&.night {
-				background: darkseagreen;
-				color: #272727;
-
-
-				&:hover {
-					background-color:  lightcoral;
-				}
-			}
-		}
 	}
 
 
 
 }
 
+a {
+	padding: 5px;
+	color: white;
+	background: dodgerblue;
+	text-decoration: none;
 
+	&:hover {
+		background-color: crimson;
+	}
+
+	&.night {
+		background: darkseagreen;
+		color: #272727;
+
+
+		&:hover {
+			background-color:  lightcoral;
+		}
+	}
+}
