@@ -1,11 +1,11 @@
 
 # haykkh.github.io
 
+![language](https://img.shields.io/badge/HTML-blue.svg?style=flat-square)![language](https://img.shields.io/badge/CSS-red.svg?style=flat-square)![language](https://img.shields.io/badge/Javascript-green.svg?style=flat-square)
+
 > personal website
 
 Հայերենի համար, սեղմեք [այստեղ](https://github.com/haykkh/hayk-am):
-
-![language](https://img.shields.io/badge/HTML-blue.svg?style=flat-square)![language](https://img.shields.io/badge/CSS-red.svg?style=flat-square)![language](https://img.shields.io/badge/Javascript-green.svg?style=flat-square)
 
 ![Header](header.png)
 
