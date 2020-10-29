@@ -110,6 +110,16 @@ header {
 				outline: none;
 			}
 		}
+		a {
+			position: relative;
+			top: 5px;
+			padding: 2.5px 5px 0 5px;
+
+			span {
+				position: relative;
+				top: -5px;
+			}
+		}
 }
 
 main {
