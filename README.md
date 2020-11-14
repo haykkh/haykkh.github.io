@@ -3,7 +3,7 @@
 
 > personal website
 
-Հայերենի համար, սեղմեք [այստեղ](https://github.com/haykkh/hayk-am):
+Հայերենի համար, սեղմեք [այստեղ](https://github.com/haykkh/khachatryan.hay):
 
 ![language](https://img.shields.io/badge/HTML-blue.svg?style=flat-square)![language](https://img.shields.io/badge/CSS-red.svg?style=flat-square)![language](https://img.shields.io/badge/Javascript-green.svg?style=flat-square)
 
