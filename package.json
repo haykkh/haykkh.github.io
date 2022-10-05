@@ -11,6 +11,9 @@
     "build": "parcel build src/html/index.html --dist-dir docs"
   },
   "devDependencies": {
+    "@parcel/packager-raw-url": "2.7.0",
+    "@parcel/transformer-sass": "2.7.0",
+    "@parcel/transformer-webmanifest": "2.7.0",
     "parcel": "^2.0.0-beta.1",
     "sass": "^1.27.1"
   }
