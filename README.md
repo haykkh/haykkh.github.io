@@ -1,4 +1,3 @@
-
 # haykkh.github.io
 
 > personal website
@@ -18,7 +17,7 @@ git clone https://github.com/haykkh/haykkh.github.io.git
 
 cd haykkh.github.io
 
-yarn
+pnpm i
 ```
 
 ### ⬇️ Direct download
@@ -28,7 +27,7 @@ yarn
 ```sh
 cd haykkh.github.io-master
 
-yarn
+pnpm i
 ```
 
 ## 🚀 Usage
@@ -36,9 +35,9 @@ yarn
 Uses [Parcel](https://parceljs.org/) to bundle files.
 
 ```sh
-yarn start  # start development server
+pnpm start  # start development server
 
-yarn build  # build website into ./docs/
+pnpm build  # build website into ./docs/
 ```
 
 ## 📝 Contributing
